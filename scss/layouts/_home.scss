@@ -18,6 +18,11 @@
 
     margin-top: 0;
     margin-bottom: 6.25rem;
+
+    @include breakpoint-up(tablet) {
+      margin-bottom: 8.25rem;
+      font-size: $_60px;
+    }
   }
 
   h3 {
@@ -25,16 +30,22 @@
     font-size: $_20px;
 
     font-weight: 500;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_38px;
+    }
   }
 
   a {
-    // position: absolute;
-    // bottom: 10%;
-    // right: 10%;
     margin-top: 2rem;
 
     text-decoration: underline;
     color: $dark;
+
+    @include breakpoint-up(tablet) {
+      margin-top: 4rem;
+      font-size: $_24px;
+    }
   }
 }
 
@@ -43,6 +54,10 @@
 .showcase,
 .contacts {
   padding: 0 1.125rem 16vh;
+
+  @include breakpoint-up(tablet) {
+    padding: 0 2rem 16vh;
+  }
 }
 
 .about {
@@ -50,14 +65,21 @@
 
   h4 {
     font-weight: 400;
-    font-size: $_16px;
-    line-height: 1.6;
+    font-size: $_15px;
 
     margin-top: 0;
     margin-bottom: 2.875rem;
 
+    &:nth-child(3) {
+      text-align: right;
+    }
+
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @include breakpoint-up(tablet) {
+      font-size: $_18px;
     }
   }
 }
@@ -79,7 +101,6 @@
   svg {
     position: absolute;
     top: calc(-10.625rem / 2);
-    left: calc((10.625rem - 4rem));
     height: 10.625rem;
     width: 10.625rem;
 
@@ -129,6 +150,11 @@
         margin-top: 1.125rem;
 
         text-decoration: underline;
+
+        @include breakpoint-up(tablet) {
+          margin-top: 0;
+          margin-left: auto;
+        }
       }
     }
   }

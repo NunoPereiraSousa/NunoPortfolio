@@ -1,14 +1,18 @@
 .sub_header {
   font-family: $headers;
-  font-size: $_38px;
+  font-size: $_40px;
   letter-spacing: normal;
 
   margin-top: 0;
-  margin-bottom: 2.875rem;
+  margin-bottom: 3.125rem;
 
   &.dark_circle {
     color: $grey;
 
-    padding-top: calc(2.875rem + 10.6325rem);
+    padding-top: calc(3.125rem + 10.6325rem);
+  }
+
+  @include breakpoint-up(tablet) {
+    font-size: $_50px;
   }
 }

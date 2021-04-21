@@ -18,12 +18,20 @@
     opacity: 0;
   }
 
+  @include breakpoint-up(tablet) {
+    padding: 1.25rem 2rem;
+  }
+
   &__logo {
     font-family: $headers;
     font-size: $_20px;
     color: $dark;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: normal;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_26px;
+    }
   }
 
   &__hamburger {
@@ -81,8 +89,12 @@
     font-family: $headers;
     font-size: $_20px;
     color: $dark;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: normal;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_26px;
+    }
   }
 
   &__cross {

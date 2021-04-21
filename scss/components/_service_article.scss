@@ -11,19 +11,31 @@
     border-top: 1px solid rgba($color: $dark, $alpha: 0.23);
   }
 
+  @include breakpoint-up(tablet) {
+    padding: 50px 30px;
+  }
+
   h3 {
     margin-top: 0;
     margin-bottom: 24px;
+    font-size: $_17px;
 
     font-weight: 500;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_22px;
+    }
   }
 
   h5 {
     margin: 0;
 
     font-weight: 400;
-    font-size: $_16px;
-    line-height: 1.6;
+    font-size: $_15px;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_18px;
+    }
   }
 
   p {
@@ -31,5 +43,9 @@
     margin: 0;
 
     transform: translate(-20px, 20px);
+
+    svg {
+      width: 30px;
+    }
   }
 }

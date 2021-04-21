@@ -186,12 +186,24 @@ main {
   opacity: 0;
 }
 
+@media (min-width: 48em) {
+  .header {
+    padding: 1.25rem 2rem;
+  }
+}
+
 .header__logo {
   font-family: "Cormorant Garamond";
   font-size: 1.25rem;
   color: #1a1a1a;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: normal;
+}
+
+@media (min-width: 48em) {
+  .header__logo {
+    font-size: 1.625rem;
+  }
 }
 
 .header__hamburger {
@@ -248,8 +260,14 @@ main {
   font-family: "Cormorant Garamond";
   font-size: 1.25rem;
   color: #1a1a1a;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: normal;
+}
+
+@media (min-width: 48em) {
+  .header_open__logo {
+    font-size: 1.625rem;
+  }
 }
 
 .header_open__cross {
@@ -287,11 +305,11 @@ main {
 
 .mobile_menu {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   left: 0;
   top: 0;
-  padding: 2rem;
+  padding: 2rem 2rem 4rem;
   visibility: hidden;
   pointer-events: none;
   -webkit-transition: all 0.8s;
@@ -333,7 +351,7 @@ main {
   -webkit-transform: none;
           transform: none;
   height: 100%;
-  padding: 2rem;
+  padding: 2rem 2rem 4rem;
 }
 
 .mobile_menu__content__pos ul {
@@ -343,6 +361,10 @@ main {
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+}
+
+.mobile_menu__content__pos ul:first-child {
+  margin-top: 0;
 }
 
 .mobile_menu__content__pos ul.open {
@@ -362,14 +384,38 @@ main {
   line-height: 1.1;
 }
 
+@media (min-width: 48em) {
+  .mobile_menu__content__pos ul.mobile_menu__links li {
+    line-height: 1.5;
+  }
+}
+
 .mobile_menu__content__pos ul.mobile_menu__links li a {
   font-family: "Cormorant Garamond";
   font-size: 2.875rem;
   font-weight: 600;
 }
 
+@media (min-width: 48em) {
+  .mobile_menu__content__pos ul.mobile_menu__links li a {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .mobile_menu__content__pos ul.mobile_menu__services li {
+    line-height: 1.7;
+  }
+}
+
 .mobile_menu__content__pos ul.mobile_menu__services a {
   font-size: 1.125rem;
+}
+
+@media (min-width: 48em) {
+  .mobile_menu__content__pos ul.mobile_menu__services a {
+    font-size: 1.75rem;
+  }
 }
 
 .mobile_menu__content__pos ul.mobile_menu__socials li {
@@ -378,6 +424,12 @@ main {
 
 .mobile_menu__content__pos ul.mobile_menu__socials li a {
   font-size: 0.9375rem;
+}
+
+@media (min-width: 48em) {
+  .mobile_menu__content__pos ul.mobile_menu__socials li a {
+    font-size: 1.375rem;
+  }
 }
 
 .mobile_menu__content__pos ul.mobile_menu__socials li a#email {
@@ -399,15 +451,21 @@ main {
 
 .sub_header {
   font-family: "Cormorant Garamond";
-  font-size: 2.375rem;
+  font-size: 2.5rem;
   letter-spacing: normal;
   margin-top: 0;
-  margin-bottom: 2.875rem;
+  margin-bottom: 3.125rem;
 }
 
 .sub_header.dark_circle {
   color: #eaeaea;
-  padding-top: calc(2.875rem + 10.6325rem);
+  padding-top: calc(3.125rem + 10.6325rem);
+}
+
+@media (min-width: 48em) {
+  .sub_header {
+    font-size: 3.125rem;
+  }
 }
 
 .presentation {
@@ -429,16 +487,36 @@ main {
   margin-bottom: 6.25rem;
 }
 
+@media (min-width: 48em) {
+  .presentation h1 {
+    margin-bottom: 8.25rem;
+    font-size: 3.75rem;
+  }
+}
+
 .presentation h3 {
   margin: 0;
   font-size: 1.25rem;
   font-weight: 500;
 }
 
+@media (min-width: 48em) {
+  .presentation h3 {
+    font-size: 2.375rem;
+  }
+}
+
 .presentation a {
   margin-top: 2rem;
   text-decoration: underline;
   color: #1a1a1a;
+}
+
+@media (min-width: 48em) {
+  .presentation a {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+  }
 }
 
 .about,
@@ -448,20 +526,38 @@ main {
   padding: 0 1.125rem 16vh;
 }
 
+@media (min-width: 48em) {
+  .about,
+  .services,
+  .showcase,
+  .contacts {
+    padding: 0 2rem 16vh;
+  }
+}
+
 .about {
   width: 100%;
 }
 
 .about h4 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.9375rem;
   margin-top: 0;
   margin-bottom: 2.875rem;
 }
 
+.about h4:nth-child(3) {
+  text-align: right;
+}
+
 .about h4:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 48em) {
+  .about h4 {
+    font-size: 1.125rem;
+  }
 }
 
 .showcase {
@@ -481,7 +577,6 @@ main {
 .contacts svg {
   position: absolute;
   top: calc(-10.625rem / 2);
-  left: calc((10.625rem - 4rem));
   height: 10.625rem;
   width: 10.625rem;
   -webkit-animation: spin 30s linear infinite;
@@ -544,6 +639,13 @@ main {
   text-decoration: underline;
 }
 
+@media (min-width: 48em) {
+  .contacts__socials a:last-child {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
 .services__grid__article {
   position: relative;
   padding: 50px 20px;
@@ -556,17 +658,35 @@ main {
   border-top: 1px solid rgba(26, 26, 26, 0.23);
 }
 
+@media (min-width: 48em) {
+  .services__grid__article {
+    padding: 50px 30px;
+  }
+}
+
 .services__grid__article h3 {
   margin-top: 0;
   margin-bottom: 24px;
+  font-size: 1.0625rem;
   font-weight: 500;
+}
+
+@media (min-width: 48em) {
+  .services__grid__article h3 {
+    font-size: 1.375rem;
+  }
 }
 
 .services__grid__article h5 {
   margin: 0;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 48em) {
+  .services__grid__article h5 {
+    font-size: 1.125rem;
+  }
 }
 
 .services__grid__article p {
@@ -574,6 +694,10 @@ main {
   margin: 0;
   -webkit-transform: translate(-20px, 20px);
           transform: translate(-20px, 20px);
+}
+
+.services__grid__article p svg {
+  width: 30px;
 }
 
 .showcase__grid__article {
@@ -587,11 +711,23 @@ main {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 48em) {
+  .showcase__grid__article__categories h4 {
+    font-size: 1.0625rem;
+  }
+}
+
 .showcase__grid__article h5 {
   margin-top: 0;
   margin-bottom: 2.875rem;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   line-height: 1.6;
+}
+
+@media (min-width: 48em) {
+  .showcase__grid__article h5 {
+    font-size: 1.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
