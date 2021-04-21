@@ -1,0 +1,22 @@
+.showcase__grid__article {
+  border-bottom: 1px solid rgba($color: $dark, $alpha: 0.4);
+
+  &__categories {
+    h4 {
+      font-weight: 400;
+      font-size: $_14px;
+
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  h5 {
+    margin-top: 0;
+    margin-bottom: 2.875rem;
+
+    font-weight: 500;
+    font-size: $_16px;
+    line-height: 1.6;
+  }
+}

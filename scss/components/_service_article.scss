@@ -1,0 +1,35 @@
+.services__grid__article {
+  position: relative;
+
+  padding: 50px 20px;
+
+  border-bottom: 1px solid rgba($color: $dark, $alpha: 0.23);
+  border-left: 1px solid rgba($color: $dark, $alpha: 0.23);
+  border-right: 1px solid rgba($color: $dark, $alpha: 0.23);
+
+  &:first-child {
+    border-top: 1px solid rgba($color: $dark, $alpha: 0.23);
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    font-weight: 500;
+  }
+
+  h5 {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: $_16px;
+    line-height: 1.6;
+  }
+
+  p {
+    width: 100%;
+    margin: 0;
+
+    transform: translate(-20px, 20px);
+  }
+}

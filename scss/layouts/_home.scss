@@ -1,0 +1,67 @@
+.presentation {
+  position: relative;
+
+  height: 100vh;
+  width: 100%;
+
+  text-align: center;
+  font-family: $headers;
+  color: $dark;
+  letter-spacing: normal;
+
+  h1 {
+    font-size: $_34px;
+    line-height: 1.3;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 6.25rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: $_26px;
+
+    font-weight: 500;
+  }
+
+  a {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+
+    text-decoration: underline;
+    color: $dark;
+  }
+}
+
+.about,
+.services,
+.showcase {
+  padding: 0 1.125rem 16vh;
+}
+
+.about {
+  width: 100%;
+
+  h4 {
+    font-weight: 400;
+    font-size: $_16px;
+    line-height: 1.6;
+
+    margin-top: 0;
+    margin-bottom: 2.875rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.showcase {
+  &__grid {
+    row-gap: 2.875rem;
+  }
+}

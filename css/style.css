@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  line-height: 1.54;
+  letter-spacing: -0.3px;
+  background-color: #eaeaea;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-fd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-fe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 47.9375em) {
+  .hide-for-phone {
+    display: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .show-above-phone {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.no_scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 1rem 1.25rem;
+}
+
+.header__logo {
+  font-family: "Cormorant Garamond";
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.header__hamburger {
+  position: relative;
+  width: 2.25rem;
+  height: 0.625rem;
+}
+
+.header__hamburger::before, .header__hamburger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 1.625rem;
+  background-color: #1a1a1a;
+}
+
+.header__hamburger::before {
+  top: 0%;
+  left: -9px;
+}
+
+.header__hamburger::after {
+  bottom: 1%;
+}
+
+.noise::before {
+  background-image: url("../assets/noise.gif");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.03;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.sub_header {
+  font-family: "Cormorant Garamond";
+  font-size: 2.375rem;
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-bottom: 2.875rem;
+}
+
+.presentation {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  color: #1a1a1a;
+  letter-spacing: normal;
+}
+
+.presentation h1 {
+  font-size: 2.125rem;
+  line-height: 1.3;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 6.25rem;
+}
+
+.presentation h3 {
+  margin: 0;
+  font-size: 1.625rem;
+  font-weight: 500;
+}
+
+.presentation a {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  text-decoration: underline;
+  color: #1a1a1a;
+}
+
+.about,
+.services,
+.showcase {
+  padding: 0 1.125rem 16vh;
+}
+
+.about {
+  width: 100%;
+}
+
+.about h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 2.875rem;
+}
+
+.about h4:last-child {
+  margin-bottom: 0;
+}
+
+.showcase__grid {
+  row-gap: 2.875rem;
+}
+
+.services__grid__article {
+  position: relative;
+  padding: 50px 20px;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.23);
+  border-left: 1px solid rgba(26, 26, 26, 0.23);
+  border-right: 1px solid rgba(26, 26, 26, 0.23);
+}
+
+.services__grid__article:first-child {
+  border-top: 1px solid rgba(26, 26, 26, 0.23);
+}
+
+.services__grid__article h3 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.services__grid__article h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.services__grid__article p {
+  width: 100%;
+  margin: 0;
+  -webkit-transform: translate(-20px, 20px);
+          transform: translate(-20px, 20px);
+}
+
+.showcase__grid__article {
+  border-bottom: 1px solid rgba(26, 26, 26, 0.4);
+}
+
+.showcase__grid__article__categories h4 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.showcase__grid__article h5 {
+  margin-top: 0;
+  margin-bottom: 2.875rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/*# sourceMappingURL=style.css.map */

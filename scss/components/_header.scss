@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+
+  padding: 1rem 1.25rem;
+
+  &__logo {
+    font-family: $headers;
+    font-size: $_20px;
+    color: $dark;
+    font-weight: 700;
+    letter-spacing: normal;
+  }
+
+  &__hamburger {
+    position: relative;
+
+    width: 2.25rem;
+    height: 0.625rem;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 1.625rem;
+      background-color: $dark;
+    }
+
+    &::before {
+      top: 0%;
+      left: -9px;
+    }
+
+    &::after {
+      bottom: 1%;
+    }
+  }
+}

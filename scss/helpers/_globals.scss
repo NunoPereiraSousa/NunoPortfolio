@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $body;
+  font-size: $_16px;
+  line-height: 1.54;
+  letter-spacing: -0.3px;
+  background-color: $grey;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.flex {
+  display: flex;
+
+  &-fd-c {
+    flex-direction: column;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-fe {
+    justify-content: flex-end;
+  }
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(iPadPro) {
+    display: none;
+  }
+}
+
+.hide-for-phone {
+  @include breakpoint-down(tablet) {
+    display: none;
+  }
+}
+
+.show-above-phone {
+  @include breakpoint-up(tablet) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(iPadPro) {
+    display: none;
+  }
+}
+
+.no_scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+// @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+// @font-face {
+//   font-family: "IBM Plex Sans";
+//   src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+// }
+// @font-face {
+//   font-family: "Open Sans";
+//   src: url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+// }
