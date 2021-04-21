@@ -5,4 +5,10 @@
 
   margin-top: 0;
   margin-bottom: 2.875rem;
+
+  &.dark_circle {
+    color: $grey;
+
+    padding-top: calc(2.875rem + 10.6325rem);
+  }
 }

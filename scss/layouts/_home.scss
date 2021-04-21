@@ -39,7 +39,8 @@
 
 .about,
 .services,
-.showcase {
+.showcase,
+.contacts {
   padding: 0 1.125rem 16vh;
 }
 
@@ -61,7 +62,73 @@
 }
 
 .showcase {
+  padding-bottom: calc(16vh + (10.625rem / 2));
+
   &__grid {
     row-gap: 2.875rem;
+  }
+}
+
+.contacts {
+  position: relative;
+  background-color: $dark;
+
+  padding-bottom: 6vh;
+
+  svg {
+    position: absolute;
+    top: calc(-10.625rem / 2);
+    left: calc((10.625rem - 4rem));
+    height: 10.625rem;
+    width: 10.625rem;
+
+    animation: spin 30s linear infinite;
+  }
+
+  &__carousel {
+    overflow: hidden;
+    width: fit-content;
+    color: $grey;
+
+    .slide-track {
+      animation: phoneCarousel 4s linear infinite;
+      display: flex;
+      width: calc(180px * 6);
+
+      .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 180px;
+
+        h2 {
+          color: rgba($color: $grey, $alpha: 0.4);
+          font-size: $_30px;
+          font-weight: 500;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__socials {
+    margin-top: 3rem;
+
+    a {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 2rem;
+
+      font-weight: 400;
+      color: $grey;
+
+      &:last-child {
+        margin-right: 0;
+        margin-top: 1.125rem;
+
+        text-decoration: underline;
+      }
+    }
   }
 }
