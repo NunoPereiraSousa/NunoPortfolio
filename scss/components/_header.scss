@@ -22,7 +22,7 @@
     font-family: $headers;
     font-size: $_20px;
     color: $dark;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: normal;
   }
 
@@ -109,7 +109,7 @@
       &:nth-child(2) {
         bottom: 1%;
         transform: rotate(-45deg) translateX(-25%);
-        transform-origin: -0.8rem 1px;
+        transform-origin: -0.8rem 1.5px;
       }
     }
   }

@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @-webkit-keyframes spin {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
   to {
     -webkit-transform: rotate(360deg);
@@ -155,6 +156,16 @@ main {
           transform: translateX(-100%);
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+}
+
 .header {
   position: fixed;
   top: 0%;
@@ -179,7 +190,7 @@ main {
   font-family: "Cormorant Garamond";
   font-size: 1.25rem;
   color: #1a1a1a;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: normal;
 }
 
@@ -270,8 +281,8 @@ main {
   bottom: 1%;
   -webkit-transform: rotate(-45deg) translateX(-25%);
           transform: rotate(-45deg) translateX(-25%);
-  -webkit-transform-origin: -0.8rem 1px;
-          transform-origin: -0.8rem 1px;
+  -webkit-transform-origin: -0.8rem 1.5px;
+          transform-origin: -0.8rem 1.5px;
 }
 
 .mobile_menu {
@@ -410,9 +421,9 @@ main {
 }
 
 .presentation h1 {
-  font-size: 2.125rem;
+  font-size: 2rem;
   line-height: 1.3;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 6.25rem;
@@ -420,14 +431,12 @@ main {
 
 .presentation h3 {
   margin: 0;
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
 .presentation a {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
+  margin-top: 2rem;
   text-decoration: underline;
   color: #1a1a1a;
 }
