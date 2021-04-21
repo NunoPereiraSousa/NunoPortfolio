@@ -162,6 +162,17 @@ main {
   right: 0%;
   z-index: 2;
   padding: 1rem 1.25rem;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.header.remove {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .header__logo {
@@ -184,15 +195,83 @@ main {
   height: 2px;
   width: 1.625rem;
   background-color: #1a1a1a;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .header__hamburger::before {
   top: 0%;
   left: -9px;
+  -webkit-transform-origin: -12px 0;
+          transform-origin: -12px 0;
 }
 
 .header__hamburger::after {
   bottom: 1%;
+  -webkit-transform-origin: -14px 0;
+          transform-origin: -14px 0;
+}
+
+.header_open {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 1;
+  padding: 1rem 1.25rem;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.header_open.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.header_open__logo {
+  font-family: "Cormorant Garamond";
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.header_open__cross {
+  position: relative;
+  width: 2.25rem;
+  height: 1.875rem;
+}
+
+.header_open__cross__lines {
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 2px;
+  width: 1.4rem;
+  background-color: #1a1a1a;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.header_open__cross__lines:nth-child(1) {
+  top: 0%;
+  -webkit-transform: rotate(45deg) translateX(-25%);
+          transform: rotate(45deg) translateX(-25%);
+  -webkit-transform-origin: -1rem 2px;
+          transform-origin: -1rem 2px;
+}
+
+.header_open__cross__lines:nth-child(2) {
+  bottom: 1%;
+  -webkit-transform: rotate(-45deg) translateX(-25%);
+          transform: rotate(-45deg) translateX(-25%);
+  -webkit-transform-origin: -0.8rem 1px;
+          transform-origin: -0.8rem 1px;
 }
 
 .mobile_menu {
