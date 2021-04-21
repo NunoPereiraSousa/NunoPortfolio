@@ -1,1 +1,14 @@
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 
+@keyframes phoneCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-180px * 3));
+  }
+}
