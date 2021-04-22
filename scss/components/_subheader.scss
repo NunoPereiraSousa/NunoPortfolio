@@ -31,4 +31,8 @@
   @include breakpoint-up(iPadPro) {
     font-size: $_70px;
   }
+
+  @include breakpoint-up(desktop) {
+    margin-bottom: 4.125rem;
+  }
 }

@@ -1,7 +1,7 @@
 .services__grid__article {
   position: relative;
 
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
 
   border-bottom: 1px solid rgba($color: $dark, $alpha: 0.23);
   border-left: 1px solid rgba($color: $dark, $alpha: 0.23);
@@ -11,13 +11,35 @@
     border-top: 1px solid rgba($color: $dark, $alpha: 0.23);
   }
 
+  &:nth-child(even) {
+    @include breakpoint-up(desktop) {
+      border-left: none;
+    }
+  }
+
+  &:nth-child(2) {
+    @include breakpoint-up(desktop) {
+      border-top: 1px solid rgba($color: $dark, $alpha: 0.23);
+    }
+  }
+
+  &:last-child {
+    @include breakpoint-up(desktop) {
+      background-color: rgba($color: $dark, $alpha: 0.25);
+    }
+  }
+
   @include breakpoint-up(tablet) {
-    padding: 50px 30px;
+    padding: 3.125rem 1.875rem;
+  }
+
+  @include breakpoint-up(desktop) {
+    padding: 4.375rem 3.125rem 6.25rem;
   }
 
   h3 {
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     font-size: $_17px;
 
     font-weight: 500;
@@ -28,6 +50,11 @@
 
     @include breakpoint-up(iPadPro) {
       font-size: $_26px;
+    }
+
+    @include breakpoint-up(desktop) {
+      font-size: $_24px;
+      margin-bottom: 1.875rem;
     }
   }
 
@@ -44,6 +71,10 @@
     @include breakpoint-up(iPadPro) {
       font-size: $_22px;
     }
+
+    @include breakpoint-up(desktop) {
+      font-size: $_20px;
+    }
   }
 
   p {
@@ -51,6 +82,10 @@
     margin: 0;
 
     transform: translate(-20px, 20px);
+
+    @include breakpoint-up(desktop) {
+      transform: translate(-20px, 40px);
+    }
 
     svg {
       width: 30px;

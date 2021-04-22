@@ -16,6 +16,10 @@
       @include breakpoint-up(iPadPro) {
         font-size: $_20px;
       }
+
+      @include breakpoint-up(desktop) {
+        font-size: $_16px;
+      }
     }
   }
 
@@ -33,6 +37,10 @@
 
     @include breakpoint-up(iPadPro) {
       font-size: $_22px;
+    }
+
+    @include breakpoint-up(desktop) {
+      font-size: $_18px;
     }
   }
 }

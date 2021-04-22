@@ -190,6 +190,27 @@ main {
   src: url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 26, 26, 0.25);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1a1a1a;
+}
+
 .header {
   position: fixed;
   top: 0%;
@@ -213,6 +234,12 @@ main {
 @media (min-width: 48em) {
   .header {
     padding: 1.25rem 2rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .header {
+    padding: 8vh 5.5vw;
   }
 }
 
@@ -257,6 +284,20 @@ main {
   bottom: 1%;
   -webkit-transform-origin: -14px 0;
           transform-origin: -14px 0;
+}
+
+.header__desktop_menu a {
+  color: #1a1a1a;
+  font-size: 1.375rem;
+  font-family: "Cormorant Garamond";
+}
+
+.header__desktop_menu a:first-child {
+  margin-right: 2rem;
+}
+
+.header__desktop_menu a:hover {
+  color: #dd4d42;
 }
 
 .header_open {
@@ -527,6 +568,12 @@ main {
   }
 }
 
+@media (min-width: 75em) {
+  .sub_header {
+    margin-bottom: 4.125rem;
+  }
+}
+
 .presentation {
   position: relative;
   height: 100vh;
@@ -553,6 +600,14 @@ main {
   }
 }
 
+@media (min-width: 75em) {
+  .presentation h1 {
+    margin-bottom: 0;
+    font-size: 6.875rem;
+    line-height: 1.1;
+  }
+}
+
 .presentation h3 {
   margin: 0;
   font-size: 1.25rem;
@@ -562,6 +617,15 @@ main {
 @media (min-width: 48em) {
   .presentation h3 {
     font-size: 2.375rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .presentation h3 {
+    position: absolute;
+    left: 5.5vw;
+    bottom: 10%;
+    font-size: 1.25rem;
   }
 }
 
@@ -578,6 +642,15 @@ main {
   }
 }
 
+@media (min-width: 75em) {
+  .presentation a {
+    position: absolute;
+    right: 5.5vw;
+    bottom: 10%;
+    font-size: 1.25rem;
+  }
+}
+
 .about,
 .services,
 .showcase,
@@ -591,6 +664,15 @@ main {
   .showcase,
   .contacts {
     padding: 0 2rem 16vh;
+  }
+}
+
+@media (min-width: 75em) {
+  .about,
+  .services,
+  .showcase,
+  .contacts {
+    padding: 24vh 5.5vw 4vh;
   }
 }
 
@@ -625,8 +707,27 @@ main {
   }
 }
 
+@media (min-width: 75em) {
+  .about h4 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .services__grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 .showcase {
   padding-bottom: calc(16vh + (10.625rem / 2));
+}
+
+@media (min-width: 75em) {
+  .showcase {
+    padding-bottom: calc(28vh + (10.625rem / 2));
+  }
 }
 
 .showcase__grid {
@@ -645,6 +746,12 @@ main {
   padding-bottom: 6vh;
 }
 
+@media (min-width: 75em) {
+  .contacts {
+    padding-top: 6vh;
+  }
+}
+
 .contacts svg {
   position: absolute;
   top: calc(-10.625rem / 2);
@@ -659,6 +766,14 @@ main {
     top: calc(-14.625rem / 2);
     height: 14.625rem;
     width: 14.625rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .contacts svg {
+    top: calc(-10.625rem / 2);
+    height: 10.625rem;
+    width: 10.625rem;
   }
 }
 
@@ -739,7 +854,7 @@ main {
 
 .services__grid__article {
   position: relative;
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
   border-bottom: 1px solid rgba(26, 26, 26, 0.23);
   border-left: 1px solid rgba(26, 26, 26, 0.23);
   border-right: 1px solid rgba(26, 26, 26, 0.23);
@@ -749,15 +864,39 @@ main {
   border-top: 1px solid rgba(26, 26, 26, 0.23);
 }
 
+@media (min-width: 75em) {
+  .services__grid__article:nth-child(even) {
+    border-left: none;
+  }
+}
+
+@media (min-width: 75em) {
+  .services__grid__article:nth-child(2) {
+    border-top: 1px solid rgba(26, 26, 26, 0.23);
+  }
+}
+
+@media (min-width: 75em) {
+  .services__grid__article:last-child {
+    background-color: rgba(26, 26, 26, 0.25);
+  }
+}
+
 @media (min-width: 48em) {
   .services__grid__article {
-    padding: 50px 30px;
+    padding: 3.125rem 1.875rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .services__grid__article {
+    padding: 4.375rem 3.125rem 6.25rem;
   }
 }
 
 .services__grid__article h3 {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   font-size: 1.0625rem;
   font-weight: 500;
 }
@@ -771,6 +910,13 @@ main {
 @media (min-width: 64em) {
   .services__grid__article h3 {
     font-size: 1.625rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .services__grid__article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.875rem;
   }
 }
 
@@ -792,11 +938,24 @@ main {
   }
 }
 
+@media (min-width: 75em) {
+  .services__grid__article h5 {
+    font-size: 1.25rem;
+  }
+}
+
 .services__grid__article p {
   width: 100%;
   margin: 0;
   -webkit-transform: translate(-20px, 20px);
           transform: translate(-20px, 20px);
+}
+
+@media (min-width: 75em) {
+  .services__grid__article p {
+    -webkit-transform: translate(-20px, 40px);
+            transform: translate(-20px, 40px);
+  }
 }
 
 .services__grid__article p svg {
@@ -834,6 +993,12 @@ main {
   }
 }
 
+@media (min-width: 75em) {
+  .showcase__grid__article__categories h4 {
+    font-size: 1rem;
+  }
+}
+
 .showcase__grid__article h5 {
   margin-top: 0;
   margin-bottom: 2.875rem;
@@ -851,6 +1016,12 @@ main {
 @media (min-width: 64em) {
   .showcase__grid__article h5 {
     font-size: 1.375rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .showcase__grid__article h5 {
+    font-size: 1.125rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

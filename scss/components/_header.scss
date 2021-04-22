@@ -22,6 +22,10 @@
     padding: 1.25rem 2rem;
   }
 
+  @include breakpoint-up(desktop) {
+    padding: 8vh 5.5vw;
+  }
+
   &__logo {
     font-family: $headers;
     font-size: $_20px;
@@ -60,6 +64,22 @@
       bottom: 1%;
 
       transform-origin: -14px 0;
+    }
+  }
+
+  &__desktop_menu {
+    a {
+      color: $dark;
+      font-size: $_22px;
+      font-family: $headers;
+
+      &:first-child {
+        margin-right: 2rem;
+      }
+
+      &:hover {
+        color: $red;
+      }
     }
   }
 }
