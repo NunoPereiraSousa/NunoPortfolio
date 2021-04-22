@@ -4,6 +4,16 @@
   }
 }
 
+@keyframes left-right {
+  0%,
+  100% {
+    transform: translateX(-35%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
 @keyframes phoneCarousel {
   0% {
     transform: translateX(0);

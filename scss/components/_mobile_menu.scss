@@ -5,7 +5,7 @@
   left: 0;
   top: 0;
 
-  padding: 2rem 2rem 4rem;
+  padding: 2rem 2rem 6rem;
   visibility: hidden;
   pointer-events: none;
 
@@ -43,7 +43,11 @@
       top: auto;
       transform: none;
       height: 100%;
-      padding: 2rem 2rem 4rem;
+      padding: 2rem 2rem 16vh;
+
+      @include breakpoint-down(phone) {
+        padding: 2rem 2rem 4vh;
+      }
 
       ul {
         padding: 0;
