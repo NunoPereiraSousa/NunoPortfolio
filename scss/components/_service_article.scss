@@ -25,6 +25,10 @@
     @include breakpoint-up(tablet) {
       font-size: $_22px;
     }
+
+    @include breakpoint-up(iPadPro) {
+      font-size: $_26px;
+    }
   }
 
   h5 {
@@ -35,6 +39,10 @@
 
     @include breakpoint-up(tablet) {
       font-size: $_18px;
+    }
+
+    @include breakpoint-up(iPadPro) {
+      font-size: $_22px;
     }
   }
 
@@ -47,6 +55,10 @@
     svg {
       width: 30px;
       animation: left-right 2s ease infinite;
+
+      @include breakpoint-up(iPadPro) {
+        width: 40px;
+      }
     }
   }
 }

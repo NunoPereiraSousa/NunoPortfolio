@@ -12,6 +12,10 @@
     @include breakpoint-up(tablet) {
       font-size: $_24px;
     }
+
+    @include breakpoint-up(iPadPro) {
+      font-size: $_40px;
+    }
   }
 
   &.dark_circle {
@@ -22,5 +26,9 @@
 
   @include breakpoint-up(tablet) {
     font-size: $_50px;
+  }
+
+  @include breakpoint-up(iPadPro) {
+    font-size: $_70px;
   }
 }

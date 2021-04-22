@@ -49,6 +49,10 @@
         padding: 2rem 2rem 4vh;
       }
 
+      @include breakpoint-up(iPadPro) {
+        padding: 2rem 10vw 16vh;
+      }
+
       ul {
         padding: 0;
         margin: 1.6rem 0;
