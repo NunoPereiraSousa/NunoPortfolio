@@ -77,6 +77,50 @@
   }
 }
 
+@-webkit-keyframes desktopCarousel {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-500px * 3.5));
+            transform: translateX(calc(-500px * 3.5));
+  }
+}
+
+@keyframes desktopCarousel {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-500px * 3.5));
+            transform: translateX(calc(-500px * 3.5));
+  }
+}
+
+@-webkit-keyframes desktopCarouselReverse {
+  0% {
+    -webkit-transform: translateX(calc(-500px * 3.5));
+            transform: translateX(calc(-500px * 3.5));
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes desktopCarouselReverse {
+  0% {
+    -webkit-transform: translateX(calc(-500px * 3.5));
+            transform: translateX(calc(-500px * 3.5));
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -252,6 +296,12 @@ main {
 @media (min-width: 48em) {
   .header {
     padding: 1.25rem 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .header {
+    padding: 4vh 5.5vw;
   }
 }
 
@@ -577,6 +627,12 @@ main {
   padding-top: calc(5.625rem + 10.6325rem);
 }
 
+@media (min-width: 75em) {
+  .sub_header.dark_circle {
+    padding-top: calc(6.625rem + 10.6325rem);
+  }
+}
+
 @media (min-width: 48em) {
   .sub_header {
     font-size: 3.125rem;
@@ -586,6 +642,18 @@ main {
 @media (min-width: 64em) {
   .sub_header {
     font-size: 4.375rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .sub_header {
+    margin-bottom: 6.625rem;
+  }
+}
+
+@media (min-width: 120em) {
+  .sub_header {
+    font-size: 5.625rem;
   }
 }
 
@@ -1061,6 +1129,7 @@ main {
 @media (min-width: 75em) {
   .showcase__grid__article__categories h4 {
     font-size: 0.875rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -1089,6 +1158,7 @@ main {
   .showcase__grid__article h5 {
     font-size: 1.125rem;
     font-weight: 400;
+    margin-bottom: 3rem;
   }
 }
 
@@ -1099,6 +1169,22 @@ main {
   font-family: "Cormorant Garamond";
   color: #1a1a1a;
   letter-spacing: normal;
+}
+
+@media (min-width: 75em) {
+  .about__presentation {
+    height: 140vh;
+    text-align: left;
+    padding: 0 5.5vw 4vh;
+  }
+}
+
+@media (min-width: 120em) {
+  .about__presentation {
+    height: 120vh;
+    font-size: 8.75rem;
+    line-height: 1;
+  }
 }
 
 .about__presentation h1 {
@@ -1119,7 +1205,14 @@ main {
   .about__presentation h1 {
     margin-bottom: 0;
     font-size: 6.875rem;
-    line-height: 1.1;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 120em) {
+  .about__presentation h1 {
+    font-size: 8.75rem;
+    line-height: 1;
   }
 }
 
@@ -1137,6 +1230,14 @@ main {
   }
 }
 
+@media (min-width: 64em) {
+  .me,
+  .skills,
+  .about__contact {
+    padding: 16vh 5.5vw 4vh;
+  }
+}
+
 @media (min-width: 75em) {
   .me,
   .skills,
@@ -1145,9 +1246,29 @@ main {
   }
 }
 
+@media (min-width: 120em) {
+  .me,
+  .skills,
+  .about__contact {
+    padding: 14vh 5.5vw 4vh;
+  }
+}
+
 .me {
   position: relative;
   padding-top: calc(5.625rem + 10.6325rem);
+}
+
+@media (min-width: 64em) {
+  .me {
+    padding-top: calc(16vh + 10.6325rem);
+  }
+}
+
+@media (min-width: 75em) {
+  .me {
+    padding-top: 0;
+  }
 }
 
 .me svg {
@@ -1209,9 +1330,27 @@ main {
   width: calc(300px * 7);
 }
 
+@media (min-width: 75em) {
+  .skills__carousel .slide-track {
+    width: calc(500px * 7);
+    -webkit-animation: desktopCarousel 8s linear infinite;
+            animation: desktopCarousel 8s linear infinite;
+    padding-bottom: 2rem;
+  }
+}
+
 .skills__carousel .slide-track.reverse {
   -webkit-animation: phoneCarouselReverse 8s linear infinite;
           animation: phoneCarouselReverse 8s linear infinite;
+}
+
+@media (min-width: 75em) {
+  .skills__carousel .slide-track.reverse {
+    -webkit-animation: desktopCarouselReverse 8s linear infinite;
+            animation: desktopCarouselReverse 8s linear infinite;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
 }
 
 .skills__carousel .slide-track.reverse h2 {
@@ -1234,11 +1373,23 @@ main {
   width: 300px;
 }
 
+@media (min-width: 75em) {
+  .skills__carousel .slide-track .slide {
+    width: 500px;
+  }
+}
+
 .skills__carousel .slide-track .slide h2 {
   color: #1a1a1a;
   font-size: 1.625rem;
   font-weight: 500;
   margin: 0;
+}
+
+@media (min-width: 75em) {
+  .skills__carousel .slide-track .slide h2 {
+    font-size: 2.5rem;
+  }
 }
 
 .skills hr {

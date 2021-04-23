@@ -22,6 +22,10 @@
     padding: 1.25rem 2rem;
   }
 
+  @include breakpoint-up(iPadPro) {
+    padding: 4vh 5.5vw;
+  }
+
   @include breakpoint-up(desktop) {
     padding: 8vh 5.5vw;
   }

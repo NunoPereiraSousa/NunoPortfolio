@@ -19,6 +19,7 @@
 
       @include breakpoint-up(desktop) {
         font-size: $_14px;
+        margin-bottom: 3rem;
       }
     }
   }
@@ -43,6 +44,7 @@
     @include breakpoint-up(desktop) {
       font-size: $_18px;
       font-weight: 400;
+      margin-bottom: 3rem;
     }
   }
 }

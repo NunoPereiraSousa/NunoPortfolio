@@ -31,3 +31,21 @@
     transform: translateX(0);
   }
 }
+
+@keyframes desktopCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-500px * 3.5));
+  }
+}
+
+@keyframes desktopCarouselReverse {
+  0% {
+    transform: translateX(calc(-500px * 3.5));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
