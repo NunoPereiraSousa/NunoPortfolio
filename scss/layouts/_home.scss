@@ -199,6 +199,20 @@
     }
   }
 
+  &__location {
+    h3 {
+      font-weight: 400;
+      color: $grey;
+      font-size: $_16px;
+
+      margin: 0;
+
+      @include breakpoint-up(iPadPro) {
+        font-size: $_24px;
+      }
+    }
+  }
+
   &__socials {
     margin-top: 3rem;
 
@@ -221,6 +235,7 @@
       &:last-child {
         margin-right: 0;
         margin-top: 1.125rem;
+        color: rgba($color: $red, $alpha: 0.9);
 
         text-decoration: underline;
 

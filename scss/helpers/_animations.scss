@@ -4,13 +4,13 @@
   }
 }
 
-@keyframes left-right {
+@keyframes hide-show {
   0%,
   100% {
-    transform: translateX(-35%);
+    opacity: 0;
   }
   50% {
-    transform: translateX(0%);
+    opacity: 0.5;
   }
 }
 
