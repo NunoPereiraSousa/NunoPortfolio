@@ -90,29 +90,77 @@
 
   h4 {
     font-weight: 400;
-    font-size: $_15px;
+    font-family: $headers;
+    line-height: 1.2;
 
     margin-top: 0;
-    margin-bottom: 2.875rem;
+
+    &:nth-child(1) {
+      font-size: $_30px;
+
+      @include breakpoint-up(tablet) {
+        font-size: $_40px;
+      }
+
+      @include breakpoint-up(iPadPro) {
+        font-size: $_60px;
+        line-height: 1.3;
+      }
+
+      @include breakpoint-up(desktop) {
+        font-size: $_90px;
+        line-height: 1.1;
+      }
+    }
+
+    &:nth-child(2) {
+      font-size: $_24px;
+      margin: 10vh 0 10vh 10vw;
+      line-height: 1.3;
+
+      @include breakpoint-up(tablet) {
+        margin: 10vh 0 10vh 20vw;
+        font-size: $_30px;
+      }
+
+      @include breakpoint-up(iPadPro) {
+        margin: 10vh 0 10vh 20vw;
+        font-size: $_40px;
+        line-height: 1.3;
+      }
+
+      @include breakpoint-up(desktop) {
+        margin: 20vh 0 20vh 20vw;
+        font-size: $_60px;
+      }
+    }
 
     &:nth-child(3) {
-      text-align: right;
+      font-size: $_20px;
+      margin: 10vh 0 10vh 4vw;
+      line-height: 1.4;
+
+      @include breakpoint-up(tablet) {
+        margin: 10vh 0 10vh 4vw;
+        font-size: $_26px;
+        line-height: 1.5;
+      }
+
+      @include breakpoint-up(iPadPro) {
+        margin: 10vh 0 10vh 4vw;
+        font-size: $_32px;
+        line-height: 1.4;
+      }
+
+      @include breakpoint-up(desktop) {
+        margin: 20vh 10vw 20vh 10vw;
+        font-size: $_40px;
+        line-height: 1.4;
+      }
     }
 
     &:last-child {
       margin-bottom: 0;
-    }
-
-    @include breakpoint-up(tablet) {
-      font-size: $_18px;
-    }
-
-    @include breakpoint-up(iPadPro) {
-      font-size: $_24px;
-    }
-
-    @include breakpoint-up(desktop) {
-      font-size: $_20px;
     }
   }
 }

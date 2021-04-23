@@ -1,7 +1,10 @@
 .sub_header {
-  font-family: $headers;
+  font-family: "Cormorant Upright", serif;
   font-size: $_40px;
   letter-spacing: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1;
 
   margin-top: 0;
   margin-bottom: 3.125rem;
@@ -33,6 +36,6 @@
   }
 
   @include breakpoint-up(desktop) {
-    margin-bottom: 4.125rem;
+    margin-bottom: 5.125rem;
   }
 }

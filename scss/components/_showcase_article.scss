@@ -1,10 +1,6 @@
 .showcase__grid__article {
   border-bottom: 1px solid rgba($color: $dark, $alpha: 0.4);
 
-  &:hover {
-    border-color: rgba($color: $red, $alpha: 0.4);
-  }
-
   &__categories {
     h4 {
       font-weight: 400;

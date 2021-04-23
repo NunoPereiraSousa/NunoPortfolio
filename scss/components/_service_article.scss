@@ -76,15 +76,16 @@
     margin-top: 2rem;
     margin-bottom: 0;
 
-    svg {
-      opacity: 0.2;
+    span {
+      margin-right: 0.6rem;
     }
 
-    @for $i from 1 through 5 {
-      svg:nth-child(#{$i}) {
-        width: 1.125rem;
-        margin-right: 1rem;
-        animation: hide-show 3s linear #{$i / 5}s infinite;
+    a {
+      color: $dark;
+      border-bottom: 1px solid rgba($color: $dark, $alpha: 0.5);
+
+      &:hover {
+        border-color: $red;
       }
     }
   }
