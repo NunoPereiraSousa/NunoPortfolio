@@ -15,8 +15,6 @@
 
   @include breakpoint-up(large) {
     height: 120vh;
-    font-size: $_140px;
-    line-height: 1;
   }
 
   h1 {
@@ -42,6 +40,7 @@
     @include breakpoint-up(large) {
       font-size: $_140px;
       line-height: 1;
+      margin: 0 auto 0 0;
     }
   }
 }
