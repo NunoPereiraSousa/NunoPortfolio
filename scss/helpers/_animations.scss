@@ -19,6 +19,15 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-180px * 3));
+    transform: translateX(calc(-300px * 3.5));
+  }
+}
+
+@keyframes phoneCarouselReverse {
+  0% {
+    transform: translateX(calc(-300px * 3.5));
+  }
+  100% {
+    transform: translateX(0);
   }
 }

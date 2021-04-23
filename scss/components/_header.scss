@@ -56,12 +56,12 @@
 
     &::before {
       top: 0%;
-      left: -9px;
       transform-origin: -12px 0;
     }
 
     &::after {
       bottom: 1%;
+      right: 0%;
 
       transform-origin: -14px 0;
     }
@@ -127,7 +127,7 @@
     &__lines {
       content: "";
       position: absolute;
-      left: 50%;
+      left: 75%;
       height: 2px;
       width: 1.4rem;
       background-color: $dark;

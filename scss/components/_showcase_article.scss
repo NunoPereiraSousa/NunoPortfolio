@@ -33,6 +33,7 @@
 
     @include breakpoint-up(tablet) {
       font-size: $_20px;
+      margin-bottom: 3.875rem;
     }
 
     @include breakpoint-up(iPadPro) {

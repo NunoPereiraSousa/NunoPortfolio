@@ -183,7 +183,7 @@
   &__grid {
     row-gap: 2.875rem;
 
-    @include breakpoint-up(iPadPro) {
+    @include breakpoint-up(tablet) {
       row-gap: 3.875rem;
     }
   }
@@ -220,34 +220,13 @@
     }
   }
 
-  &__carousel {
-    overflow: hidden;
-    width: fit-content;
-    color: $grey;
-
-    .slide-track {
-      animation: phoneCarousel 4s linear infinite;
-      display: flex;
-      width: calc(180px * 6);
-
-      .slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        width: 180px;
-
-        h2 {
-          color: rgba($color: $grey, $alpha: 0.4);
-          font-size: $_30px;
-          font-weight: 500;
-          margin: 0;
-        }
+  &__location {
+    &.dark {
+      h3 {
+        color: $dark;
       }
     }
-  }
 
-  &__location {
     h3 {
       font-weight: 400;
       color: $grey;
@@ -275,6 +254,11 @@
 
     @include breakpoint-up(desktop) {
       margin-top: 20vh;
+    }
+    &.dark {
+      a {
+        color: $dark;
+      }
     }
 
     a {

@@ -1,0 +1,34 @@
+<svg id="Circle01" xmlns="http://www.w3.org/2000/svg" width="183" height="183" viewBox="0 0 183 183">
+  <path id="Path_1" data-name="Path 1" d="M91.5,0A91.5,91.5,0,1,1,0,91.5,91.5,91.5,0,0,1,91.5,0Z" fill="#e5e5e5"/>
+  <text id="N" transform="translate(71.43 24.55) rotate(-11.32)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">N</tspan></text>
+  <text id="E" transform="translate(84.14 22.11) rotate(-1.718)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">E</tspan></text>
+  <text id="V" transform="matrix(0.991, 0.131, -0.131, 0.991, 94.77, 21.75)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">V</tspan></text>
+  <text id="E-2" data-name="E" transform="translate(106.41 23.32) rotate(16.809)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">E</tspan></text>
+  <text id="R" transform="translate(116.76 26.39) rotate(26.08)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">R</tspan></text>
+  <text id="_" data-name="»" transform="matrix(0.736, 0.677, -0.677, 0.736, 135.25, 37.21)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">»</tspan></text>
+  <text id="A" transform="translate(148.24 50.76) rotate(59.331)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">A</tspan></text>
+  <text id="P" transform="translate(154.49 61.33) rotate(69.21)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">P</tspan></text>
+  <text id="O" transform="translate(158.73 72.28) rotate(79.65)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">O</tspan></text>
+  <text id="L" transform="matrix(0.016, 1, -1, 0.016, 160.99, 85.6)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">L</tspan></text>
+  <text id="O-2" data-name="O" transform="translate(161.31 95.15) rotate(98.46)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">O</tspan></text>
+  <text id="G" transform="matrix(-0.331, 0.944, -0.944, -0.331, 159.28, 108.47)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">G</tspan></text>
+  <text id="I" transform="matrix(-0.446, 0.895, -0.895, -0.446, 154.97, 120.17)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">I</tspan></text>
+  <text id="Z" transform="translate(152.69 125.08) rotate(123.22)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">Z</tspan></text>
+  <text id="E-3" data-name="E" transform="translate(146.77 134.1) rotate(132.05)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">E</tspan></text>
+  <text id="_2" data-name="»" transform="matrix(-0.85, 0.528, -0.528, -0.85, 132.02, 148.25)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">»</tspan></text>
+  <text id="F" transform="translate(115.42 157.06) rotate(164.291)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">F</tspan></text>
+  <text id="O-3" data-name="O" transform="translate(105.69 159.96) rotate(173.66)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">O</tspan></text>
+  <text id="R-2" data-name="R" transform="translate(92.23 161.32) rotate(-175.996)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">R</tspan></text>
+  <text id="_3" data-name="»" transform="translate(71.08 158.19) rotate(-159.23)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">»</tspan></text>
+  <text id="W" transform="matrix(-0.765, -0.644, 0.644, -0.765, 53.86, 150.76)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">W</tspan></text>
+  <text id="H" transform="matrix(-0.606, -0.795, 0.795, -0.606, 40.06, 138.79)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">H</tspan></text>
+  <text id="O-4" data-name="O" transform="translate(32.21 128.54) rotate(-116.49)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">O</tspan></text>
+  <text id="_4" data-name="»" transform="matrix(-0.16, -0.987, 0.987, -0.16, 23.54, 107.12)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">»</tspan></text>
+  <text id="Y" transform="translate(21.79 88.39) rotate(-83.07)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">Y</tspan></text>
+  <text id="O-5" data-name="O" transform="translate(22.89 78.08) rotate(-73.41)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">O</tspan></text>
+  <text id="U" transform="translate(26.78 65.15) rotate(-62.668)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">U</tspan></text>
+  <text id="_5" data-name="’" transform="translate(32.88 53.96) rotate(-55.59)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">’</tspan></text>
+  <text id="R-3" data-name="R" transform="matrix(0.657, -0.754, 0.754, 0.657, 35.17, 50.25)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">R</tspan></text>
+  <text id="E-4" data-name="E" transform="matrix(0.769, -0.639, 0.639, 0.769, 42.96, 41.38)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">E</tspan></text>
+  <text id="_." data-name="." transform="translate(51.59 34.47) rotate(-33.215)" fill="#1a1a1a" font-size="16" font-family="Cormorant-Bold, Cormorant" font-weight="700"><tspan x="0" y="0">.</tspan></text>
+</svg>
