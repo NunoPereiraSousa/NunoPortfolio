@@ -1,6 +1,10 @@
 .showcase__grid__article {
   border-bottom: 1px solid rgba($color: $dark, $alpha: 0.4);
 
+  &:hover {
+    border-color: rgba($color: $red, $alpha: 0.4);
+  }
+
   &__categories {
     h4 {
       font-weight: 400;
@@ -18,7 +22,7 @@
       }
 
       @include breakpoint-up(desktop) {
-        font-size: $_16px;
+        font-size: $_14px;
       }
     }
   }
@@ -41,6 +45,7 @@
 
     @include breakpoint-up(desktop) {
       font-size: $_18px;
+      font-weight: 400;
     }
   }
 }

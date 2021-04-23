@@ -23,12 +23,6 @@
     }
   }
 
-  &:last-child {
-    @include breakpoint-up(desktop) {
-      background-color: rgba($color: $dark, $alpha: 0.25);
-    }
-  }
-
   @include breakpoint-up(tablet) {
     padding: 3.125rem 1.875rem;
   }
@@ -82,19 +76,15 @@
     margin-top: 2rem;
     margin-bottom: 0;
 
-    @include breakpoint-up(desktop) {
-      transform: translate(-20px, 40px);
+    svg {
+      opacity: 0.2;
     }
 
     @for $i from 1 through 5 {
       svg:nth-child(#{$i}) {
-        width: 20px;
+        width: 1.125rem;
         margin-right: 1rem;
         animation: hide-show 3s linear #{$i / 5}s infinite;
-
-        @include breakpoint-up(iPadPro) {
-          width: 40px;
-        }
       }
     }
   }

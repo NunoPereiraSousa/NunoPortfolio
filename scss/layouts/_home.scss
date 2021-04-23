@@ -210,6 +210,11 @@
       @include breakpoint-up(iPadPro) {
         font-size: $_24px;
       }
+
+      @include breakpoint-up(desktop) {
+        font-size: $_20px;
+        line-height: 1.8;
+      }
     }
   }
 
@@ -218,6 +223,10 @@
 
     @include breakpoint-up(iPadPro) {
       margin-top: 6rem;
+    }
+
+    @include breakpoint-up(desktop) {
+      margin-top: 20vh;
     }
 
     a {
@@ -230,6 +239,10 @@
 
       @include breakpoint-up(iPadPro) {
         font-size: $_24px;
+      }
+
+      @include breakpoint-up(desktop) {
+        font-size: $_20px;
       }
 
       &:last-child {
