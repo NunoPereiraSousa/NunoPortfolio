@@ -9,6 +9,8 @@
       margin-top: 0;
       margin-bottom: 2rem;
 
+      padding-top: 2.875rem;
+
       @include breakpoint-up(tablet) {
         font-size: $_17px;
       }

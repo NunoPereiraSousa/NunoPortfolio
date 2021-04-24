@@ -1258,6 +1258,7 @@ main {
   font-size: 0.875rem;
   margin-top: 0;
   margin-bottom: 2rem;
+  padding-top: 2.875rem;
 }
 
 @media (min-width: 48em) {
@@ -1328,7 +1329,7 @@ main {
 
 @media (min-width: 120em) {
   .about__presentation {
-    height: 120vh;
+    height: 150vh;
   }
 }
 
