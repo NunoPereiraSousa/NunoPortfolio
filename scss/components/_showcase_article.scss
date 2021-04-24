@@ -20,6 +20,8 @@
       @include breakpoint-up(desktop) {
         font-size: $_14px;
         margin-bottom: 3rem;
+
+        padding-top: 3.875rem;
       }
     }
   }

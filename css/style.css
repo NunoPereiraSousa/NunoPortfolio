@@ -308,14 +308,12 @@ main {
   background-color: #eaeaea;
 }
 
-.cursor.menu-active {
-  opacity: 1;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+.cursor.navbar_hover {
+  background-color: transparent;
 }
 
-.cursor.hovered {
-  opacity: 1;
+.cursor.article1_cursor, .cursor.article2_cursor, .cursor.article3_cursor, .cursor.article4_cursor, .cursor.article5_cursor {
+  background-color: transparent;
 }
 
 .cursor-follower {
@@ -344,8 +342,8 @@ main {
 }
 
 .cursor-follower.open_work_cursor {
-  border: 1px solid #dd4d42;
-  background-color: #dd4d42;
+  border: 1px solid rgba(221, 77, 66, 0.85);
+  background-color: rgba(221, 77, 66, 0.85);
   width: 5rem;
   height: 5rem;
 }
@@ -358,16 +356,80 @@ main {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "Cormorant Garamond";
+  color: #eaeaea;
+  font-weight: 800;
 }
 
-.cursor-follower.menu-active {
-  opacity: 1;
-  -webkit-transform: scale(3);
-          transform: scale(3);
+.cursor-follower.navbar_hover {
+  border: 1px solid rgba(26, 26, 26, 0.05);
+  background-color: rgba(26, 26, 26, 0.05);
+  width: 5rem;
+  height: 5rem;
 }
 
-.cursor-follower.hovered {
-  opacity: 1;
+.cursor-follower.article1_cursor, .cursor-follower.article2_cursor, .cursor-follower.article3_cursor, .cursor-follower.article4_cursor, .cursor-follower.article5_cursor {
+  width: 5rem;
+  height: 5rem;
+}
+
+.cursor-follower.article1_cursor::after, .cursor-follower.article2_cursor::after, .cursor-follower.article3_cursor::after, .cursor-follower.article4_cursor::after, .cursor-follower.article5_cursor::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.cursor-follower.article1_cursor {
+  border: 1px solid rgba(201, 77, 36, 0.8);
+  background-color: rgba(201, 77, 36, 0.8);
+}
+
+.cursor-follower.article1_cursor::after {
+  content: "PORTIC";
+}
+
+.cursor-follower.article2_cursor {
+  border: 1px solid rgba(67, 44, 178, 0.8);
+  background-color: rgba(67, 44, 178, 0.8);
+  width: 5rem;
+  height: 5rem;
+}
+
+.cursor-follower.article2_cursor::after {
+  content: "Moitas";
+  color: #eaeaea;
+}
+
+.cursor-follower.article3_cursor {
+  border: 1px solid rgba(219, 175, 3, 0.8);
+  background-color: rgba(219, 175, 3, 0.8);
+}
+
+.cursor-follower.article3_cursor::after {
+  content: "Travel";
+}
+
+.cursor-follower.article4_cursor {
+  border: 1px solid rgba(34, 36, 49, 0.8);
+  background-color: rgba(34, 36, 49, 0.8);
+}
+
+.cursor-follower.article4_cursor::after {
+  content: "dutify";
+  color: #eaeaea;
+}
+
+.cursor-follower.article5_cursor {
+  border: 1px solid rgba(37, 158, 84, 0.8);
+  background-color: rgba(37, 158, 84, 0.8);
+}
+
+.cursor-follower.article5_cursor::after {
+  content: "improve";
 }
 
 .header {
@@ -971,16 +1033,6 @@ main {
   }
 }
 
-.showcase__grid {
-  row-gap: 2.875rem;
-}
-
-@media (min-width: 48em) {
-  .showcase__grid {
-    row-gap: 3.875rem;
-  }
-}
-
 .contacts {
   position: relative;
   background-color: #1a1a1a;
@@ -1197,10 +1249,6 @@ main {
   border-bottom: 1px solid rgba(26, 26, 26, 0.5);
 }
 
-.services__grid__article p a:hover {
-  border-color: #dd4d42;
-}
-
 .showcase__grid__article {
   border-bottom: 1px solid rgba(26, 26, 26, 0.4);
 }
@@ -1228,6 +1276,7 @@ main {
   .showcase__grid__article__categories h4 {
     font-size: 0.875rem;
     margin-bottom: 3rem;
+    padding-top: 3.875rem;
   }
 }
 

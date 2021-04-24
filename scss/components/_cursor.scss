@@ -22,13 +22,16 @@
     background-color: $grey;
   }
 
-  &.menu-active {
-    opacity: 1;
-    transform: scale(0);
+  &.navbar_hover {
+    background-color: transparent;
   }
 
-  &.hovered {
-    opacity: 1;
+  &.article1_cursor,
+  &.article2_cursor,
+  &.article3_cursor,
+  &.article4_cursor,
+  &.article5_cursor {
+    background-color: transparent;
   }
 }
 
@@ -56,8 +59,8 @@
   }
 
   &.open_work_cursor {
-    border: 1px solid $red;
-    background-color: $red;
+    border: 1px solid rgba($color: $red, $alpha: 0.85);
+    background-color: rgba($color: $red, $alpha: 0.85);
     width: 5rem;
     height: 5rem;
 
@@ -69,15 +72,86 @@
       transform: translate(-50%, -50%);
 
       font-family: $headers;
+      color: $grey;
+      font-weight: 800;
     }
   }
 
-  &.menu-active {
-    opacity: 1;
-    transform: scale(3);
+  &.navbar_hover {
+    border: 1px solid rgba($color: $dark, $alpha: 0.05);
+    background-color: rgba($color: $dark, $alpha: 0.05);
+    width: 5rem;
+    height: 5rem;
   }
 
-  &.hovered {
-    opacity: 1;
+  &.article1_cursor,
+  &.article2_cursor,
+  &.article3_cursor,
+  &.article4_cursor,
+  &.article5_cursor {
+    width: 5rem;
+    height: 5rem;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font-family: $headers;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+  }
+
+  &.article1_cursor {
+    border: 1px solid rgba($color: #c94d24, $alpha: 0.8);
+    background-color: rgba($color: #c94d24, $alpha: 0.8);
+
+    &::after {
+      content: "PORTIC";
+    }
+  }
+
+  &.article2_cursor {
+    border: 1px solid rgba($color: #432cb2, $alpha: 0.8);
+    background-color: rgba($color: #432cb2, $alpha: 0.8);
+    width: 5rem;
+    height: 5rem;
+
+    &::after {
+      content: "Moitas";
+
+      color: $grey;
+    }
+  }
+
+  &.article3_cursor {
+    border: 1px solid rgba($color: #dbaf03, $alpha: 0.8);
+    background-color: rgba($color: #dbaf03, $alpha: 0.8);
+
+    &::after {
+      content: "Travel";
+    }
+  }
+
+  &.article4_cursor {
+    border: 1px solid rgba($color: #222431, $alpha: 0.8);
+    background-color: rgba($color: #222431, $alpha: 0.8);
+
+    &::after {
+      content: "dutify";
+
+      color: $grey;
+    }
+  }
+
+  &.article5_cursor {
+    border: 1px solid rgba($color: #259e54, $alpha: 0.8);
+    background-color: rgba($color: #259e54, $alpha: 0.8);
+
+    &::after {
+      content: "improve";
+    }
   }
 }
