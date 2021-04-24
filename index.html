@@ -10,8 +10,8 @@
     <title>Homepage</title>
   </head>
   <body>
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+    <div class="cursor hide-for-mobile"></div>
+    <div class="cursor-follower hide-for-mobile"></div>
     <div class="noise"></div>
     <nav class="header flex flex-ai-c flex-jc-sb">
       <a href="/" class="header__logo">Nuno</a>
@@ -98,7 +98,9 @@
           </div>
         </h3>
 
-        <a href="mailto:nunopereirasousa00@gmail.com">Open to work</a>
+        <a href="mailto:nunopereirasousa00@gmail.com" class="open_work"
+          >Open to work</a
+        >
       </section>
 
       <section class="about">
@@ -140,7 +142,10 @@
           </article>
           <article class="services__grid__article">
             <h3>Teaching and tutoring</h3>
-            <h5>I teach and tutor programming to people all over the world.</h5>
+            <h5>
+              I teach and tutor programming to people all over the world. 100%
+              of improvement and happy students guaranteed.
+            </h5>
           </article>
           <article class="services__grid__article">
             <h3>UI Design</h3>
@@ -153,7 +158,7 @@
             <h5>Contact me and let's start doing transformations.</h5>
             <p>
               <span>—</span>
-              <a href="mailto:nunopereirasousa00@gmail.com">
+              <a href="mailto:nunopereirasousa00@gmail.com" class="open_work">
                 nunopereirasousa00@gmail.com
               </a>
             </p>
@@ -632,13 +637,25 @@
           <a href="https://github.com/NunoPereiraSousa" target="_blank">
             <div><div>Gh</div></div>
           </a>
-          <a href="mailto:nunopereirasousa00@gmail.com">
+          <a href="mailto:nunopereirasousa00@gmail.com" class="open_work">
             <div><div>nunopereirasousa00@gmail.com</div></div>
           </a>
         </div>
       </section>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/cursor.js"></script>
     <script src="../js/header.js"></script>
   </body>
 </html>

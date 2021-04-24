@@ -11,10 +11,15 @@
   pointer-events: none;
   z-index: 10000;
   transform: scale(1);
+  // transform: translate(9.5px, 8px);
 
   &.active {
     opacity: 1;
-    transform: scale(0);
+    background-color: $grey;
+  }
+
+  &.open_work_cursor {
+    background-color: $grey;
   }
 
   &.menu-active {
@@ -36,16 +41,35 @@
   z-index: 1;
   transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
-    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background,
+    0.6s cubic-bezier(0.75, -0.27, 0.3, 1.33) width,
+    0.6s cubic-bezier(0.75, -0.27, 0.3, 1.33) height;
   user-select: none;
   pointer-events: none;
   z-index: 10000;
-  transform: translate(-0.5rem, -0.5rem);
   overflow: hidden;
 
   &.active {
     opacity: 1;
-    transform: scale(3);
+    // transform: scale(3);
+    border: 1px solid $grey;
+  }
+
+  &.open_work_cursor {
+    border: 1px solid $red;
+    background-color: $red;
+    width: 5rem;
+    height: 5rem;
+
+    &::after {
+      content: "EMAIL";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font-family: $headers;
+    }
   }
 
   &.menu-active {

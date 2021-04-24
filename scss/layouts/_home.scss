@@ -62,9 +62,10 @@
     }
 
     @include breakpoint-up(desktop) {
+      padding: 2rem;
       position: absolute;
-      right: 5.5vw;
-      bottom: 10%;
+      right: calc(5.5vw - 2rem);
+      bottom: calc(10% - 2rem);
       font-size: $_20px;
     }
   }

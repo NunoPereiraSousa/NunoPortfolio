@@ -146,6 +146,7 @@ a:visited,
 a:hover,
 a:focus {
   text-decoration: none;
+  cursor: none;
 }
 
 button:focus {
@@ -256,11 +257,14 @@ main {
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
+  background: #eaeaea !important;
+  display: none;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
+  background: transparent;
 }
 
 /* Handle */
@@ -271,7 +275,7 @@ main {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #1a1a1a;
+  background: transparent;
 }
 
 .cursor {
@@ -297,8 +301,11 @@ main {
 
 .cursor.active {
   opacity: 1;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  background-color: #eaeaea;
+}
+
+.cursor.open_work_cursor {
+  background-color: #eaeaea;
 }
 
 .cursor.menu-active {
@@ -318,25 +325,39 @@ main {
   height: 3rem;
   border-radius: 50%;
   z-index: 1;
-  -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
-  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -0.27, 0.3, 1.33) width, 0.6s cubic-bezier(0.75, -0.27, 0.3, 1.33) height, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -0.27, 0.3, 1.33) width, 0.6s cubic-bezier(0.75, -0.27, 0.3, 1.33) height, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -0.27, 0.3, 1.33) width, 0.6s cubic-bezier(0.75, -0.27, 0.3, 1.33) height;
+  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -0.27, 0.3, 1.33) width, 0.6s cubic-bezier(0.75, -0.27, 0.3, 1.33) height, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
   z-index: 10000;
-  -webkit-transform: translate(-0.5rem, -0.5rem);
-          transform: translate(-0.5rem, -0.5rem);
   overflow: hidden;
 }
 
 .cursor-follower.active {
   opacity: 1;
-  -webkit-transform: scale(3);
-          transform: scale(3);
+  border: 1px solid #eaeaea;
+}
+
+.cursor-follower.open_work_cursor {
+  border: 1px solid #dd4d42;
+  background-color: #dd4d42;
+  width: 5rem;
+  height: 5rem;
+}
+
+.cursor-follower.open_work_cursor::after {
+  content: "EMAIL";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Cormorant Garamond";
 }
 
 .cursor-follower.menu-active {
@@ -729,7 +750,7 @@ main {
 
 @media (min-width: 120em) {
   .sub_header {
-    font-size: 5.625rem;
+    font-size: 5rem;
   }
 }
 
@@ -803,9 +824,10 @@ main {
 
 @media (min-width: 75em) {
   .presentation a {
+    padding: 2rem;
     position: absolute;
-    right: 5.5vw;
-    bottom: 10%;
+    right: calc(5.5vw - 2rem);
+    bottom: calc(10% - 2rem);
     font-size: 1.25rem;
   }
 }
@@ -1277,9 +1299,9 @@ main {
 
 @media (min-width: 75em) {
   .about__presentation h1 {
-    margin-bottom: 0;
     font-size: 6.875rem;
-    line-height: 1.2;
+    line-height: 1;
+    margin: 0 auto 0 0;
   }
 }
 
@@ -1287,7 +1309,6 @@ main {
   .about__presentation h1 {
     font-size: 8.75rem;
     line-height: 1;
-    margin: 0 auto 0 0;
   }
 }
 
@@ -1463,7 +1484,7 @@ main {
 
 @media (min-width: 75em) {
   .skills__carousel .slide-track .slide h2 {
-    font-size: 2.5rem;
+    font-size: 2.125rem;
   }
 }
 
