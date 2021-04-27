@@ -1,0 +1,28 @@
+.projects_showcase__grid__card {
+  font-family: "Cormorant";
+
+  h1 {
+    margin: 0 40px 0 0;
+
+    font-weight: 100;
+    font-size: $_110px;
+    line-height: 0.74;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: $dark;
+  }
+
+  a {
+    margin: 0;
+
+    line-height: 1;
+    font-weight: 600;
+    color: $dark;
+
+    font-size: $_24px;
+
+    span {
+      margin: 0 0 0 10px;
+    }
+  }
+}

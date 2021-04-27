@@ -235,7 +235,7 @@
         font-size: $_20px;
       }
 
-      &:last-child {
+      &.open_work {
         margin-right: 0;
         margin-top: 1.125rem;
         color: rgba($color: $red, $alpha: 0.9);
