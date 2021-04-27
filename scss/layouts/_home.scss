@@ -177,9 +177,9 @@
 .showcase {
   padding-bottom: 16vh;
 
-  @include breakpoint-up(desktop) {
-    padding-bottom: calc(28vh + (10.625rem / 2));
-  }
+  // @include breakpoint-up(desktop) {
+  //   padding-bottom: calc(28vh + (10.625rem / 2));
+  // }
 
   &__grid {
     // padding-top: 2.875rem;
@@ -196,10 +196,6 @@
 
   padding-top: 16vh;
   padding-bottom: 6vh;
-
-  @include breakpoint-up(desktop) {
-    padding-top: 6vh;
-  }
 
   svg {
     position: absolute;
@@ -298,7 +294,6 @@
 
     @include breakpoint-up(desktop) {
       margin-top: 5rem;
-      margin-left: auto;
     }
 
     a {
@@ -308,9 +303,8 @@
 
       text-decoration: underline;
 
-      @include breakpoint-up(tablet) {
-        margin-top: 0;
-        margin-left: auto;
+      @include breakpoint-up(desktop) {
+        font-size: $_16px;
       }
     }
   }
