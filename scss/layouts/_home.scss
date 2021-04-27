@@ -175,7 +175,7 @@
 }
 
 .showcase {
-  padding-bottom: calc(16vh + (10.625rem / 2));
+  padding-bottom: 16vh;
 
   @include breakpoint-up(desktop) {
     padding-bottom: calc(28vh + (10.625rem / 2));
@@ -194,6 +194,7 @@
   position: relative;
   background-color: $dark;
 
+  padding-top: 16vh;
   padding-bottom: 6vh;
 
   @include breakpoint-up(desktop) {
@@ -222,6 +223,12 @@
   }
 
   &__location {
+    // padding-top: calc(5.625rem * 2);
+
+    @include breakpoint-up(desktop) {
+      // padding-top: calc(6.625rem + 10.6325rem);
+    }
+
     &.dark {
       h3 {
         color: $dark;
@@ -231,7 +238,8 @@
     h3 {
       font-weight: 400;
       color: $grey;
-      font-size: $_16px;
+      font-size: $_14px;
+      text-transform: uppercase;
 
       margin: 0;
 
@@ -240,14 +248,16 @@
       }
 
       @include breakpoint-up(desktop) {
-        font-size: $_20px;
+        font-size: $_18px;
         line-height: 1.8;
       }
     }
   }
 
   &__socials {
-    margin-top: 3rem;
+    margin-top: 5rem;
+
+    grid-template-columns: min-content min-content;
 
     @include breakpoint-up(iPadPro) {
       margin-top: 6rem;
@@ -269,26 +279,38 @@
 
       font-weight: 400;
       color: $grey;
+      font-size: $_14px;
+      line-height: 1.6;
 
       @include breakpoint-up(iPadPro) {
         font-size: $_24px;
       }
 
       @include breakpoint-up(desktop) {
-        font-size: $_20px;
+        font-size: $_16px;
       }
+    }
+  }
 
-      &:last-child {
-        margin-right: 0;
-        margin-top: 1.125rem;
-        color: rgba($color: $red, $alpha: 0.9);
+  &__email {
+    margin-top: 2.5rem;
+    width: fit-content;
 
-        text-decoration: underline;
+    @include breakpoint-up(desktop) {
+      margin-top: 5rem;
+      margin-left: auto;
+    }
 
-        @include breakpoint-up(tablet) {
-          margin-top: 0;
-          margin-left: auto;
-        }
+    a {
+      margin-right: 0;
+      color: rgba($color: $red, $alpha: 0.9);
+      font-size: $_14px;
+
+      text-decoration: underline;
+
+      @include breakpoint-up(tablet) {
+        margin-top: 0;
+        margin-left: auto;
       }
     }
   }

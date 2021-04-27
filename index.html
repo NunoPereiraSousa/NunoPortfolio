@@ -17,7 +17,7 @@
       <a href="/" class="header__logo">Nuno</a>
       <div class="header__hamburger hide-for-desktop"></div>
       <div class="header__desktop_menu hide-for-mobile">
-        <a href="#">Projects</a>
+        <a href="/">Projects</a>
         <a href="./views/about.html">About Me</a>
       </div>
     </nav>
@@ -60,13 +60,23 @@
 
           <ul class="mobile_menu__socials">
             <li>
-              <a href="">LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/in/nunopereirasous/"
+                target="_blank"
+                >LinkedIn</a
+              >
             </li>
             <li>
-              <a href="">Instagram</a>
+              <a
+                href="https://www.instagram.com/nunopereirasousa/"
+                target="_blank"
+                >Instagram</a
+              >
             </li>
             <li>
-              <a href="">GitHub</a>
+              <a href="https://github.com/NunoPereiraSousa" target="_blank"
+                >GitHub</a
+              >
             </li>
             <li>
               <a href="mailto:nunopereirasousa00@gmail.com" id="email"
@@ -236,7 +246,7 @@
       </section>
 
       <section class="contacts">
-        <div class="svg flex flex-jc-c">
+        <!-- <div class="svg flex flex-jc-c">
           <svg
             id="Layer_2"
             data-name="Layer 2"
@@ -592,9 +602,7 @@
               <tspan x="0" y="0">.</tspan>
             </text>
           </svg>
-        </div>
-
-        <h2 class="sub_header dark_circle">Contacts</h2>
+        </div> -->
 
         <!-- <div class="contacts__carousel carousel">
           <div class="slide-track">
@@ -620,24 +628,36 @@
         </div> -->
 
         <div class="contacts__location">
-          <h3>oPorto city</h3>
-          <h3>Portugal</h3>
-          <h3>— more than a web developer 🚀</h3>
+          <h3>Based in oPorto Portugal, studying and working worldwide.</h3>
+          <h3>— LX local time: <span id="currentDateTime"></span>.</h3>
+          <!-- <h3>— more than a web developer 🚀</h3> -->
         </div>
 
-        <div class="contacts__socials flex flex-wrap">
+        <div class="contacts__socials grid">
           <a
             href="https://www.linkedin.com/in/nunopereirasous/"
             target="_blank"
           >
-            <div><div>Ln</div></div>
+            <div><div>LinkedIn</div></div>
           </a>
           <a href="https://www.instagram.com/nunopereirasousa/" target="_blank">
-            <div><div>Ig</div></div>
+            <div><div>Instagram</div></div>
           </a>
           <a href="https://github.com/NunoPereiraSousa" target="_blank">
-            <div><div>Gh</div></div>
+            <div><div>GitHub</div></div>
           </a>
+          <a
+            href="https://www.facebook.com/nuno.sousa.9655806/"
+            target="_blank"
+          >
+            <div><div>Facebook</div></div>
+          </a>
+          <a href="https://dribbble.com/nunops" target="_blank">
+            <div><div>Dribbble</div></div>
+          </a>
+        </div>
+
+        <div class="contacts__email">
           <a href="mailto:nunopereirasousa00@gmail.com" class="open_work">
             <div><div>nunopereirasousa00@gmail.com</div></div>
           </a>
@@ -656,7 +676,8 @@
       integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
       crossorigin="anonymous"
     ></script>
-    <script src="../js/cursor.js"></script>
-    <script src="../js/header.js"></script>
+    <script src="./js/date_time.js"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>

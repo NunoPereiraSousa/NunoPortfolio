@@ -1024,7 +1024,7 @@ main {
 }
 
 .showcase {
-  padding-bottom: calc(16vh + (10.625rem / 2));
+  padding-bottom: 16vh;
 }
 
 @media (min-width: 75em) {
@@ -1036,6 +1036,7 @@ main {
 .contacts {
   position: relative;
   background-color: #1a1a1a;
+  padding-top: 16vh;
   padding-bottom: 6vh;
 }
 
@@ -1077,7 +1078,8 @@ main {
 .contacts__location h3 {
   font-weight: 400;
   color: #eaeaea;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -1089,13 +1091,16 @@ main {
 
 @media (min-width: 75em) {
   .contacts__location h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.8;
   }
 }
 
 .contacts__socials {
-  margin-top: 3rem;
+  margin-top: 5rem;
+  -ms-grid-columns: min-content min-content;
+      grid-template-columns: -webkit-min-content -webkit-min-content;
+      grid-template-columns: min-content min-content;
 }
 
 @media (min-width: 64em) {
@@ -1120,6 +1125,8 @@ main {
   margin-right: 2rem;
   font-weight: 400;
   color: #eaeaea;
+  font-size: 0.875rem;
+  line-height: 1.6;
 }
 
 @media (min-width: 64em) {
@@ -1130,19 +1137,33 @@ main {
 
 @media (min-width: 75em) {
   .contacts__socials a {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
-.contacts__socials a:last-child {
+.contacts__email {
+  margin-top: 2.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (min-width: 75em) {
+  .contacts__email {
+    margin-top: 5rem;
+    margin-left: auto;
+  }
+}
+
+.contacts__email a {
   margin-right: 0;
-  margin-top: 1.125rem;
   color: rgba(221, 77, 66, 0.9);
+  font-size: 0.875rem;
   text-decoration: underline;
 }
 
 @media (min-width: 48em) {
-  .contacts__socials a:last-child {
+  .contacts__email a {
     margin-top: 0;
     margin-left: auto;
   }
@@ -1617,5 +1638,57 @@ main {
     margin-top: 0;
     margin-left: auto;
   }
+}
+
+.projects__presentation {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  color: #1a1a1a;
+  letter-spacing: normal;
+}
+
+.projects__presentation h1 {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+@media (min-width: 48em) {
+  .projects__presentation h1 {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .projects__presentation h1 {
+    font-size: 6.875rem;
+    line-height: 1;
+    margin: 0 auto 0 0;
+  }
+}
+
+@media (min-width: 120em) {
+  .projects__presentation h1 {
+    font-size: 8.75rem;
+    line-height: 1;
+  }
+}
+
+.projects__presentation svg:not(#projects_circle) {
+  height: 6.875rem;
+  margin: 5rem 0;
+}
+
+.projects__presentation svg#projects_circle {
+  position: absolute;
+  left: 50%;
+  bottom: calc(0% - (11.4375rem / 3));
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=style.css.map */

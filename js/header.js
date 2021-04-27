@@ -11,6 +11,8 @@ let header_open = document.querySelector(".header_open");
 let header_open__cross = document.querySelector(".header_open__cross");
 
 header__hamburger.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+
   main.classList.add("no_scroll");
   main.classList.add("menu-open");
 
