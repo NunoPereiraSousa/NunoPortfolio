@@ -175,6 +175,24 @@
 }
 
 .projects_showcase {
+  &__title {
+    font-size: 180px;
+    font-family: "Cormorant";
+    font-weight: 100;
+    line-height: 1;
+
+    margin: 0;
+    margin-bottom: 5.625rem;
+
+    &:last-of-type {
+      margin-top: 5.625rem;
+    }
+
+    @include breakpoint-up(desktop) {
+      font-size: 30vw;
+    }
+  }
+
   padding: 0 1.125rem 16vh;
 
   @include breakpoint-up(tablet) {
@@ -193,7 +211,8 @@
     padding: 14vh 5.5vw 4vh;
   }
 
-  &__grid {
+  &__grid,
+  &__grid2 {
     row-gap: 1.875rem;
 
     @include breakpoint-up(tablet) {

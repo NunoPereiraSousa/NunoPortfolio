@@ -126,7 +126,7 @@ body.dark {
       background-color: rgba($color: $dark, $alpha: 0.8) !important;
       &::after {
         font-size: 1.5rem;
-        content: "💡";
+        content: "🔦";
       }
     }
 
@@ -135,7 +135,7 @@ body.dark {
       background-color: rgba($color: $grey, $alpha: 0.8) !important;
       &::after {
         font-size: 1.5rem;
-        content: "🔦";
+        content: "💡";
       }
     }
   }

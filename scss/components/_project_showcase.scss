@@ -12,7 +12,7 @@
     -webkit-text-stroke-color: $dark;
 
     @include breakpoint-up(desktop) {
-      font-size: 260px;
+      font-size: 220px;
       margin: 0 100px 0 0;
     }
   }
@@ -32,7 +32,7 @@
 
     @include breakpoint-up(desktop) {
       color: rgba($color: $dark, $alpha: 0.5);
-      font-size: $_90px;
+      font-size: $_70px;
       font-weight: 400;
     }
   }
