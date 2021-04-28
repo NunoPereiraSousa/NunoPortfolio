@@ -38,11 +38,14 @@ function getWeekDay() {
 function getTime() {
   let hours = date.getHours();
 
-  hours = hours % 12 || 12;
+  var ampm = hours >= 12 ? "pm" : "am";
 
-  let timeFormat = hours >= 12 ? "pm" : "am";
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
 
-  let finalTime = `${hours}:${getMinutes()} ${timeFormat}`;
+  console.log(hours);
+
+  let finalTime = `${hours}:${getMinutes()} ${ampm}`;
 
   return finalTime;
 }

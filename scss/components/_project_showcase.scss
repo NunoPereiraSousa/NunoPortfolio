@@ -10,6 +10,11 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0.6px;
     -webkit-text-stroke-color: $dark;
+
+    @include breakpoint-up(desktop) {
+      font-size: 260px;
+      margin: 0 100px 0 0;
+    }
   }
 
   a {
@@ -23,6 +28,12 @@
 
     span {
       margin: 0 0 0 10px;
+    }
+
+    @include breakpoint-up(desktop) {
+      color: rgba($color: $dark, $alpha: 0.5);
+      font-size: $_90px;
+      font-weight: 400;
     }
   }
 }
