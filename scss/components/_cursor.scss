@@ -1,3 +1,18 @@
+body.dark {
+  .cursor {
+    background-color: $grey;
+  }
+
+  .cursor-follower {
+    border: 1px solid $grey;
+
+    &.open_work_cursor,
+    &.article1_cursor {
+      border: 1px solid rgba($color: $red, $alpha: 0.2) !important;
+    }
+  }
+}
+
 .cursor {
   position: fixed;
   background-color: $dark;
@@ -84,6 +99,7 @@
     height: 5rem;
   }
 
+  &.toggleTheme,
   &.article1_cursor,
   &.article2_cursor,
   &.article3_cursor,
@@ -101,6 +117,26 @@
       font-family: $headers;
       text-transform: uppercase;
       font-weight: 800;
+    }
+  }
+
+  &.toggleTheme {
+    &.lightTheme {
+      border: 1px solid rgba($color: $dark, $alpha: 0.8);
+      background-color: rgba($color: $dark, $alpha: 0.8) !important;
+      &::after {
+        font-size: 1.5rem;
+        content: "💡";
+      }
+    }
+
+    &.nightTheme {
+      border: 1px solid rgba($color: $grey, $alpha: 0.8);
+      background-color: rgba($color: $grey, $alpha: 0.8) !important;
+      &::after {
+        font-size: 1.5rem;
+        content: "🔦";
+      }
     }
   }
 

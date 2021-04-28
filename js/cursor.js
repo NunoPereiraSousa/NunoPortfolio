@@ -62,3 +62,35 @@ $(".open_work").on("mouseleave", () => {
   cursor.removeClass("open_work_cursor");
   follower.removeClass("open_work_cursor");
 });
+
+// NAVBAR TOGGLE THEME
+$("#toggleTheme").on("mouseenter", () => {
+  cursor.addClass("toggleTheme");
+  follower.addClass("toggleTheme");
+  let theme = JSON.parse(localStorage.getItem("theme"));
+
+  if (theme == "dark") {
+    follower.addClass("nightTheme");
+    follower.removeClass("lightTheme");
+  } else {
+    follower.addClass("lightTheme");
+    follower.removeClass("nightTheme");
+  }
+});
+
+$("#toggleTheme").on("mouseleave", () => {
+  cursor.removeClass("toggleTheme");
+  follower.removeClass("toggleTheme");
+});
+
+$("#toggleTheme").on("click", () => {
+  let theme = JSON.parse(localStorage.getItem("theme"));
+
+  if (theme == "dark") {
+    follower.addClass("nightTheme");
+    follower.removeClass("lightTheme");
+  } else {
+    follower.addClass("lightTheme");
+    follower.removeClass("nightTheme");
+  }
+});

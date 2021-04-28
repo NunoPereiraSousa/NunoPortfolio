@@ -19,6 +19,8 @@
     margin-top: 0;
     margin-bottom: 6.25rem;
 
+    transition: all 0.4s;
+
     @include breakpoint-up(tablet) {
       margin-bottom: 8.25rem;
       font-size: $_60px;
@@ -37,6 +39,8 @@
     font-size: $_20px;
 
     font-weight: 500;
+    color: $dark;
+    transition: all 0.4s;
 
     @include breakpoint-up(tablet) {
       font-size: $_38px;
@@ -55,6 +59,7 @@
 
     text-decoration: underline;
     color: $dark;
+    transition: all 0.4s;
 
     @include breakpoint-up(tablet) {
       margin-top: 4rem;

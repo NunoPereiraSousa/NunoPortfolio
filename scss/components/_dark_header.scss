@@ -1,0 +1,21 @@
+body.dark {
+  .header {
+    &__logo,
+    p {
+      color: $grey;
+    }
+
+    &__hamburger {
+      &::before,
+      &::after {
+        background-color: $grey;
+      }
+    }
+
+    &__desktop_menu {
+      a {
+        color: $grey;
+      }
+    }
+  }
+}

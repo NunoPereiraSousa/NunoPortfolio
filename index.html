@@ -10,12 +10,15 @@
 
     <title>Homepage</title>
   </head>
-  <body>
+  <body class="light">
     <div class="cursor hide-for-mobile"></div>
     <div class="cursor-follower hide-for-mobile"></div>
     <div class="noise"></div>
     <nav class="header flex flex-ai-c flex-jc-sb">
-      <a href="/" class="header__logo">Nuno</a>
+      <div class="flex flex-ai-c">
+        <a href="/" class="header__logo">Nuno&nbsp;</a>
+        <p id="toggleTheme">Morning</p>
+      </div>
       <div class="header__hamburger hide-for-desktop"></div>
       <div class="header__desktop_menu hide-for-mobile">
         <a href="./views/projects.html">Projects</a>
@@ -234,6 +237,7 @@
       integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/toggleTheme.js"></script>
     <script src="./js/date_time.js"></script>
     <script src="./js/cursor.js"></script>
     <script src="./js/header.js"></script>

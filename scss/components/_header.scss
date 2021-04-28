@@ -5,7 +5,7 @@
   right: 0%;
   z-index: 2;
 
-  padding: 1rem 1.25rem;
+  padding: 1.5rem 1.25rem;
 
   visibility: visible;
   opacity: 1;
@@ -19,7 +19,7 @@
   }
 
   @include breakpoint-up(tablet) {
-    padding: 1.25rem 2rem;
+    padding: 2rem 2rem;
   }
 
   @include breakpoint-up(iPadPro) {
@@ -30,7 +30,8 @@
     padding: 8vh 5.5vw;
   }
 
-  &__logo {
+  &__logo,
+  p {
     font-family: $headers;
     font-size: $_20px;
     color: $dark;
@@ -39,6 +40,15 @@
 
     @include breakpoint-up(tablet) {
       font-size: $_26px;
+    }
+  }
+
+  p {
+    margin: 0;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
     }
   }
 
@@ -96,7 +106,7 @@
   right: 0%;
   z-index: 1;
 
-  padding: 1rem 1.25rem;
+  padding: 1.5rem 1.25rem;
 
   visibility: hidden;
   pointer-events: none;
