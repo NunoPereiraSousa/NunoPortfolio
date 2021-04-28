@@ -15,7 +15,7 @@
 
     text-transform: uppercase;
 
-    margin-top: 0;
+    margin: 0;
 
     @include breakpoint-up(tablet) {
       font-size: $_60px;
@@ -37,6 +37,10 @@
     height: 6.875rem;
 
     margin: 5rem 0;
+
+    @include breakpoint-width-height(667px, 375px, 667px) {
+      margin: 3rem 0;
+    }
   }
 
   svg#projects_circle {
@@ -44,6 +48,10 @@
     bottom: calc(0% - (11.4375rem / 3));
 
     animation: spin 30s linear infinite;
+
+    @include breakpoint-width-height(667px, 375px, 667px) {
+      bottom: calc(0% - (11.4375rem / 2));
+    }
   }
 }
 
@@ -173,5 +181,9 @@
 
   &__grid {
     row-gap: 1.875rem;
+
+    @include breakpoint-up(tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }

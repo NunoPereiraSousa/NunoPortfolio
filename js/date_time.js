@@ -49,7 +49,7 @@ function getTime() {
 
 function getMinutes() {
   let minutes = date.getMinutes();
-  return minutes;
+  return minutes < 10 ? `0${minutes}` : minutes;
 }
 
 currentDateTime.innerHTML = `${getWeekDay()} ${getTime()}`;
