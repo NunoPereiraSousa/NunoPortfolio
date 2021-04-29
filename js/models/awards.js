@@ -3,7 +3,7 @@ export let awards = [
     title: "College - Web development",
     date: "2018 - 2021",
     desc:
-      "I am senior college student with the highest GPA for a web development degree: 4.5 / 5"
+      "I am senior college student with the highest GPA for a web development degree: 4.5/ 5."
   },
   {
     title: "Teaching and tutoring",

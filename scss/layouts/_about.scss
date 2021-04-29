@@ -1,6 +1,7 @@
 .about__presentation {
   height: 100vh;
   width: 100%;
+  position: relative;
 
   text-align: center;
   font-family: $headers;
@@ -41,149 +42,182 @@
       line-height: 1;
     }
   }
+
+  &__svgs {
+    position: absolute;
+    right: 10%;
+    bottom: -15%;
+
+    @include breakpoint-up(iPadPro) {
+      right: 10%;
+      bottom: -5%;
+    }
+
+    @include breakpoint-up(desktop) {
+      right: 10%;
+      bottom: -15%;
+    }
+
+    @include breakpoint-up(large) {
+      right: 10%;
+      bottom: -10%;
+    }
+  }
+
+  svg {
+    &#Circle01 {
+      width: 7.5rem;
+      height: 7.5rem;
+      animation: spin 30s linear infinite;
+
+      margin-bottom: 2rem;
+
+      @include breakpoint-up(desktop) {
+        width: 10.5rem;
+        height: 10.5rem;
+      }
+
+      @include breakpoint-up(large) {
+        width: 12.5rem;
+        height: 12.5rem;
+      }
+    }
+
+    &#arrow {
+      height: 150px;
+      opacity: 0.5;
+
+      @include breakpoint-up(desktop) {
+        opacity: 1;
+      }
+
+      @include breakpoint-up(large) {
+        height: 200px;
+      }
+    }
+  }
 }
 
 .me,
-.skills,
+.hobbies,
 .about__contact {
-  padding: 0 1.125rem 16vh;
+  position: relative;
+  padding: 16vh 1.125rem;
 
   @include breakpoint-up(tablet) {
-    padding: 0 2rem 16vh;
+    padding: 16vh 2rem;
   }
 
   @include breakpoint-up(iPadPro) {
-    padding: 16vh 5.5vw 4vh;
+    padding: 16vh 5.5vw;
   }
 
   @include breakpoint-up(desktop) {
-    padding: 24vh 5.5vw 4vh;
-  }
-
-  @include breakpoint-up(large) {
-    padding: 14vh 5.5vw 4vh;
+    padding: calc(24vh + 6.875rem) 5.5vw;
   }
 }
 
 .me {
-  position: relative;
-  padding-top: calc(5.625rem + 10.6325rem);
-
-  @include breakpoint-up(iPadPro) {
-    padding-top: calc(16vh + 10.6325rem);
-  }
+  margin-top: 32vh;
 
   @include breakpoint-up(desktop) {
-    padding-top: 0;
-  }
-
-  svg {
-    position: absolute;
-    top: calc(-10.625rem / 2);
-    height: 10.625rem;
-    width: 10.625rem;
-
-    animation: spin 30s linear infinite;
-
-    @include breakpoint-up(iPadPro) {
-      top: calc(-14.625rem / 2);
-      height: 14.625rem;
-      width: 14.625rem;
-    }
-
-    @include breakpoint-up(desktop) {
-      top: calc(-10.625rem / 2);
-      height: 10.625rem;
-      width: 10.625rem;
-    }
+    margin-top: 48vh;
   }
 }
 
-.skills {
-  &__carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    color: $grey;
+.hobbies {
+  &__grid {
+    row-gap: 3rem;
 
-    &::before,
-    &::after {
-      content: "";
-      height: 100%;
-      position: absolute;
-      width: 1.125rem;
-      z-index: 2;
-    }
-
-    &::after {
-      right: 1.125rem;
-      top: 0;
-    }
-
-    &::before {
-      left: 0;
-      top: 0;
-    }
-
-    .slide-track {
-      animation: phoneCarousel 8s linear infinite;
-      display: flex;
-      width: calc(300px * 7);
-
-      @include breakpoint-up(desktop) {
-        width: calc(500px * 7);
-        animation: desktopCarousel 8s linear infinite;
-
-        padding-bottom: 2rem;
-      }
-
-      &.reverse {
-        animation: phoneCarouselReverse 8s linear infinite;
-
-        @include breakpoint-up(desktop) {
-          animation: desktopCarouselReverse 8s linear infinite;
-          padding-top: 2rem;
-          padding-bottom: 0;
-        }
-
-        h2 {
-          -webkit-text-fill-color: transparent;
-          -webkit-text-stroke-width: 0.6px;
-          -webkit-text-stroke-color: $dark;
-        }
-      }
-
-      .slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        width: 300px;
-
-        @include breakpoint-up(desktop) {
-          width: 500px;
-        }
-
-        h2 {
-          color: $dark;
-          font-size: $_26px;
-          font-weight: 500;
-          margin: 0;
-
-          @include breakpoint-up(desktop) {
-            font-size: $_34px;
-          }
-        }
-      }
+    @include breakpoint-up(desktop) {
+      row-gap: 6rem;
     }
   }
 
-  hr {
-    background-color: rgba($color: $dark, $alpha: 0.25);
-    border: none;
-    height: 1px;
-    width: 100%;
-  }
+  // &__carousel {
+  //   position: relative;
+  //   overflow: hidden;
+  //   width: 100%;
+  //   color: $grey;
+
+  //   &::before,
+  //   &::after {
+  //     content: "";
+  //     height: 100%;
+  //     position: absolute;
+  //     width: 1.125rem;
+  //     z-index: 2;
+  //   }
+
+  //   &::after {
+  //     right: 1.125rem;
+  //     top: 0;
+  //   }
+
+  //   &::before {
+  //     left: 0;
+  //     top: 0;
+  //   }
+
+  //   .slide-track {
+  //     animation: phoneCarousel 8s linear infinite;
+  //     display: flex;
+  //     width: calc(300px * 7);
+
+  //     @include breakpoint-up(desktop) {
+  //       width: calc(500px * 7);
+  //       animation: desktopCarousel 8s linear infinite;
+
+  //       padding-bottom: 2rem;
+  //     }
+
+  //     &.reverse {
+  //       animation: phoneCarouselReverse 8s linear infinite;
+
+  //       @include breakpoint-up(desktop) {
+  //         animation: desktopCarouselReverse 8s linear infinite;
+  //         padding-top: 2rem;
+  //         padding-bottom: 0;
+  //       }
+
+  //       h2 {
+  //         -webkit-text-fill-color: transparent;
+  //         -webkit-text-stroke-width: 0.6px;
+  //         -webkit-text-stroke-color: $dark;
+  //       }
+  //     }
+
+  //     .slide {
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       height: 100px;
+  //       width: 300px;
+
+  //       @include breakpoint-up(desktop) {
+  //         width: 500px;
+  //       }
+
+  //       h2 {
+  //         color: $dark;
+  //         font-size: $_26px;
+  //         font-weight: 500;
+  //         margin: 0;
+
+  //         @include breakpoint-up(desktop) {
+  //           font-size: $_34px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // hr {
+  //   background-color: rgba($color: $dark, $alpha: 0.25);
+  //   border: none;
+  //   height: 1px;
+  //   width: 100%;
+  // }
 }
 
 .about__contact {

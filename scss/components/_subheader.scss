@@ -51,3 +51,45 @@
     font-size: $_80px;
   }
 }
+
+.header__carousel {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 40s linear infinite;
+
+  h2 {
+    font-family: "Cormorant Upright", serif;
+    font-size: $_40px;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1;
+
+    margin-top: 0;
+    margin-bottom: 5.625rem;
+
+    @include breakpoint-width-height(667px, 375px, 667px) {
+      font-size: $_32px;
+    }
+
+    @include breakpoint-up(tablet) {
+      font-size: $_50px;
+    }
+
+    @include breakpoint-up(iPadPro) {
+      font-size: $_70px;
+    }
+
+    @include breakpoint-up(desktop) {
+      margin-bottom: 10.625rem;
+      font-size: $_100px;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: $_120px;
+    }
+  }
+}

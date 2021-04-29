@@ -1,40 +1,41 @@
 .services__grid__article {
-  position: relative;
+  // position: relative;
 
-  padding: 3.125rem 1.25rem;
+  padding: 3rem 1.25rem;
 
   border-bottom: 1px solid rgba($color: $dark, $alpha: 0.23);
-  border-left: 1px solid rgba($color: $dark, $alpha: 0.23);
-  border-right: 1px solid rgba($color: $dark, $alpha: 0.23);
+  // border-left: 1px solid rgba($color: $dark, $alpha: 0.23);
+  // border-right: 1px solid rgba($color: $dark, $alpha: 0.23);
 
   &:first-child {
     border-top: 1px solid rgba($color: $dark, $alpha: 0.23);
   }
 
-  &:nth-child(even) {
-    @include breakpoint-up(desktop) {
-      border-left: none;
-    }
-  }
+  // &:nth-child(even) {
+  //   @include breakpoint-up(desktop) {
+  //     border-left: none;
+  //   }
+  // }
 
-  &:nth-child(2) {
-    @include breakpoint-up(desktop) {
-      border-top: 1px solid rgba($color: $dark, $alpha: 0.23);
-    }
-  }
+  // &:nth-child(2) {
+  //   @include breakpoint-up(desktop) {
+  //     border-top: 1px solid rgba($color: $dark, $alpha: 0.23);
+  //   }
+  // }
 
-  @include breakpoint-up(tablet) {
-    padding: 3.125rem 1.875rem;
-  }
+  // @include breakpoint-up(tablet) {
+  //   padding: 3.125rem 1.875rem;
+  // }
 
-  @include breakpoint-up(desktop) {
-    padding: 4.375rem 3.125rem 6.25rem;
-  }
+  // @include breakpoint-up(desktop) {
+  //   padding: 4.375rem 3.125rem 6.25rem;
+  // }
+
+  font-family: $headers2;
 
   h3 {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-size: $_17px;
+    margin: 0;
+    font-size: $_26px;
 
     font-weight: 500;
 
@@ -52,39 +53,43 @@
     }
   }
 
-  h5 {
-    margin: 0;
-
-    font-weight: 400;
-    font-size: $_15px;
-
-    @include breakpoint-up(tablet) {
-      font-size: $_18px;
-    }
-
-    @include breakpoint-up(iPadPro) {
-      font-size: $_22px;
-    }
-
-    @include breakpoint-up(desktop) {
-      font-size: $_20px;
-    }
+  h4 {
+    font-size: $_18px;
   }
 
-  p {
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 0;
+  // h5 {
+  //   margin: 0;
 
-    font-size: $_14px;
+  //   font-weight: 400;
+  //   font-size: $_15px;
 
-    span {
-      margin-right: 0.6rem;
-    }
+  //   @include breakpoint-up(tablet) {
+  //     font-size: $_18px;
+  //   }
 
-    a {
-      color: $dark;
-      border-bottom: 1px solid rgba($color: $dark, $alpha: 0.5);
-    }
-  }
+  //   @include breakpoint-up(iPadPro) {
+  //     font-size: $_22px;
+  //   }
+
+  //   @include breakpoint-up(desktop) {
+  //     font-size: $_20px;
+  //   }
+  // }
+
+  // p {
+  //   width: 100%;
+  //   margin-top: 2rem;
+  //   margin-bottom: 0;
+
+  //   font-size: $_14px;
+
+  //   span {
+  //     margin-right: 0.6rem;
+  //   }
+
+  //   a {
+  //     color: $dark;
+  //     border-bottom: 1px solid rgba($color: $dark, $alpha: 0.5);
+  //   }
+  // }
 }

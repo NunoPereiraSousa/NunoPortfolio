@@ -4,7 +4,7 @@ let showcase__grid = document.querySelector(".showcase__grid");
 
 for (let award of awards) {
   showcase__grid.innerHTML += `
-    <article class="showcase__grid__article">
+    <article class="showcase__grid__article grid">
         <div
             class="showcase__grid__article__categories flex flex-ai-c flex-jc-sb"
         >

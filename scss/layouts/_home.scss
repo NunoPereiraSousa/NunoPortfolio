@@ -80,14 +80,19 @@
 .services,
 .showcase,
 .contacts {
-  padding: 0 1.125rem 16vh;
+  position: relative;
+  padding: 16vh 1.125rem;
 
   @include breakpoint-up(tablet) {
-    padding: 0 2rem 16vh;
+    padding: 16vh 2rem;
+  }
+
+  @include breakpoint-up(iPadPro) {
+    padding: 16vh 5.5vw;
   }
 
   @include breakpoint-up(desktop) {
-    padding: 24vh 5.5vw 4vh;
+    padding: calc(24vh + 6.875rem) 5.5vw;
   }
 }
 
@@ -171,16 +176,8 @@
   }
 }
 
-.services {
-  &__grid {
-    @include breakpoint-up(desktop) {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-}
-
 .showcase {
-  padding-bottom: 16vh;
+  padding-bottom: 8vh;
 
   // @include breakpoint-up(desktop) {
   //   padding-bottom: calc(28vh + (10.625rem / 2));
@@ -199,7 +196,7 @@
   position: relative;
   background-color: $dark;
 
-  padding-top: 16vh;
+  padding-top: 8vh;
   padding-bottom: 6vh;
 
   svg {
