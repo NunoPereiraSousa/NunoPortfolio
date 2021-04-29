@@ -4,12 +4,12 @@ let showcase__grid = document.querySelector(".showcase__grid");
 
 for (let project of projects) {
   showcase__grid.innerHTML += `
-              <article class="showcase__grid__article" id="article${project.id}">
+              <article class="showcase__grid__article grid" id="article${project.id}">
                   <div
                       class="showcase__grid__article__categories flex flex-ai-c flex-jc-sb"
                   >
                       <h4>${project.category}</h4>
-                      <h4>${project.title} <span>${project.arrow}</span></h4>
+                      <h4>${project.title} ${project.arrow}</h4>
                   </div>
           
                   <h5>

@@ -1,14 +1,25 @@
 .services__grid__article {
   // position: relative;
 
-  padding: 3rem 1.25rem;
+  padding: 2rem 1.25rem;
 
-  border-bottom: 1px solid rgba($color: $dark, $alpha: 0.23);
+  border-bottom: 1px solid rgba($color: $dark, $alpha: 0.2);
   // border-left: 1px solid rgba($color: $dark, $alpha: 0.23);
   // border-right: 1px solid rgba($color: $dark, $alpha: 0.23);
 
   &:first-child {
-    border-top: 1px solid rgba($color: $dark, $alpha: 0.23);
+    border-top: 1px solid rgba($color: $dark, $alpha: 0.2);
+  }
+
+  @include breakpoint-up(tablet) {
+    padding: 2.5rem 1.25rem;
+  }
+
+  @include breakpoint-up(iPadPro) {
+    padding: 3rem 1.25rem;
+  }
+  @include breakpoint-up(desktop) {
+    padding: 4rem 0;
   }
 
   // &:nth-child(even) {
@@ -40,21 +51,41 @@
     font-weight: 500;
 
     @include breakpoint-up(tablet) {
-      font-size: $_22px;
+      font-size: $_40px;
     }
 
     @include breakpoint-up(iPadPro) {
-      font-size: $_26px;
+      font-size: $_50px;
     }
 
     @include breakpoint-up(desktop) {
-      font-size: $_24px;
-      margin-bottom: 1.875rem;
+      font-size: $_60px;
+      order: 1;
     }
   }
 
   h4 {
-    font-size: $_18px;
+    font-size: $_14px;
+    font-family: $body;
+    font-weight: 400;
+    // font-style: italic;
+    margin: 0 0.6rem 0 0;
+
+    @include breakpoint-up(tablet) {
+      font-size: $_18px;
+      margin: 0 1rem 0 0;
+    }
+
+    @include breakpoint-up(iPadPro) {
+      font-size: $_20px;
+      margin: 0 1.5rem 0 0;
+    }
+
+    @include breakpoint-up(desktop) {
+      order: 2;
+      margin-left: auto;
+      font-size: $_18px;
+    }
   }
 
   // h5 {
