@@ -69,7 +69,7 @@ $("#toggleTheme").on("mouseenter", () => {
   follower.addClass("toggleTheme");
   let theme = JSON.parse(localStorage.getItem("theme"));
 
-  if (theme == "dark") {
+  if (theme == "darkMode") {
     follower.addClass("nightTheme");
     follower.removeClass("lightTheme");
   } else {
@@ -86,7 +86,7 @@ $("#toggleTheme").on("mouseleave", () => {
 $("#toggleTheme").on("click", () => {
   let theme = JSON.parse(localStorage.getItem("theme"));
 
-  if (theme == "dark") {
+  if (theme == "darkMode") {
     follower.addClass("nightTheme");
     follower.removeClass("lightTheme");
   } else {

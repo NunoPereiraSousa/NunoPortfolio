@@ -1,11 +1,11 @@
 .services__grid__article {
   // position: relative;
 
+  font-family: $headers2;
+
   padding: 2rem 1.25rem;
 
   border-bottom: 1px solid rgba($color: $dark, $alpha: 0.2);
-  // border-left: 1px solid rgba($color: $dark, $alpha: 0.23);
-  // border-right: 1px solid rgba($color: $dark, $alpha: 0.23);
 
   &:first-child {
     border-top: 1px solid rgba($color: $dark, $alpha: 0.2);
@@ -22,27 +22,10 @@
     padding: 4rem 0;
   }
 
-  // &:nth-child(even) {
-  //   @include breakpoint-up(desktop) {
-  //     border-left: none;
-  //   }
-  // }
-
-  // &:nth-child(2) {
-  //   @include breakpoint-up(desktop) {
-  //     border-top: 1px solid rgba($color: $dark, $alpha: 0.23);
-  //   }
-  // }
-
-  // @include breakpoint-up(tablet) {
-  //   padding: 3.125rem 1.875rem;
-  // }
-
-  // @include breakpoint-up(desktop) {
-  //   padding: 4.375rem 3.125rem 6.25rem;
-  // }
-
-  font-family: $headers2;
+  &:hover h3,
+  &:hover h4 {
+    opacity: 1;
+  }
 
   h3 {
     margin: 0;
@@ -61,6 +44,8 @@
     @include breakpoint-up(desktop) {
       font-size: $_50px;
       order: 1;
+
+      opacity: 0.5;
     }
   }
 
@@ -85,6 +70,8 @@
       order: 2;
       margin-left: auto;
       font-size: $_18px;
+
+      opacity: 0.5;
     }
   }
 

@@ -1,4 +1,6 @@
 let toggle = document.querySelector("#toggleTheme");
+let cursorFollower = document.querySelector(".cursor-follower");
+console.log(cursorFollower);
 
 let body = document.body;
 
@@ -19,14 +21,34 @@ const disableDarkMode = () => {
 const changeText = () => {
   status = JSON.parse(localStorage.getItem("theme"));
 
-  status == "darkMode"
-    ? (toggle.innerHTML = "Light")
-    : (toggle.innerHTML = "Dark");
+  if (status == "darkMode") {
+    toggle.innerHTML = "Light";
+  } else {
+    toggle.innerHTML = "Dark";
+  }
+};
+
+const changeCursorTxt = () => {
+  status = JSON.parse(localStorage.getItem("theme"));
+
+  if (status !== "darkMode") {
+    cursorFollower.classList.remove("lightTheme");
+    cursorFollower.classList.add("nightTheme");
+
+    console.log(cursorFollower.classList);
+  } else {
+    cursorFollower.classList.remove("nightTheme");
+    cursorFollower.classList.add("lightTheme");
+
+    console.log(cursorFollower.classList);
+  }
 };
 
 if (status == "darkMode") {
   enableDarkMode();
   toggle.innerHTML = "Light";
+
+  // changeCursorTxt();
 }
 
 toggle.addEventListener("click", () => {
@@ -41,4 +63,5 @@ toggle.addEventListener("click", () => {
   }
 
   changeText();
+  // changeCursorTxt();
 });

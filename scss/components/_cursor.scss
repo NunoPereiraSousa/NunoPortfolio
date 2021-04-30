@@ -99,14 +99,9 @@ body.dark {
     height: 5rem;
   }
 
-  &.toggleTheme,
-  &.article1_cursor,
-  &.article2_cursor,
-  &.article3_cursor,
-  &.article4_cursor,
-  &.article5_cursor {
-    width: 5rem;
-    height: 5rem;
+  &.toggleTheme {
+    width: 3rem;
+    height: 3rem;
 
     &::after {
       position: absolute;
@@ -125,7 +120,7 @@ body.dark {
       border: 1px solid rgba($color: $dark, $alpha: 0.8);
       background-color: rgba($color: $dark, $alpha: 0.8) !important;
       &::after {
-        font-size: 1.5rem;
+        font-size: $_18px;
         content: "🔦";
       }
     }
@@ -134,9 +129,29 @@ body.dark {
       border: 1px solid rgba($color: $grey, $alpha: 0.8);
       background-color: rgba($color: $grey, $alpha: 0.8) !important;
       &::after {
-        font-size: 1.5rem;
+        font-size: $_18px;
         content: "💡";
       }
+    }
+  }
+
+  &.article1_cursor,
+  &.article2_cursor,
+  &.article3_cursor,
+  &.article4_cursor,
+  &.article5_cursor {
+    width: 5rem;
+    height: 5rem;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font-family: $headers;
+      text-transform: uppercase;
+      font-weight: 800;
     }
   }
 
