@@ -2,43 +2,43 @@ let toggle = document.querySelector("#toggleTheme");
 
 let body = document.body;
 
-let status = "";
+let status = JSON.parse(localStorage.getItem("theme"));
 
-window.onload = () => {
-  status = JSON.parse(localStorage.getItem("theme"));
+const enableDarkMode = () => {
+  body.classList.add("dark");
 
-  if (status == "dark") {
-    body.style.backgroundColor = "#1a1a1a";
-  } else {
-    body.style.backgroundColor = "#fffafa";
-  }
-
-  body.classList = status;
+  localStorage.setItem("theme", JSON.stringify("darkMode"));
 };
 
+const disableDarkMode = () => {
+  body.classList.remove("dark");
+
+  localStorage.setItem("theme", JSON.stringify(null));
+};
+
+const changeText = () => {
+  status = JSON.parse(localStorage.getItem("theme"));
+
+  status == "darkMode"
+    ? (toggle.innerHTML = "Light")
+    : (toggle.innerHTML = "Dark");
+};
+
+if (status == "darkMode") {
+  enableDarkMode();
+  toggle.innerHTML = "Light";
+}
+
 toggle.addEventListener("click", () => {
-  if (body.classList.contains("dark")) {
-    body.classList.add("light");
-    body.classList.remove("dark");
+  status = JSON.parse(localStorage.getItem("theme"));
 
-    status = "light";
+  console.log(status);
+
+  if (status !== "darkMode") {
+    enableDarkMode();
   } else {
-    body.classList.remove("light");
-    body.classList.add("dark");
-
-    status = "dark";
-  }
-  localStorage.setItem("theme", JSON.stringify(status));
-
-  if (status == "dark") {
-    status = "light";
-  } else {
-    status = "dark";
+    disableDarkMode();
   }
 
-  if (body.classList.contains("dark")) {
-    toggle.innerHTML = "Evening";
-  } else {
-    toggle.innerHTML = "Morning";
-  }
+  changeText();
 });

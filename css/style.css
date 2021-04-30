@@ -564,13 +564,58 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
   }
 }
 
-.header p {
-  margin: 0;
-  opacity: 0.5;
+@media (min-width: 75em) {
+  .header__logo,
+  .header p {
+    font-size: 1.125rem;
+  }
 }
 
-.header p:hover {
+.header__theme {
+  position: absolute;
+  top: 4.9rem;
+  left: 1.25rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media (min-width: 48em) {
+  .header__theme {
+    left: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .header__theme {
+    left: 94.5vw;
+  }
+}
+
+@media (min-width: 75em) {
+  .header__theme {
+    top: 8rem;
+    left: 94.5vw;
+  }
+}
+
+.header__theme p {
+  -webkit-transform: rotate(90deg) translateY(50%);
+          transform: rotate(90deg) translateY(50%);
+  font-size: 0.9375rem;
+  margin: 0;
+  opacity: 0.65;
+}
+
+.header__theme p:hover {
   opacity: 1;
+}
+
+@media (min-width: 75em) {
+  .header__theme p {
+    -webkit-transform: rotate(90deg) translateY(100%);
+            transform: rotate(90deg) translateY(100%);
+  }
 }
 
 .header__hamburger {
@@ -616,6 +661,12 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
   color: #dd4d42;
 }
 
+@media (min-width: 75em) {
+  .header__desktop_menu a {
+    font-size: 1.125rem;
+  }
+}
+
 .header_open {
   width: 100%;
   position: fixed;
@@ -635,6 +686,10 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.header_open #toggleTheme {
+  margin: 0;
 }
 
 .header_open__logo {
@@ -956,7 +1011,8 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
 
 .presentation a {
   margin-top: 2rem;
-  text-decoration: underline;
+  -webkit-text-decoration: underline #1a1a1a;
+          text-decoration: underline #1a1a1a;
   color: #1a1a1a;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -975,7 +1031,7 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
     position: absolute;
     right: calc(5.5vw - 2rem);
     bottom: calc(10% - 2rem);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -1019,6 +1075,12 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
   padding-top: 0;
 }
 
+@media (min-width: 75em) {
+  .about {
+    padding: 24vh 5.5vw;
+  }
+}
+
 .about h4 {
   font-weight: 400;
   font-family: "Cormorant Garamond";
@@ -1045,6 +1107,13 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
 }
 
 @media (min-width: 75em) {
+  .about h4:nth-child(1) {
+    font-size: 4.375rem;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 120em) {
   .about h4:nth-child(1) {
     font-size: 5.625rem;
     line-height: 1.1;
@@ -1074,8 +1143,15 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
 
 @media (min-width: 75em) {
   .about h4:nth-child(2) {
-    margin: 20vh 0 20vh 20vw;
-    font-size: 3.75rem;
+    margin: 20vh 0 20vh 40vw;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 120em) {
+  .about h4:nth-child(2) {
+    font-size: 2.875rem;
   }
 }
 
@@ -1103,9 +1179,9 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
 
 @media (min-width: 75em) {
   .about h4:nth-child(3) {
-    margin: 20vh 10vw 20vh 10vw;
-    font-size: 2.5rem;
-    line-height: 1.4;
+    margin: 20vh 10vw 20vh 20vw;
+    font-size: 2.125rem;
+    line-height: 1.2;
   }
 }
 
@@ -1344,7 +1420,7 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
 
 @media (min-width: 75em) {
   .services__grid__article h3 {
-    font-size: 3.75rem;
+    font-size: 3.125rem;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;

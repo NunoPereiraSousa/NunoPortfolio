@@ -10,6 +10,8 @@ let mobile_menu__socials = document.querySelector(".mobile_menu__socials");
 let header_open = document.querySelector(".header_open");
 let header_open__cross = document.querySelector(".header_open__cross");
 
+let header__logo = document.querySelector(".header__logo");
+
 header__hamburger.addEventListener("click", () => {
   window.scrollTo(0, 0);
 
@@ -18,6 +20,7 @@ header__hamburger.addEventListener("click", () => {
 
   mobile_menu.classList.add("open");
   mobile_menu__bg.classList.add("open");
+  header__logo.style.color = "#1a1a1a";
 
   setTimeout(() => {
     header.classList.add("remove");
@@ -50,5 +53,6 @@ header_open__cross.addEventListener("click", () => {
     main.classList.remove("no_scroll");
     main.classList.remove("menu-open");
     header.classList.remove("remove");
+    header__logo.style.color = "#fffafa";
   }, 800);
 });

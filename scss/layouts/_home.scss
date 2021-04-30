@@ -57,7 +57,7 @@
   a {
     margin-top: 2rem;
 
-    text-decoration: underline;
+    text-decoration: underline $dark;
     color: $dark;
     transition: all 0.4s;
 
@@ -71,7 +71,7 @@
       position: absolute;
       right: calc(5.5vw - 2rem);
       bottom: calc(10% - 2rem);
-      font-size: $_20px;
+      font-size: $_18px;
     }
   }
 }
@@ -100,6 +100,10 @@
   width: 100%;
   padding-top: 0;
 
+  @include breakpoint-up(desktop) {
+    padding: 24vh 5.5vw;
+  }
+
   h4 {
     font-weight: 400;
     font-family: $headers;
@@ -121,6 +125,11 @@
       }
 
       @include breakpoint-up(desktop) {
+        font-size: $_70px;
+        line-height: 1.1;
+      }
+
+      @include breakpoint-up(large) {
         font-size: $_90px;
         line-height: 1.1;
       }
@@ -143,8 +152,13 @@
       }
 
       @include breakpoint-up(desktop) {
-        margin: 20vh 0 20vh 20vw;
-        font-size: $_60px;
+        margin: 20vh 0 20vh 40vw;
+        font-size: $_40px;
+        line-height: 1.2;
+      }
+
+      @include breakpoint-up(large) {
+        font-size: $_46px;
       }
     }
 
@@ -166,9 +180,9 @@
       }
 
       @include breakpoint-up(desktop) {
-        margin: 20vh 10vw 20vh 10vw;
-        font-size: $_40px;
-        line-height: 1.4;
+        margin: 20vh 10vw 20vh 20vw;
+        font-size: $_34px;
+        line-height: 1.2;
       }
     }
 

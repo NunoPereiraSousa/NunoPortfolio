@@ -59,7 +59,7 @@
     }
 
     @include breakpoint-up(desktop) {
-      font-size: $_60px;
+      font-size: $_50px;
       order: 1;
     }
   }
