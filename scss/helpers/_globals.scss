@@ -13,13 +13,16 @@ body {
   font-size: $_16px;
   line-height: 1.54;
   letter-spacing: -0.3px;
-  background-color: $grey;
   cursor: none;
 
   transition: all 0.4s;
 
+  &.light {
+    background-color: $grey !important;
+  }
+
   &.dark {
-    background-color: $dark;
+    background-color: $dark !important;
   }
 }
 

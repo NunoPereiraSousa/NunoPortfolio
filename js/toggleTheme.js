@@ -7,12 +7,13 @@ let status = "";
 window.onload = () => {
   status = JSON.parse(localStorage.getItem("theme"));
 
-  body.classList = status;
+  if (status == "dark") {
+    body.style.backgroundColor = "#1a1a1a";
+  } else {
+    body.style.backgroundColor = "#fffafa";
+  }
 
-  console.log(status);
-  // if (body.classList.contains("dark")) {
-  //   body.classList.toggle("dark");
-  // }
+  body.classList = status;
 };
 
 toggle.addEventListener("click", () => {
