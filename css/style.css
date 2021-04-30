@@ -1562,7 +1562,7 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
   }
 }
 
-.about__presentation svg#Circle01 {
+.about__presentation__svgs svg#Circle01 {
   width: 6.5rem;
   height: 6.5rem;
   -webkit-animation: spin 30s linear infinite;
@@ -1571,32 +1571,32 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
 }
 
 @media (min-width: 48em) {
-  .about__presentation svg#Circle01 {
+  .about__presentation__svgs svg#Circle01 {
     width: 10.5rem;
     height: 10.5rem;
   }
 }
 
 @media (min-width: 120em) {
-  .about__presentation svg#Circle01 {
+  .about__presentation__svgs svg#Circle01 {
     width: 12.5rem;
     height: 12.5rem;
   }
 }
 
-.about__presentation svg#arrow {
+.about__presentation__svgs svg#arrow {
   height: 150px;
   opacity: 0.5;
 }
 
 @media (min-width: 75em) {
-  .about__presentation svg#arrow {
+  .about__presentation__svgs svg#arrow {
     opacity: 1;
   }
 }
 
 @media (min-width: 120em) {
-  .about__presentation svg#arrow {
+  .about__presentation__svgs svg#arrow {
     height: 200px;
   }
 }
@@ -1812,6 +1812,72 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
   .projects__presentation h1 {
     font-size: 8.75rem;
     line-height: 1;
+  }
+}
+
+.projects__presentation__svgs {
+  position: absolute;
+  right: 10%;
+  bottom: -15%;
+}
+
+@media (min-width: 64em) {
+  .projects__presentation__svgs {
+    right: 10%;
+    bottom: -5%;
+  }
+}
+
+@media (min-width: 75em) {
+  .projects__presentation__svgs {
+    right: 10%;
+    bottom: -15%;
+  }
+}
+
+@media (min-width: 120em) {
+  .projects__presentation__svgs {
+    right: 10%;
+    bottom: -10%;
+  }
+}
+
+.projects__presentation__svgs svg#Circle01 {
+  width: 7.5rem;
+  height: 7.5rem;
+  -webkit-animation: spin 30s linear infinite;
+          animation: spin 30s linear infinite;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 48em) {
+  .projects__presentation__svgs svg#Circle01 {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+}
+
+@media (min-width: 120em) {
+  .projects__presentation__svgs svg#Circle01 {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+}
+
+.projects__presentation__svgs svg#arrow {
+  height: 150px;
+  opacity: 0.5;
+}
+
+@media (min-width: 75em) {
+  .projects__presentation__svgs svg#arrow {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 120em) {
+  .projects__presentation__svgs svg#arrow {
+    height: 200px;
   }
 }
 
@@ -2076,6 +2142,11 @@ body.dark .cursor-follower.open_work_cursor, body.dark .cursor-follower.article1
   }
 }
 
+body.dark {
+  /* ABOUT PAGE */
+  /* PROJECTS PAGE */
+}
+
 body.dark .header__logo,
 body.dark .header p {
   color: #fffafa;
@@ -2113,6 +2184,22 @@ body.dark .showcase__grid__article {
   }
 }
 
+body.dark .hobbies__grid__card p {
+  color: #fffafa;
+}
+
+body.dark .hobbies__grid__card p:first-child {
+  -webkit-text-decoration: underline rgba(255, 250, 250, 0.7);
+          text-decoration: underline rgba(255, 250, 250, 0.7);
+}
+
+@media (min-width: 75em) {
+  body.dark .hobbies__grid__card p:first-child {
+    -webkit-text-decoration: underline rgba(255, 250, 250, 0.5);
+            text-decoration: underline rgba(255, 250, 250, 0.5);
+  }
+}
+
 body.dark .contacts {
   background-color: #fffafa;
 }
@@ -2134,5 +2221,67 @@ body.dark .presentation a {
 
 body.dark .about h4 {
   color: #fffafa;
+}
+
+body.dark .about__presentation {
+  color: #fffafa;
+}
+
+body.dark .about__presentation svg#Circle01 path {
+  fill: #1a1a1a !important;
+}
+
+body.dark .about__presentation svg#Circle01 text {
+  fill: #fffafa !important;
+}
+
+body.dark .about__presentation svg#arrow path {
+  stroke: #fffafa !important;
+}
+
+body.dark .about__contact h3,
+body.dark .about__contact h2,
+body.dark .about__contact a {
+  color: #fffafa;
+}
+
+body.dark .about__contact a.open_work {
+  color: #dd4d42;
+}
+
+body.dark .projects__presentation {
+  color: #fffafa;
+}
+
+body.dark .projects__presentation svg#Circle01 circle {
+  fill: #1a1a1a !important;
+}
+
+body.dark .projects__presentation svg#Circle01 text {
+  fill: #fffafa !important;
+}
+
+body.dark .projects__presentation svg#arrow path {
+  stroke: #fffafa !important;
+}
+
+body.dark .projects_showcase__title {
+  color: #fffafa;
+}
+
+body.dark .projects_showcase__grid__card h1 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: #fffafa;
+}
+
+body.dark .projects_showcase__grid__card a {
+  color: #fffafa;
+}
+
+@media (min-width: 75em) {
+  body.dark .projects_showcase__grid__card a {
+    color: rgba(255, 250, 250, 0.5);
+  }
 }
 /*# sourceMappingURL=style.css.map */

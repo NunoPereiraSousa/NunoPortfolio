@@ -43,6 +43,20 @@ body.dark {
     }
   }
 
+  .hobbies__grid__card {
+    p {
+      color: $grey;
+
+      &:first-child {
+        text-decoration: underline rgba($color: $grey, $alpha: 0.7);
+
+        @include breakpoint-up(desktop) {
+          text-decoration: underline rgba($color: $grey, $alpha: 0.5);
+        }
+      }
+    }
+  }
+
   .contacts {
     background-color: $grey;
 
@@ -69,6 +83,84 @@ body.dark {
   .about {
     h4 {
       color: $grey;
+    }
+  }
+
+  /* ABOUT PAGE */
+
+  .about__presentation {
+    color: $grey;
+
+    svg {
+      &#Circle01 {
+        path {
+          fill: $dark !important;
+        }
+
+        text {
+          fill: $grey !important;
+        }
+      }
+      &#arrow {
+        path {
+          stroke: $grey !important;
+        }
+      }
+    }
+  }
+
+  .about__contact {
+    h3,
+    h2,
+    a {
+      color: $grey;
+    }
+
+    a.open_work {
+      color: $red;
+    }
+  }
+
+  /* PROJECTS PAGE */
+
+  .projects__presentation {
+    color: $grey;
+
+    svg {
+      &#Circle01 {
+        circle {
+          fill: $dark !important;
+        }
+
+        text {
+          fill: $grey !important;
+        }
+      }
+      &#arrow {
+        path {
+          stroke: $grey !important;
+        }
+      }
+    }
+  }
+
+  .projects_showcase__title {
+    color: $grey;
+  }
+
+  .projects_showcase__grid__card {
+    h1 {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 0.6px;
+      -webkit-text-stroke-color: $grey;
+    }
+
+    a {
+      color: $grey;
+
+      @include breakpoint-up(desktop) {
+        color: rgba($color: $grey, $alpha: 0.5);
+      }
     }
   }
 }
