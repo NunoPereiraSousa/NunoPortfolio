@@ -21,17 +21,13 @@
 
     h4 {
       font-weight: 400;
-      font-size: $_12px;
+      font-size: $_13px;
       font-family: $body;
 
       margin-top: 0;
       margin-bottom: 2rem;
 
       padding-top: 2.875rem;
-
-      @include breakpoint-width-height(667px, 375px, 667px) {
-        font-size: $_13px;
-      }
 
       @include breakpoint-up(tablet) {
         font-size: $_17px;
@@ -48,7 +44,7 @@
       }
 
       &:nth-child(even) {
-        font-style: italic;
+        // font-style: italic;
 
         @include breakpoint-up(desktop) {
           font-size: $_20px;

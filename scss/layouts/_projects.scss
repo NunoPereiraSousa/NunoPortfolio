@@ -9,7 +9,9 @@
   letter-spacing: normal;
 
   @include breakpoint-up(desktop) {
-    height: 140vh;
+    height: 110vh;
+    text-align: left;
+    padding: 0 5.5vw 4vh;
   }
 
   h1 {
@@ -19,7 +21,7 @@
 
     text-transform: uppercase;
 
-    margin: 0;
+    margin-top: 0;
 
     @include breakpoint-up(tablet) {
       font-size: $_60px;
@@ -28,6 +30,7 @@
     @include breakpoint-up(desktop) {
       font-size: $_110px;
       line-height: 1;
+      margin: 0 auto 0 0;
     }
 
     @include breakpoint-up(large) {
@@ -35,57 +38,63 @@
       line-height: 1;
     }
   }
+}
 
-  svg:not(#projects_circle) {
-    height: 6.875rem;
+.stack,
+.projects_showcase {
+  position: relative;
+  padding: 20vh 1.125rem;
 
-    margin: 5rem 0;
-
-    @include breakpoint-width-height(667px, 375px, 667px) {
-      margin: 3rem 0;
-    }
-
-    @include breakpoint-up(desktop) {
-      height: 150px;
-      margin: 7rem 0;
-    }
-
-    path {
-      @include breakpoint-up(desktop) {
-        stroke-width: 3px !important;
-      }
-    }
+  @include breakpoint-up(tablet) {
+    padding: 20vh 2rem;
   }
 
-  svg#projects_circle {
-    position: absolute;
-    bottom: calc(0% - (11.4375rem / 3));
+  @include breakpoint-up(iPadPro) {
+    padding: 20vh 5.5vw;
+  }
 
-    animation: spin 30s linear infinite;
-
-    @include breakpoint-width-height(667px, 375px, 667px) {
-      bottom: calc(0% - (11.4375rem / 2));
-    }
+  @include breakpoint-up(desktop) {
+    padding: calc(24vh + 6.875rem) 5.5vw;
   }
 }
 
 .stack {
-  padding: calc(5.625rem + 10.6325rem) 1.125rem 16vh;
-
-  @include breakpoint-up(tablet) {
-    padding: calc(5.625rem + 10.6325rem) 2rem 16vh;
-  }
-
-  @include breakpoint-up(iPadPro) {
-    padding: 16vh 5.5vw 4vh;
-  }
+  margin-top: 32vh;
 
   @include breakpoint-up(desktop) {
-    padding: 24vh 5.5vw 4vh;
+    margin-top: 48vh;
   }
 
-  @include breakpoint-up(large) {
-    padding: 14vh 5.5vw 4vh;
+  &__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    row-gap: 2.5rem;
+
+    justify-items: center;
+    align-items: center;
+
+    @include breakpoint-up(tablet) {
+      row-gap: 3.5rem;
+    }
+
+    @include breakpoint-up(desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 5rem;
+    }
+
+    svg {
+      height: 50px;
+
+      filter: grayscale(100%);
+
+      @include breakpoint-up(tablet) {
+        height: 80px;
+      }
+
+      @include breakpoint-up(desktop) {
+        height: 90px;
+      }
+    }
   }
 
   &__carousel {
@@ -191,24 +200,6 @@
     @include breakpoint-up(desktop) {
       font-size: 30vw;
     }
-  }
-
-  padding: 0 1.125rem 16vh;
-
-  @include breakpoint-up(tablet) {
-    padding: 0 2rem 16vh;
-  }
-
-  @include breakpoint-up(iPadPro) {
-    padding: 16vh 5.5vw 4vh;
-  }
-
-  @include breakpoint-up(desktop) {
-    padding: 24vh 5.5vw 4vh;
-  }
-
-  @include breakpoint-up(large) {
-    padding: 14vh 5.5vw 4vh;
   }
 
   &__grid,

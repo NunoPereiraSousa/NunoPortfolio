@@ -1,57 +1,3 @@
-.sub_header {
-  font-family: "Cormorant Upright", serif;
-  font-size: $_40px;
-  letter-spacing: normal;
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 1;
-
-  margin-top: 0;
-  margin-bottom: 5.625rem;
-
-  @include breakpoint-width-height(667px, 375px, 667px) {
-    font-size: $_32px;
-  }
-
-  sup {
-    font-size: $_20px;
-
-    @include breakpoint-up(tablet) {
-      font-size: $_24px;
-    }
-
-    @include breakpoint-up(iPadPro) {
-      font-size: $_40px;
-    }
-  }
-
-  &.dark_circle {
-    color: $grey;
-
-    padding-top: calc(5.625rem + 10.6325rem);
-
-    @include breakpoint-up(desktop) {
-      padding-top: calc(6.625rem + 10.6325rem);
-    }
-  }
-
-  @include breakpoint-up(tablet) {
-    font-size: $_50px;
-  }
-
-  @include breakpoint-up(iPadPro) {
-    font-size: $_70px;
-  }
-
-  @include breakpoint-up(desktop) {
-    margin-bottom: 6.625rem;
-  }
-
-  @include breakpoint-up(large) {
-    font-size: $_80px;
-  }
-}
-
 .header__carousel {
   position: absolute;
   top: 0;
@@ -62,21 +8,20 @@
 
   h2 {
     font-family: "Cormorant Upright", serif;
-    font-size: $_40px;
+    font-size: $_50px;
     letter-spacing: normal;
     text-transform: uppercase;
     font-weight: 400;
     line-height: 1;
 
     margin-top: 0;
-    margin-bottom: 5.625rem;
 
     @include breakpoint-width-height(667px, 375px, 667px) {
       font-size: $_32px;
     }
 
     @include breakpoint-up(tablet) {
-      font-size: $_50px;
+      font-size: $_70px;
     }
 
     @include breakpoint-up(iPadPro) {

@@ -66,13 +66,13 @@
 
   svg {
     &#Circle01 {
-      width: 7.5rem;
-      height: 7.5rem;
+      width: 6.5rem;
+      height: 6.5rem;
       animation: spin 30s linear infinite;
 
       margin-bottom: 2rem;
 
-      @include breakpoint-up(desktop) {
+      @include breakpoint-up(tablet) {
         width: 10.5rem;
         height: 10.5rem;
       }
@@ -102,14 +102,14 @@
 .hobbies,
 .about__contact {
   position: relative;
-  padding: 16vh 1.125rem;
+  padding: 20vh 1.125rem;
 
   @include breakpoint-up(tablet) {
-    padding: 16vh 2rem;
+    padding: 20vh 2rem;
   }
 
   @include breakpoint-up(iPadPro) {
-    padding: 16vh 5.5vw;
+    padding: 20vh 5.5vw;
   }
 
   @include breakpoint-up(desktop) {

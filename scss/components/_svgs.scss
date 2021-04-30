@@ -1,0 +1,58 @@
+.svgs {
+  position: absolute;
+  right: 10%;
+  bottom: -15%;
+
+  &.svgs__presentation {
+    right: 10%;
+    bottom: -20%;
+  }
+
+  @include breakpoint-up(iPadPro) {
+    right: 10%;
+    bottom: -5%;
+  }
+
+  @include breakpoint-up(desktop) {
+    right: 10%;
+    bottom: -15%;
+  }
+
+  @include breakpoint-up(large) {
+    right: 10%;
+    bottom: -10%;
+  }
+
+  svg {
+    &#Circle01 {
+      width: 7.5rem;
+      height: 7.5rem;
+      animation: spin 30s linear infinite;
+
+      margin-bottom: 2rem;
+
+      @include breakpoint-up(tablet) {
+        width: 10.5rem;
+        height: 10.5rem;
+      }
+
+      @include breakpoint-up(large) {
+        width: 12.5rem;
+        height: 12.5rem;
+      }
+    }
+
+    &#arrow {
+      height: 150px;
+      opacity: 0.5;
+
+      @include breakpoint-up(desktop) {
+        opacity: 1;
+      }
+
+      @include breakpoint-up(large) {
+        height: 200px;
+      }
+    }
+  }
+}

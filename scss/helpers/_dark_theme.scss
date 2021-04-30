@@ -1,0 +1,74 @@
+body.dark {
+  .header {
+    &__logo,
+    p {
+      color: $grey;
+    }
+
+    &__hamburger {
+      &::before,
+      &::after {
+        background-color: $grey;
+      }
+    }
+
+    &__desktop_menu {
+      a {
+        color: $grey;
+      }
+    }
+  }
+
+  .header__carousel {
+    color: $grey;
+  }
+
+  .services__grid__article {
+    color: $grey;
+
+    border-bottom: 1px solid rgba($color: $grey, $alpha: 0.2);
+
+    &:first-child {
+      border-top: 1px solid rgba($color: $grey, $alpha: 0.2);
+    }
+  }
+
+  .showcase__grid__article {
+    color: $grey;
+
+    border-bottom: 1px solid rgba($color: $grey, $alpha: 0.4);
+
+    @include breakpoint-up(desktop) {
+      border-bottom: 1px solid rgba($color: $grey, $alpha: 0.2);
+    }
+  }
+
+  .contacts {
+    background-color: $grey;
+
+    h3,
+    a {
+      color: $dark;
+    }
+
+    &__email {
+      a {
+        color: rgba($color: $red, $alpha: 0.9);
+      }
+    }
+  }
+
+  .presentation {
+    h1,
+    h3,
+    a {
+      color: $grey;
+    }
+  }
+
+  .about {
+    h4 {
+      color: $grey;
+    }
+  }
+}
