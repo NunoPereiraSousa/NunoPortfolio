@@ -15,7 +15,7 @@ for (let hobby of hobbies) {
 
 let hobbiesCards = document.querySelectorAll(".hobbies__grid__card");
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 // SCROLL FADE ANIMATION
 // hobbiesCards.forEach(hobby => {

@@ -1957,6 +1957,23 @@ body.dark .cursor-follower.contacts_cursor {
   }
 }
 
+.about__contact__email {
+  margin-top: 3rem;
+}
+
+.about__contact__email a.open_work {
+  margin-right: 0;
+  color: rgba(221, 77, 66, 0.9);
+  text-decoration: underline;
+}
+
+@media (min-width: 48em) {
+  .about__contact__email a.open_work {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
 .hobbies__grid__card {
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;

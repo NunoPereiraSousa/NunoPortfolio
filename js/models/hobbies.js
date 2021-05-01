@@ -1,7 +1,7 @@
 export let hobbies = [
   {
     title: "MySelf",
-    desc: `I'm 20 years old senior college student with the highest GPA for a web
+    desc: `I'm a 20 years old senior college student with the highest GPA for a web
         development degree. I'm passionate about learning
         the latest and greatest technologies whether that's
         front-end, back-end, or UI & UX Design. Helping people achieving their
