@@ -51,41 +51,12 @@
     }
   }
 
-  &__theme {
-    position: absolute;
-    top: 4.9rem;
-    left: 1.25rem;
-    height: fit-content;
+  #toggleTheme {
+    margin: 0;
 
-    @include breakpoint-up(tablet) {
-      left: 2rem;
-    }
+    font-size: $_18px;
 
-    @include breakpoint-up(iPadPro) {
-      left: 94.5vw;
-    }
-
-    @include breakpoint-up(desktop) {
-      top: 8rem;
-      left: 94.5vw;
-    }
-
-    p {
-      transform: rotate(90deg) translateY(50%);
-
-      font-size: $_15px;
-
-      margin: 0;
-      opacity: 0.65;
-
-      &:hover {
-        opacity: 1;
-      }
-
-      @include breakpoint-up(desktop) {
-        transform: rotate(90deg) translateY(100%);
-      }
-    }
+    opacity: 0.5;
   }
 
   &__hamburger {

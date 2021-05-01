@@ -18,6 +18,16 @@ const disableDarkMode = () => {
   localStorage.setItem("theme", JSON.stringify(null));
 };
 
+const changeText = () => {
+  status = JSON.parse(localStorage.getItem("theme"));
+
+  if (status == "darkMode") {
+    toggle.innerHTML = "Light Theme";
+  } else {
+    toggle.innerHTML = "Dark Theme";
+  }
+};
+
 const changeCursorTxt = () => {
   status = JSON.parse(localStorage.getItem("theme"));
 
