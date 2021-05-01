@@ -9,7 +9,7 @@ for (let project of projects) {
                       class="showcase__grid__article__categories flex flex-ai-c flex-jc-sb"
                   >
                       <h4>${project.category}</h4>
-                      <h4>${project.title} ${project.arrow}</h4>
+                      <h4>${project.title}</h4>
                   </div>
           
                   <h5>

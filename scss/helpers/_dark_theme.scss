@@ -19,12 +19,6 @@ body.dark {
     }
   }
 
-  // .header_open.open {
-  //   .header__logo {
-  //     color: $dark !important;
-  //   }
-  // }
-
   .header__carousel {
     color: $grey;
   }
@@ -84,11 +78,34 @@ body.dark {
     a {
       color: $grey;
     }
+
+    .open_work {
+      text-decoration: underline $grey;
+    }
   }
 
   .about {
     h4 {
       color: $grey;
+    }
+  }
+
+  .presentation__svgs {
+    svg {
+      &#Circle01 {
+        path {
+          fill: $dark !important;
+        }
+
+        text {
+          fill: $grey !important;
+        }
+      }
+      &#arrow {
+        path {
+          stroke: $grey !important;
+        }
+      }
     }
   }
 
@@ -155,18 +172,9 @@ body.dark {
   }
 
   .projects_showcase__grid__card {
-    h1 {
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke-width: 0.6px;
-      -webkit-text-stroke-color: $grey;
-    }
-
+    h1,
     a {
       color: $grey;
-
-      @include breakpoint-up(desktop) {
-        color: rgba($color: $grey, $alpha: 0.5);
-      }
     }
   }
 }

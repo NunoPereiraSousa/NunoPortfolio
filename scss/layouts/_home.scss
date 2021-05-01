@@ -164,6 +164,7 @@
   margin-top: 36vh;
 
   @include breakpoint-up(desktop) {
+    margin-top: 0;
     padding: 24vh 5.5vw;
   }
 
@@ -262,16 +263,7 @@
     padding-bottom: 16vh;
   }
 
-  // @include breakpoint-up(desktop) {
-  //   padding-bottom: calc(28vh + (10.625rem / 2));
-  // }
-
   &__grid {
-    // padding-top: 2.875rem;
-
-    // @include breakpoint-up(tablet) {
-    //   row-gap: 3.875rem;
-    // }
   }
 }
 

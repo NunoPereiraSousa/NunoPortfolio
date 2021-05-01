@@ -57,6 +57,12 @@
     font-size: $_18px;
 
     opacity: 0.5;
+
+    @include breakpoint-up(desktop) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__hamburger {

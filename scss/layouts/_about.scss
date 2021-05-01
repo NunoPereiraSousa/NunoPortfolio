@@ -132,91 +132,6 @@
       row-gap: 6rem;
     }
   }
-
-  // &__carousel {
-  //   position: relative;
-  //   overflow: hidden;
-  //   width: 100%;
-  //   color: $grey;
-
-  //   &::before,
-  //   &::after {
-  //     content: "";
-  //     height: 100%;
-  //     position: absolute;
-  //     width: 1.125rem;
-  //     z-index: 2;
-  //   }
-
-  //   &::after {
-  //     right: 1.125rem;
-  //     top: 0;
-  //   }
-
-  //   &::before {
-  //     left: 0;
-  //     top: 0;
-  //   }
-
-  //   .slide-track {
-  //     animation: phoneCarousel 8s linear infinite;
-  //     display: flex;
-  //     width: calc(300px * 7);
-
-  //     @include breakpoint-up(desktop) {
-  //       width: calc(500px * 7);
-  //       animation: desktopCarousel 8s linear infinite;
-
-  //       padding-bottom: 2rem;
-  //     }
-
-  //     &.reverse {
-  //       animation: phoneCarouselReverse 8s linear infinite;
-
-  //       @include breakpoint-up(desktop) {
-  //         animation: desktopCarouselReverse 8s linear infinite;
-  //         padding-top: 2rem;
-  //         padding-bottom: 0;
-  //       }
-
-  //       h2 {
-  //         -webkit-text-fill-color: transparent;
-  //         -webkit-text-stroke-width: 0.6px;
-  //         -webkit-text-stroke-color: $dark;
-  //       }
-  //     }
-
-  //     .slide {
-  //       display: flex;
-  //       justify-content: center;
-  //       align-items: center;
-  //       height: 100px;
-  //       width: 300px;
-
-  //       @include breakpoint-up(desktop) {
-  //         width: 500px;
-  //       }
-
-  //       h2 {
-  //         color: $dark;
-  //         font-size: $_26px;
-  //         font-weight: 500;
-  //         margin: 0;
-
-  //         @include breakpoint-up(desktop) {
-  //           font-size: $_34px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
-  // hr {
-  //   background-color: rgba($color: $dark, $alpha: 0.25);
-  //   border: none;
-  //   height: 1px;
-  //   width: 100%;
-  // }
 }
 
 .about__contact {
@@ -244,6 +159,8 @@
   &__socials {
     margin-top: 3rem;
 
+    grid-template-columns: min-content min-content;
+
     @include breakpoint-up(iPadPro) {
       margin-top: 6rem;
     }
@@ -258,6 +175,7 @@
       margin-right: 2rem;
 
       font-weight: 400;
+      font-size: $_14px;
       color: $dark;
 
       @include breakpoint-up(iPadPro) {
