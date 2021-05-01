@@ -1,6 +1,14 @@
 .showcase__grid__article {
   border-bottom: 1px solid rgba($color: $dark, $alpha: 0.4);
 
+  &:first-child {
+    border-top: 1px solid rgba($color: $dark, $alpha: 0.4);
+
+    @include breakpoint-up(desktop) {
+      border-top: 1px solid rgba($color: $dark, $alpha: 0.2);
+    }
+  }
+
   transition: all 0.4s;
 
   @include breakpoint-up(desktop) {
@@ -35,17 +43,24 @@
 
       @include breakpoint-up(desktop) {
         font-size: $_18px;
-        font-weight: 300;
 
         margin-right: 2rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
         padding-top: 0;
+      }
+
+      @include breakpoint-up(large) {
+        font-size: $_22px;
       }
 
       &:nth-child(even) {
         @include breakpoint-up(desktop) {
           font-style: italic;
           font-size: $_16px;
+        }
+
+        @include breakpoint-up(large) {
+          font-size: $_20px;
         }
       }
 

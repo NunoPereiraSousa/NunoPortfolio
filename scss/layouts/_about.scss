@@ -9,13 +9,13 @@
   letter-spacing: normal;
 
   @include breakpoint-up(desktop) {
-    height: 140vh;
+    height: 150vh;
     text-align: left;
     padding: 0 5.5vw 4vh;
   }
 
   @include breakpoint-up(large) {
-    height: 150vh;
+    height: 160vh;
   }
 
   h1 {
@@ -138,6 +138,10 @@
   padding-bottom: 6vh;
 
   &__location {
+    &.dark h3 {
+      color: $grey;
+    }
+
     h3 {
       font-weight: 400;
       color: $dark;
@@ -160,6 +164,10 @@
     margin-top: 3rem;
 
     grid-template-columns: min-content min-content;
+
+    &.dark a {
+      color: $grey;
+    }
 
     @include breakpoint-up(iPadPro) {
       margin-top: 6rem;
@@ -201,3 +209,34 @@
     }
   }
 }
+
+// .animation_panel {
+//   height: 100vh;
+//   width: 100vw;
+
+//   position: fixed;
+//   z-index: 2;
+//   left: 0%;
+//   bottom: 0%;
+//   right: 0%;
+
+//   background-color: $dark;
+
+//   color: $grey;
+
+//   transition: all 0.4s;
+
+//   h1 {
+//     font-family: $headers2;
+
+//     font-weight: 200;
+
+//     font-size: $_60px;
+
+//     margin: 2rem 0;
+//   }
+
+//   h3 {
+//     font-weight: 300;
+//   }
+// }

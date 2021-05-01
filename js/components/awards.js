@@ -18,3 +18,18 @@ for (let award of awards) {
     </article>
     `;
 }
+
+// let articles = document.querySelectorAll(".showcase__grid__article");
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// // SCROLL FADE ANIMATION
+// articles.forEach(article => {
+//   gsap.to(article, {
+//     scrollTrigger: {
+//       trigger: article,
+//       start: "-50% center"
+//     },
+//     opacity: 1
+//   });
+// });

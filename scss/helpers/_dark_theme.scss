@@ -41,6 +41,14 @@ body.dark {
     @include breakpoint-up(desktop) {
       border-bottom: 1px solid rgba($color: $grey, $alpha: 0.2);
     }
+
+    &:first-child {
+      border-top: 1px solid rgba($color: $grey, $alpha: 0.4);
+
+      @include breakpoint-up(desktop) {
+        border-top: 1px solid rgba($color: $grey, $alpha: 0.2);
+      }
+    }
   }
 
   .hobbies__grid__card {
