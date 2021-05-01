@@ -1,6 +1,14 @@
 body.dark {
   .cursor {
     background-color: $grey;
+
+    &.toggleTheme {
+      background-color: transparent;
+    }
+
+    &.contacts_cursor {
+      background-color: $dark;
+    }
   }
 
   .cursor-follower {
@@ -9,6 +17,30 @@ body.dark {
     &.open_work_cursor,
     &.article1_cursor {
       border: 1px solid rgba($color: $red, $alpha: 0.2) !important;
+    }
+
+    &.article1_cursor {
+      border: 1px solid rgba($color: #c94d24, $alpha: 0.8);
+    }
+
+    &.article2_cursor {
+      border: 1px solid rgba($color: #432cb2, $alpha: 0.8);
+    }
+
+    &.article3_cursor {
+      border: 1px solid rgba($color: #dbaf03, $alpha: 0.8);
+    }
+
+    &.article4_cursor {
+      border: 1px solid rgba($color: #222431, $alpha: 0.8);
+    }
+
+    &.article5_cursor {
+      border: 1px solid rgba($color: #259e54, $alpha: 0.8);
+    }
+
+    &.contacts_cursor {
+      border: 1px solid $dark;
     }
   }
 }
@@ -26,7 +58,6 @@ body.dark {
   pointer-events: none;
   z-index: 10000;
   transform: scale(1);
-  // transform: translate(9.5px, 8px);
 
   &.active {
     opacity: 1;
@@ -46,6 +77,10 @@ body.dark {
   &.article3_cursor,
   &.article4_cursor,
   &.article5_cursor {
+    background-color: transparent;
+  }
+
+  &.toggleTheme {
     background-color: transparent;
   }
 }
@@ -100,8 +135,8 @@ body.dark {
   }
 
   &.toggleTheme {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
 
     &::after {
       position: absolute;
@@ -121,7 +156,6 @@ body.dark {
       background-color: rgba($color: $dark, $alpha: 0.8) !important;
       &::after {
         font-size: $_18px;
-        content: "🔦";
       }
     }
 
@@ -130,7 +164,6 @@ body.dark {
       background-color: rgba($color: $grey, $alpha: 0.8) !important;
       &::after {
         font-size: $_18px;
-        content: "💡";
       }
     }
   }

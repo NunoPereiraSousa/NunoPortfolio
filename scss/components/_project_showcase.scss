@@ -1,6 +1,36 @@
 .projects_showcase__grid__card {
   font-family: "Cormorant";
 
+  &:hover a {
+    @include breakpoint-up(desktop) {
+      color: rgba($color: $dark, $alpha: 1);
+    }
+  }
+
+  &:hover h1 {
+    -webkit-text-stroke-color: rgba($color: $dark, $alpha: 1);
+  }
+
+  &:hover span#arrow01 {
+    color: rgba($color: #c94d24, $alpha: 1);
+  }
+
+  &:hover span#arrow02 {
+    color: rgba($color: #432cb2, $alpha: 1);
+  }
+
+  &:hover span#arrow03 {
+    color: rgba($color: #dbaf03, $alpha: 1);
+  }
+
+  &:hover span#arrow04 {
+    color: rgba($color: #222431, $alpha: 1);
+  }
+
+  &:hover span#arrow05 {
+    color: rgba($color: #259e54, $alpha: 1);
+  }
+
   h1 {
     margin: 0 40px 0 0;
 
@@ -10,10 +40,13 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0.6px;
     -webkit-text-stroke-color: $dark;
+    transition: all 0.4s;
 
     @include breakpoint-up(desktop) {
       font-size: 220px;
       margin: 0 100px 0 0;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgba($color: $dark, $alpha: 0.3);
     }
   }
 
@@ -25,13 +58,18 @@
     color: $dark;
 
     font-size: $_24px;
+    transition: all 0.4s;
 
     span {
       margin: 0 0 0 10px;
+
+      @include breakpoint-up(desktop) {
+        font-weight: 100;
+      }
     }
 
     @include breakpoint-up(desktop) {
-      color: rgba($color: $dark, $alpha: 0.5);
+      color: rgba($color: $dark, $alpha: 0.3);
       font-size: $_70px;
       font-weight: 400;
     }

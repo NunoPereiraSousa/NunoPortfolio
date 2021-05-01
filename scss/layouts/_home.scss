@@ -29,8 +29,12 @@
     @include breakpoint-up(desktop) {
       margin-bottom: 0;
 
-      font-size: $_110px;
+      font-size: $_100px;
       line-height: 1.1;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: $_120px;
     }
   }
 

@@ -18,16 +18,6 @@ const disableDarkMode = () => {
   localStorage.setItem("theme", JSON.stringify(null));
 };
 
-const changeText = () => {
-  status = JSON.parse(localStorage.getItem("theme"));
-
-  if (status == "darkMode") {
-    toggle.innerHTML = "Light";
-  } else {
-    toggle.innerHTML = "Dark";
-  }
-};
-
 const changeCursorTxt = () => {
   status = JSON.parse(localStorage.getItem("theme"));
 
@@ -46,9 +36,7 @@ const changeCursorTxt = () => {
 
 if (status == "darkMode") {
   enableDarkMode();
-  toggle.innerHTML = "Light";
-
-  // changeCursorTxt();
+  toggle.innerHTML = "Light Theme";
 }
 
 toggle.addEventListener("click", () => {
@@ -63,5 +51,4 @@ toggle.addEventListener("click", () => {
   }
 
   changeText();
-  // changeCursorTxt();
 });

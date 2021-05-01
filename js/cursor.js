@@ -72,9 +72,13 @@ $("#toggleTheme").on("mouseenter", () => {
   if (theme == "darkMode") {
     follower.addClass("nightTheme");
     follower.removeClass("lightTheme");
+    follower.removeClass("lightTheme");
+    cursor.removeClass("lightTheme");
   } else {
     follower.addClass("lightTheme");
     follower.removeClass("nightTheme");
+    follower.removeClass("nightTheme");
+    cursor.removeClass("nightTheme");
   }
 });
 
@@ -88,9 +92,22 @@ $("#toggleTheme").on("click", () => {
 
   if (theme == "darkMode") {
     follower.addClass("nightTheme");
+    cursor.addClass("nightTheme");
     follower.removeClass("lightTheme");
+    cursor.removeClass("lightTheme");
   } else {
     follower.addClass("lightTheme");
+    cursor.addClass("lightTheme");
     follower.removeClass("nightTheme");
+    cursor.removeClass("nightTheme");
   }
+});
+
+$(".contacts").on("mouseenter", () => {
+  cursor.addClass("contacts_cursor");
+  follower.addClass("contacts_cursor");
+});
+$(".contacts").on("mouseleave", () => {
+  cursor.removeClass("contacts_cursor");
+  follower.removeClass("contacts_cursor");
 });

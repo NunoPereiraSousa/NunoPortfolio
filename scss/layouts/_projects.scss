@@ -9,7 +9,7 @@
   letter-spacing: normal;
 
   @include breakpoint-up(desktop) {
-    height: 110vh;
+    height: 120vh;
     text-align: left;
     padding: 0 5.5vw 4vh;
   }
@@ -140,6 +140,7 @@
       height: 50px;
 
       filter: grayscale(100%);
+      transition: all 0.4s;
 
       @include breakpoint-up(tablet) {
         height: 80px;
@@ -147,6 +148,10 @@
 
       @include breakpoint-up(desktop) {
         height: 90px;
+      }
+
+      &:hover {
+        filter: grayscale(0%);
       }
     }
   }
