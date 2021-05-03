@@ -1,17 +1,13 @@
 .presentation {
   position: relative;
 
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 
   text-align: center;
   font-family: $headers;
   color: $dark;
   letter-spacing: normal;
-
-  @include breakpoint-up(tablet) {
-    height: 100vh;
-  }
 
   h1 {
     font-size: $_34px;
@@ -143,10 +139,10 @@
 .showcase,
 .contacts {
   position: relative;
-  padding: 16vh 1.125rem;
+  padding: 20vh 1.125rem;
 
   @include breakpoint-up(tablet) {
-    padding: 16vh 2rem;
+    padding: 20vh 2rem;
   }
 
   @include breakpoint-up(iPadPro) {
@@ -161,10 +157,8 @@
 .about {
   width: 100%;
   padding-top: 0;
-  margin-top: 36vh;
 
   @include breakpoint-up(desktop) {
-    margin-top: 0;
     padding: 24vh 5.5vw;
   }
 
@@ -299,9 +293,17 @@
       }
 
       @include breakpoint-up(desktop) {
-        font-size: $_18px;
+        font-size: $_14px;
         line-height: 1.8;
       }
+    }
+  }
+
+  &__grid {
+    @include breakpoint-up(desktop) {
+      grid-template-columns: 1fr 1fr;
+
+      margin-top: 20vh;
     }
   }
 
@@ -315,7 +317,9 @@
     }
 
     @include breakpoint-up(desktop) {
-      margin-top: 20vh;
+      margin-top: 0;
+
+      grid-template-columns: repeat(5, 1fr);
     }
 
     a {
@@ -343,7 +347,8 @@
     width: fit-content;
 
     @include breakpoint-up(desktop) {
-      margin-top: 5rem;
+      margin-top: 0;
+      margin-left: auto;
     }
 
     a {
