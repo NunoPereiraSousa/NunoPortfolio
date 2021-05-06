@@ -45,14 +45,14 @@ $(".header__desktop_menu").on("mouseleave", () => {
   follower.removeClass("navbar_hover");
 });
 
-$(".contacts").on("mouseenter", () => {
-  cursor.addClass("active");
-  follower.addClass("active");
-});
-$(".contacts").on("mouseleave", () => {
-  cursor.removeClass("active");
-  follower.removeClass("active");
-});
+// $(".contacts").on("mouseenter", () => {
+//   cursor.addClass("active");
+//   follower.addClass("active");
+// });
+// $(".contacts").on("mouseleave", () => {
+//   cursor.removeClass("active");
+//   follower.removeClass("active");
+// });
 
 $(".open_work").on("mouseenter", () => {
   cursor.addClass("open_work_cursor");

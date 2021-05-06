@@ -137,6 +137,7 @@
 .about,
 .services,
 .showcase,
+.carousels,
 .contacts {
   position: relative;
   padding: 20vh 1.125rem;
@@ -159,7 +160,7 @@
   padding-top: 0;
 
   @include breakpoint-up(desktop) {
-    padding: 24vh 5.5vw;
+    padding: 24vh 5.5vw calc(24vh + 6.875rem);
   }
 
   h4 {
@@ -254,32 +255,29 @@
   padding-bottom: 8vh;
 
   @include breakpoint-up(desktop) {
-    padding-bottom: 16vh;
+    padding-bottom: calc(24vh + 6.875rem);
   }
 
   &__grid {
   }
 }
 
-.contacts {
+.carousels {
   position: relative;
+}
+
+.contacts {
+  padding-top: 8vh;
+  padding-bottom: 8vh;
   background-color: $dark;
 
-  padding-top: 8vh;
-  padding-bottom: 6vh;
-
   @include breakpoint-up(desktop) {
-    padding-top: 16vh;
+    padding-top: 0;
     padding-bottom: 10vh;
+    background-color: transparent;
   }
 
   &__location {
-    // padding-top: calc(5.625rem * 2);
-
-    @include breakpoint-up(desktop) {
-      // padding-top: calc(6.625rem + 10.6325rem);
-    }
-
     h3 {
       font-weight: 400;
       color: $grey;
@@ -319,7 +317,10 @@
     @include breakpoint-up(desktop) {
       margin-top: 0;
 
-      grid-template-columns: repeat(5, 1fr);
+      // grid-template-columns: 1fr;
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
 
     a {
@@ -337,7 +338,10 @@
       }
 
       @include breakpoint-up(desktop) {
-        font-size: $_16px;
+        font-size: $_28px;
+        margin-right: 3rem;
+        font-family: $headers2;
+        color: $dark;
       }
     }
   }
@@ -359,7 +363,15 @@
       text-decoration: underline;
 
       @include breakpoint-up(desktop) {
-        font-size: $_16px;
+        font-size: $_28px;
+        font-family: $headers2;
+      }
+
+      span {
+        @include breakpoint-up(desktop) {
+          font-size: $_20px;
+          font-family: $body;
+        }
       }
     }
   }
