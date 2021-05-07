@@ -5,7 +5,7 @@
 
   text-align: center;
   font-family: $headers;
-  color: $dark;
+  color: $grey;
   letter-spacing: normal;
 
   @include breakpoint-up(desktop) {
@@ -139,12 +139,12 @@
 
   &__location {
     &.dark h3 {
-      color: $grey;
+      color: $dark;
     }
 
     h3 {
       font-weight: 400;
-      color: $dark;
+      color: $grey;
       font-size: $_16px;
 
       margin: 0;
@@ -176,7 +176,7 @@
     grid-template-columns: min-content min-content;
 
     &.dark a {
-      color: $grey;
+      color: $dark;
     }
 
     @include breakpoint-up(iPadPro) {
@@ -195,7 +195,7 @@
 
       font-weight: 400;
       font-size: $_14px;
-      color: $dark;
+      color: $grey;
 
       @include breakpoint-up(iPadPro) {
         font-size: $_24px;

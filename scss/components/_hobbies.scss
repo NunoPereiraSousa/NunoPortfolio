@@ -1,11 +1,7 @@
 .hobbies__grid__card {
   grid-template-columns: 1fr 2fr;
-  // opacity: 0;
 
   transition: all 0.4s linear;
-
-  @include breakpoint-up(desktop) {
-  }
 
   p {
     margin: 0;
@@ -15,6 +11,7 @@
       margin-right: 3rem;
       font-size: $_16px;
       font-weight: 600;
+      color: $grey;
 
       text-decoration: underline rgba($color: $dark, $alpha: 0.7);
       line-height: 1;
@@ -30,6 +27,7 @@
       line-height: 1.4;
       font-size: $_15px;
       font-weight: 300;
+      color: $grey;
 
       @include breakpoint-up(desktop) {
         margin-right: auto;

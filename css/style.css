@@ -1800,7 +1800,7 @@ body.dark .cursor-follower.contacts_cursor {
   position: relative;
   text-align: center;
   font-family: "Cormorant Garamond";
-  color: #1a1a1a;
+  color: #eee8e0;
   letter-spacing: normal;
 }
 
@@ -1968,12 +1968,12 @@ body.dark .cursor-follower.contacts_cursor {
 }
 
 .about__contact__location.dark h3 {
-  color: #eee8e0;
+  color: #1a1a1a;
 }
 
 .about__contact__location h3 {
   font-weight: 400;
-  color: #1a1a1a;
+  color: #eee8e0;
   font-size: 1rem;
   margin: 0;
 }
@@ -2008,7 +2008,7 @@ body.dark .cursor-follower.contacts_cursor {
 }
 
 .about__contact__socials.dark a {
-  color: #eee8e0;
+  color: #1a1a1a;
 }
 
 @media (min-width: 64em) {
@@ -2031,7 +2031,7 @@ body.dark .cursor-follower.contacts_cursor {
   margin-right: 2rem;
   font-weight: 400;
   font-size: 0.875rem;
-  color: #1a1a1a;
+  color: #eee8e0;
 }
 
 @media (min-width: 64em) {
@@ -2100,6 +2100,7 @@ body.dark .cursor-follower.contacts_cursor {
   margin-right: 3rem;
   font-size: 1rem;
   font-weight: 600;
+  color: #eee8e0;
   -webkit-text-decoration: underline rgba(26, 26, 26, 0.7);
           text-decoration: underline rgba(26, 26, 26, 0.7);
   line-height: 1;
@@ -2118,6 +2119,7 @@ body.dark .cursor-follower.contacts_cursor {
   line-height: 1.4;
   font-size: 0.9375rem;
   font-weight: 300;
+  color: #eee8e0;
 }
 
 @media (min-width: 75em) {
