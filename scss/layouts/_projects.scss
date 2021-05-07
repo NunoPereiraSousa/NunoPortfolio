@@ -5,7 +5,7 @@
 
   text-align: center;
   font-family: $headers;
-  color: $dark;
+  color: $grey;
   letter-spacing: normal;
 
   @include breakpoint-up(desktop) {

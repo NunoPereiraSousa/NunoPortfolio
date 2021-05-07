@@ -2136,7 +2136,7 @@ body.dark .cursor-follower.contacts_cursor {
   position: relative;
   text-align: center;
   font-family: "Cormorant Garamond";
-  color: #1a1a1a;
+  color: #eee8e0;
   letter-spacing: normal;
 }
 
@@ -2484,7 +2484,7 @@ body.dark .cursor-follower.contacts_cursor {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    opacity: 0.5;
+    opacity: 0.65;
   }
 }
 
@@ -2498,7 +2498,7 @@ body.dark .cursor-follower.contacts_cursor {
   font-size: 0.875rem;
   font-family: "Work Sans";
   line-height: 0.74;
-  color: #1a1a1a;
+  color: #eee8e0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -2516,7 +2516,7 @@ body.dark .cursor-follower.contacts_cursor {
   margin: 0;
   line-height: 1;
   font-weight: 400;
-  color: #1a1a1a;
+  color: #eee8e0;
   font-size: 3.125rem;
 }
 

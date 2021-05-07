@@ -6,7 +6,7 @@
     display: flex;
     align-items: flex-end;
 
-    opacity: 0.5;
+    opacity: 0.65;
   }
 
   &:hover {
@@ -20,7 +20,7 @@
     font-size: $_14px;
     font-family: $body;
     line-height: 0.74;
-    color: $dark;
+    color: $grey;
 
     transition: all 0.4s;
 
@@ -38,7 +38,7 @@
 
     line-height: 1;
     font-weight: 400;
-    color: $dark;
+    color: $grey;
 
     font-size: $_50px;
 
