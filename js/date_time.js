@@ -43,11 +43,11 @@ function getTime() {
   hours = hours % 12;
   hours = hours ? hours : 12; // the hour '0' should be '12'
 
-  console.log(hours);
-
   let finalTime = `${hours}:${getMinutes()} ${ampm}`;
+  console.log(finalTime);
 
-  return finalTime;
+  // return finalTime;
+  currentDateTime.innerHTML = finalTime;
 }
 
 function getMinutes() {
@@ -55,4 +55,6 @@ function getMinutes() {
   return minutes < 10 ? `0${minutes}` : minutes;
 }
 
-currentDateTime.innerHTML = `${getWeekDay()} ${getTime()}`;
+setInterval(() => {
+  getTime();
+}, 100);

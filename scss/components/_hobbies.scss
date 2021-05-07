@@ -13,13 +13,13 @@
       font-weight: 600;
       color: $grey;
 
-      text-decoration: underline rgba($color: $dark, $alpha: 0.7);
+      text-decoration: underline rgba($color: $grey, $alpha: 0.7);
       line-height: 1;
 
       @include breakpoint-up(desktop) {
         margin: 0 auto;
         font-size: $_26px;
-        text-decoration: underline rgba($color: $dark, $alpha: 0.5);
+        text-decoration: underline rgba($color: $grey, $alpha: 0.5);
       }
     }
 
@@ -31,7 +31,7 @@
 
       @include breakpoint-up(desktop) {
         margin-right: auto;
-        font-size: $_26px;
+        font-size: $_24px;
 
         width: 50vw;
       }
