@@ -31,6 +31,8 @@
 
       font-size: $_100px;
       line-height: 1.1;
+
+      transition: none;
     }
 
     @include breakpoint-up(large) {
@@ -55,6 +57,8 @@
       left: 5.5vw;
       bottom: 10%;
       font-size: $_20px;
+
+      transition: none;
     }
   }
 
@@ -76,6 +80,8 @@
       right: calc(5.5vw - 2rem);
       bottom: calc(10% - 2rem);
       font-size: $_18px;
+
+      transition: none;
     }
   }
 
@@ -260,10 +266,14 @@
 .carousels {
   position: relative;
 
-  padding-bottom: 26vh;
+  padding-bottom: calc(16vh + 6.875rem);
 
   @include breakpoint-up(desktop) {
-    padding-bottom: calc(40vh + 6.875rem) !important;
+    padding-bottom: calc(38vh + 6.875rem) !important;
+  }
+
+  @include breakpoint-up(large) {
+    padding-bottom: calc(44vh + 6.875rem) !important;
   }
 }
 

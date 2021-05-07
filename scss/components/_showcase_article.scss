@@ -1,11 +1,11 @@
 .showcase__grid__article {
-  border-bottom: 1px solid rgba($color: $dark, $alpha: 0.4);
+  border-bottom: 1px solid rgba($color: $grey, $alpha: 0.4);
 
   &:first-child {
-    border-top: 1px solid rgba($color: $dark, $alpha: 0.4);
+    border-top: 1px solid rgba($color: $grey, $alpha: 0.4);
 
     @include breakpoint-up(desktop) {
-      border-top: 1px solid rgba($color: $dark, $alpha: 0.2);
+      border-top: 1px solid rgba($color: $grey, $alpha: 0.2);
     }
   }
 

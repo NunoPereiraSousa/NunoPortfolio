@@ -108,10 +108,8 @@ toggle.addEventListener("click", () => {
   console.log(status);
 
   if (status !== "lightMode") {
-    console.log("enable");
     enableLightMode();
   } else {
-    console.log("disable");
     disableLightMode();
   }
 

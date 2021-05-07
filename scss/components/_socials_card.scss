@@ -9,6 +9,8 @@ a.socials__card {
 
   border-top: 1px solid $grey;
 
+  transition: all 0.4s;
+
   @include breakpoint-up(tablet) {
     padding: 8vh 0;
     font-size: $_120px;
@@ -19,8 +21,20 @@ a.socials__card {
     font-size: $_140px;
   }
 
-  &:first-child {
-    // padding-top: 0;
+  &:hover.email {
+    color: $red;
+  }
+
+  &:hover.dribbble {
+    color: $dribbble;
+  }
+
+  &:hover.linkedIn {
+    color: $linkedIn;
+  }
+
+  &:hover.github {
+    color: $github;
   }
 
   //   &.email {
@@ -40,14 +54,14 @@ a.socials__card {
   //     background-color: $linkedIn;
   //   }
 
-  &.instagram {
-    background: linear-gradient(
-      -45deg,
-      rgba(240, 148, 51, 0.5) 0%,
-      rgba(230, 104, 60, 0.5) 25%,
-      rgba(220, 39, 67, 0.5) 50%,
-      rgba(204, 35, 102, 0.5) 75%,
-      rgba(188, 24, 136, 0.5) 100%
-    );
-  }
+  // &.instagram {
+  //   background: linear-gradient(
+  //     -45deg,
+  //     rgba(240, 148, 51, 0.5) 0%,
+  //     rgba(230, 104, 60, 0.5) 25%,
+  //     rgba(220, 39, 67, 0.5) 50%,
+  //     rgba(204, 35, 102, 0.5) 75%,
+  //     rgba(188, 24, 136, 0.5) 100%
+  //   );
+  // }
 }

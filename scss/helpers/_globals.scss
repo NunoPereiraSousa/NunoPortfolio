@@ -16,14 +16,14 @@ body {
   cursor: none;
   background-color: $dark;
 
-  transition: all 0.4s;
+  // transition: background-color 0.4s;
 
   &.light {
-    background-color: $grey !important;
+    background-color: $grey;
   }
 
   &.dark {
-    background-color: $dark !important;
+    background-color: $dark;
   }
 }
 
