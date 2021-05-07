@@ -79,40 +79,4 @@
       opacity: 0.5;
     }
   }
-
-  // h5 {
-  //   margin: 0;
-
-  //   font-weight: 400;
-  //   font-size: $_15px;
-
-  //   @include breakpoint-up(tablet) {
-  //     font-size: $_18px;
-  //   }
-
-  //   @include breakpoint-up(iPadPro) {
-  //     font-size: $_22px;
-  //   }
-
-  //   @include breakpoint-up(desktop) {
-  //     font-size: $_20px;
-  //   }
-  // }
-
-  // p {
-  //   width: 100%;
-  //   margin-top: 2rem;
-  //   margin-bottom: 0;
-
-  //   font-size: $_14px;
-
-  //   span {
-  //     margin-right: 0.6rem;
-  //   }
-
-  //   a {
-  //     color: $dark;
-  //     border-bottom: 1px solid rgba($color: $dark, $alpha: 0.5);
-  //   }
-  // }
 }

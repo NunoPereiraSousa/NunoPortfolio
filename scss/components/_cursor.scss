@@ -65,7 +65,8 @@ body.dark {
   }
 
   &.open_work_cursor {
-    background-color: $dark;
+    opacity: 0;
+    border-color: $red !important;
   }
 
   &.navbar_hover {
@@ -82,6 +83,7 @@ body.dark {
 
   &.toggleTheme {
     background-color: transparent;
+    opacity: 0;
   }
 }
 
@@ -128,8 +130,8 @@ body.dark {
   }
 
   &.navbar_hover {
-    border: 1px solid rgba($color: $grey, $alpha: 0.05);
-    background-color: rgba($color: $grey, $alpha: 0.05);
+    border: 1px solid rgba($color: $dark, $alpha: 0.05);
+    background-color: rgba($color: $dark, $alpha: 0.05);
     width: 5rem;
     height: 5rem;
   }
@@ -153,7 +155,7 @@ body.dark {
   &.toggleTheme {
     &.lightTheme {
       border: 1px solid rgba($color: $grey, $alpha: 0.8);
-      background-color: rgba($color: $grey, $alpha: 0.8) !important;
+      background-color: rgba($color: $grey, $alpha: 0.8);
       &::after {
         font-size: $_18px;
       }
@@ -161,7 +163,7 @@ body.dark {
 
     &.nightTheme {
       border: 1px solid rgba($color: $dark, $alpha: 0.8);
-      background-color: rgba($color: $dark, $alpha: 0.8) !important;
+      background-color: rgba($color: $dark, $alpha: 0.8);
       &::after {
         font-size: $_18px;
       }
@@ -189,7 +191,7 @@ body.dark {
   }
 
   &.article1_cursor {
-    border: 1px solid rgba($color: #c94d24, $alpha: 0.8);
+    border: 1px solid rgba($color: #c94d24, $alpha: 0.8) !important;
     background-color: rgba($color: #c94d24, $alpha: 0.8);
 
     &::after {
@@ -198,7 +200,7 @@ body.dark {
   }
 
   &.article2_cursor {
-    border: 1px solid rgba($color: #432cb2, $alpha: 0.8);
+    border: 1px solid rgba($color: #432cb2, $alpha: 0.8) !important;
     background-color: rgba($color: #432cb2, $alpha: 0.8);
     width: 5rem;
     height: 5rem;
@@ -211,7 +213,7 @@ body.dark {
   }
 
   &.article3_cursor {
-    border: 1px solid rgba($color: #dbaf03, $alpha: 0.8);
+    border: 1px solid rgba($color: #dbaf03, $alpha: 0.8) !important;
     background-color: rgba($color: #dbaf03, $alpha: 0.8);
 
     &::after {
@@ -220,7 +222,7 @@ body.dark {
   }
 
   &.article4_cursor {
-    border: 1px solid rgba($color: #222431, $alpha: 0.8);
+    border: 1px solid rgba($color: #222431, $alpha: 0.8) !important;
     background-color: rgba($color: #222431, $alpha: 0.8);
 
     &::after {
@@ -231,7 +233,7 @@ body.dark {
   }
 
   &.article5_cursor {
-    border: 1px solid rgba($color: #259e54, $alpha: 0.8);
+    border: 1px solid rgba($color: #259e54, $alpha: 0.8) !important;
     background-color: rgba($color: #259e54, $alpha: 0.8);
 
     &::after {

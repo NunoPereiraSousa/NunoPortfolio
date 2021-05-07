@@ -64,12 +64,6 @@
           font-size: $_20px;
         }
       }
-
-      &:nth-child(odd) {
-        @include breakpoint-up(desktop) {
-          // color: $red;
-        }
-      }
     }
   }
 

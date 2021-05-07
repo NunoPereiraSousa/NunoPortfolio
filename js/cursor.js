@@ -69,7 +69,7 @@ $("#toggleTheme").on("mouseenter", () => {
   follower.addClass("toggleTheme");
   let theme = JSON.parse(localStorage.getItem("theme"));
 
-  if (theme == "darkMode") {
+  if (theme == "lightMode") {
     follower.addClass("nightTheme");
     follower.removeClass("lightTheme");
     follower.removeClass("lightTheme");
