@@ -90,7 +90,8 @@ $("#toggleTheme").on("mouseleave", () => {
 $("#toggleTheme").on("click", () => {
   let theme = JSON.parse(localStorage.getItem("theme"));
 
-  if (theme == "darkMode") {
+  if (theme == "lightMode") {
+    console.log(1);
     follower.addClass("nightTheme");
     cursor.addClass("nightTheme");
     follower.removeClass("lightTheme");

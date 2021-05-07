@@ -478,8 +478,8 @@ body.dark .cursor-follower.contacts_cursor {
 }
 
 .cursor-follower.toggleTheme.lightTheme {
-  border: 1px solid rgba(26, 26, 26, 0.8);
-  background-color: rgba(26, 26, 26, 0.8) !important;
+  border: 1px solid rgba(238, 232, 224, 0.8);
+  background-color: rgba(238, 232, 224, 0.8) !important;
 }
 
 .cursor-follower.toggleTheme.lightTheme::after {
@@ -487,8 +487,8 @@ body.dark .cursor-follower.contacts_cursor {
 }
 
 .cursor-follower.toggleTheme.nightTheme {
-  border: 1px solid rgba(238, 232, 224, 0.8);
-  background-color: rgba(238, 232, 224, 0.8) !important;
+  border: 1px solid rgba(26, 26, 26, 0.8);
+  background-color: rgba(26, 26, 26, 0.8) !important;
 }
 
 .cursor-follower.toggleTheme.nightTheme::after {
@@ -2565,168 +2565,176 @@ a.socials__card.instagram {
   background: linear-gradient(-45deg, rgba(240, 148, 51, 0.5) 0%, rgba(230, 104, 60, 0.5) 25%, rgba(220, 39, 67, 0.5) 50%, rgba(204, 35, 102, 0.5) 75%, rgba(188, 24, 136, 0.5) 100%);
 }
 
-body.dark {
+body.light {
   /* ABOUT PAGE */
   /* PROJECTS PAGE */
 }
 
-body.dark .header__logo,
-body.dark .header p {
-  color: #eee8e0;
-}
-
-body.dark .header__hamburger::before, body.dark .header__hamburger::after {
-  background-color: #eee8e0;
-}
-
-body.dark .header__desktop_menu a {
-  color: #eee8e0;
-}
-
-body.dark .header__carousel,
-body.dark .carousel,
-body.dark .socials__card {
-  color: #eee8e0;
-}
-
-body.dark .socials__card {
-  border-top: 1px solid #eee8e0;
-}
-
-body.dark .services__grid__article {
-  color: #eee8e0;
-  border-bottom: 1px solid rgba(238, 232, 224, 0.2);
-}
-
-body.dark .services__grid__article:first-child {
-  border-top: 1px solid rgba(238, 232, 224, 0.2);
-}
-
-body.dark .showcase__grid__article {
-  color: #eee8e0;
-  border-bottom: 1px solid rgba(238, 232, 224, 0.4);
-}
-
-@media (min-width: 75em) {
-  body.dark .showcase__grid__article {
-    border-bottom: 1px solid rgba(238, 232, 224, 0.2);
-  }
-}
-
-body.dark .showcase__grid__article:first-child {
-  border-top: 1px solid rgba(238, 232, 224, 0.4);
-}
-
-@media (min-width: 75em) {
-  body.dark .showcase__grid__article:first-child {
-    border-top: 1px solid rgba(238, 232, 224, 0.2);
-  }
-}
-
-body.dark .hobbies__grid__card p {
-  color: #eee8e0;
-}
-
-body.dark .hobbies__grid__card p:first-child {
-  -webkit-text-decoration: underline rgba(238, 232, 224, 0.7);
-          text-decoration: underline rgba(238, 232, 224, 0.7);
-}
-
-@media (min-width: 75em) {
-  body.dark .hobbies__grid__card p:first-child {
-    -webkit-text-decoration: underline rgba(238, 232, 224, 0.5);
-            text-decoration: underline rgba(238, 232, 224, 0.5);
-  }
-}
-
-body.dark .contacts {
-  background-color: #eee8e0;
-}
-
-body.dark .contacts h3,
-body.dark .contacts a {
+body.light .header__logo,
+body.light .header p {
   color: #1a1a1a;
 }
 
-body.dark .contacts__email a {
+body.light .header__hamburger::before, body.light .header__hamburger::after {
+  background-color: #1a1a1a;
+}
+
+body.light .header__desktop_menu a {
+  color: #1a1a1a;
+}
+
+body.light .cursor.nightTheme {
+  background-color: #1a1a1a !important;
+}
+
+body.light .cursor-follower.nightTheme {
+  border-color: #1a1a1a !important;
+}
+
+body.light .header__carousel,
+body.light .carousel,
+body.light .socials__card {
+  color: #1a1a1a;
+}
+
+body.light .socials__card {
+  border-top: 1px solid #1a1a1a;
+}
+
+body.light .services__grid__article {
+  color: #1a1a1a;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.2);
+}
+
+body.light .services__grid__article:first-child {
+  border-top: 1px solid rgba(26, 26, 26, 0.2);
+}
+
+body.light .showcase__grid__article {
+  color: #1a1a1a;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.4);
+}
+
+@media (min-width: 75em) {
+  body.light .showcase__grid__article {
+    border-bottom: 1px solid rgba(26, 26, 26, 0.2);
+  }
+}
+
+body.light .showcase__grid__article:first-child {
+  border-top: 1px solid rgba(26, 26, 26, 0.4);
+}
+
+@media (min-width: 75em) {
+  body.light .showcase__grid__article:first-child {
+    border-top: 1px solid rgba(26, 26, 26, 0.2);
+  }
+}
+
+body.light .hobbies__grid__card p {
+  color: #1a1a1a;
+}
+
+body.light .hobbies__grid__card p:first-child {
+  -webkit-text-decoration: underline rgba(26, 26, 26, 0.7);
+          text-decoration: underline rgba(26, 26, 26, 0.7);
+}
+
+@media (min-width: 75em) {
+  body.light .hobbies__grid__card p:first-child {
+    -webkit-text-decoration: underline rgba(26, 26, 26, 0.5);
+            text-decoration: underline rgba(26, 26, 26, 0.5);
+  }
+}
+
+body.light .contacts {
+  background-color: #1a1a1a;
+}
+
+body.light .contacts h3,
+body.light .contacts a {
+  color: #1a1a1a;
+}
+
+body.light .contacts__email a {
   color: rgba(221, 77, 66, 0.9);
 }
 
-body.dark .presentation h1,
-body.dark .presentation h3,
-body.dark .presentation a {
-  color: #eee8e0;
+body.light .presentation h1,
+body.light .presentation h3,
+body.light .presentation a {
+  color: #1a1a1a;
 }
 
-body.dark .presentation .open_work {
-  -webkit-text-decoration: underline #eee8e0;
-          text-decoration: underline #eee8e0;
+body.light .presentation .open_work {
+  -webkit-text-decoration: underline #1a1a1a;
+          text-decoration: underline #1a1a1a;
 }
 
-body.dark .about h4 {
-  color: #eee8e0;
+body.light .about h4 {
+  color: #1a1a1a;
 }
 
-body.dark .presentation__svgs svg#Circle01 path {
+body.light .presentation__svgs svg#Circle01 path {
   fill: #1a1a1a !important;
 }
 
-body.dark .presentation__svgs svg#Circle01 text {
-  fill: #eee8e0 !important;
-}
-
-body.dark .presentation__svgs svg#arrow path {
-  stroke: #eee8e0 !important;
-}
-
-body.dark .about__presentation {
-  color: #eee8e0;
-}
-
-body.dark .about__presentation svg#Circle01 path {
+body.light .presentation__svgs svg#Circle01 text {
   fill: #1a1a1a !important;
 }
 
-body.dark .about__presentation svg#Circle01 text {
-  fill: #eee8e0 !important;
+body.light .presentation__svgs svg#arrow path {
+  stroke: #1a1a1a !important;
 }
 
-body.dark .about__presentation svg#arrow path {
-  stroke: #eee8e0 !important;
+body.light .about__presentation {
+  color: #1a1a1a;
 }
 
-body.dark .about__contact h3,
-body.dark .about__contact h2,
-body.dark .about__contact a {
-  color: #eee8e0;
+body.light .about__presentation svg#Circle01 path {
+  fill: #1a1a1a !important;
 }
 
-body.dark .about__contact a.open_work {
+body.light .about__presentation svg#Circle01 text {
+  fill: #1a1a1a !important;
+}
+
+body.light .about__presentation svg#arrow path {
+  stroke: #1a1a1a !important;
+}
+
+body.light .about__contact h3,
+body.light .about__contact h2,
+body.light .about__contact a {
+  color: #1a1a1a;
+}
+
+body.light .about__contact a.open_work {
   color: #dd4d42;
 }
 
-body.dark .projects__presentation {
-  color: #eee8e0;
+body.light .projects__presentation {
+  color: #1a1a1a;
 }
 
-body.dark .projects__presentation svg#Circle01 circle {
+body.light .projects__presentation svg#Circle01 circle {
   fill: #1a1a1a !important;
 }
 
-body.dark .projects__presentation svg#Circle01 text {
-  fill: #eee8e0 !important;
+body.light .projects__presentation svg#Circle01 text {
+  fill: #1a1a1a !important;
 }
 
-body.dark .projects__presentation svg#arrow path {
-  stroke: #eee8e0 !important;
+body.light .projects__presentation svg#arrow path {
+  stroke: #1a1a1a !important;
 }
 
-body.dark .projects_showcase__title {
-  color: #eee8e0;
+body.light .projects_showcase__title {
+  color: #1a1a1a;
 }
 
-body.dark .projects_showcase__grid__card h1,
-body.dark .projects_showcase__grid__card a {
-  color: #eee8e0;
+body.light .projects_showcase__grid__card h1,
+body.light .projects_showcase__grid__card a {
+  color: #1a1a1a;
 }
 /*# sourceMappingURL=style.css.map */

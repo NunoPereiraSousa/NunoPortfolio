@@ -152,16 +152,16 @@ body.dark {
 
   &.toggleTheme {
     &.lightTheme {
-      border: 1px solid rgba($color: $dark, $alpha: 0.8);
-      background-color: rgba($color: $dark, $alpha: 0.8) !important;
+      border: 1px solid rgba($color: $grey, $alpha: 0.8);
+      background-color: rgba($color: $grey, $alpha: 0.8) !important;
       &::after {
         font-size: $_18px;
       }
     }
 
     &.nightTheme {
-      border: 1px solid rgba($color: $grey, $alpha: 0.8);
-      background-color: rgba($color: $grey, $alpha: 0.8) !important;
+      border: 1px solid rgba($color: $dark, $alpha: 0.8);
+      background-color: rgba($color: $dark, $alpha: 0.8) !important;
       &::after {
         font-size: $_18px;
       }
