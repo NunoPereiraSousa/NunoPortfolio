@@ -1,0 +1,53 @@
+a.socials__card {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: $_70px;
+  color: $dark;
+  font-family: $headers2;
+
+  padding: 3rem 0;
+
+  border-top: 1px solid $dark;
+
+  @include breakpoint-up(tablet) {
+    padding: 8vh 0;
+    font-size: $_120px;
+  }
+
+  @include breakpoint-up(iPadPro) {
+    padding: 12vh 0;
+    font-size: $_140px;
+  }
+
+  &:first-child {
+    // padding-top: 0;
+  }
+
+  //   &.email {
+  //     background-color: transparent;
+  //     color: $dark;
+  //   }
+
+  //   &.dribbble {
+  //     background-color: $dribbble;
+  //   }
+
+  //   &.github {
+  //     background-color: $github;
+  //   }
+
+  //   &.linkedIn {
+  //     background-color: $linkedIn;
+  //   }
+
+  &.instagram {
+    background: linear-gradient(
+      -45deg,
+      rgba(240, 148, 51, 0.5) 0%,
+      rgba(230, 104, 60, 0.5) 25%,
+      rgba(220, 39, 67, 0.5) 50%,
+      rgba(204, 35, 102, 0.5) 75%,
+      rgba(188, 24, 136, 0.5) 100%
+    );
+  }
+}

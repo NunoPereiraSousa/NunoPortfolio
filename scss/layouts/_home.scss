@@ -252,8 +252,6 @@
 }
 
 .showcase {
-  padding-bottom: 8vh;
-
   @include breakpoint-up(desktop) {
     padding-bottom: calc(24vh + 6.875rem);
   }
@@ -264,6 +262,12 @@
 
 .carousels {
   position: relative;
+
+  padding-bottom: 26vh;
+
+  @include breakpoint-up(desktop) {
+    padding-bottom: calc(40vh + 6.875rem) !important;
+  }
 }
 
 .contacts {

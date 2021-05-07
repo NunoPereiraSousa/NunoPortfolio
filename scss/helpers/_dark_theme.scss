@@ -19,8 +19,14 @@ body.dark {
     }
   }
 
-  .header__carousel {
+  .header__carousel,
+  .carousel,
+  .socials__card {
     color: $grey;
+  }
+
+  .socials__card {
+    border-top: 1px solid $grey;
   }
 
   .services__grid__article {
