@@ -3,10 +3,10 @@
 
   padding: 2rem 1.25rem;
 
-  border-bottom: 1px solid rgba($color: $dark, $alpha: 0.2);
+  border-bottom: 1px solid rgba($color: $grey, $alpha: 0.2);
 
   &:first-child {
-    border-top: 1px solid rgba($color: $dark, $alpha: 0.2);
+    border-top: 1px solid rgba($color: $grey, $alpha: 0.2);
   }
 
   @include breakpoint-up(tablet) {
@@ -36,6 +36,7 @@
     font-weight: 400;
     line-height: 0.74;
     margin: 0 0 0.3rem 0;
+    color: $grey;
 
     @include breakpoint-up(tablet) {
       font-size: $_18px;
@@ -59,6 +60,7 @@
   h3 {
     margin: 0;
     font-size: $_26px;
+    color: $grey;
 
     font-weight: 400;
 

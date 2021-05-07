@@ -12,7 +12,7 @@
   transition: all 0.4s;
 
   @include breakpoint-up(desktop) {
-    border-bottom: 1px solid rgba($color: $dark, $alpha: 0.2);
+    border-bottom: 1px solid rgba($color: $grey, $alpha: 0.2);
     padding-top: 3rem;
 
     opacity: 0.5;
@@ -27,6 +27,7 @@
       font-weight: 400;
       font-size: $_13px;
       font-family: $body;
+      color: $grey;
 
       margin-top: 0;
       margin-bottom: 2rem;
@@ -76,6 +77,7 @@
     margin-top: 0;
     margin-bottom: 2.875rem;
     font-family: $headers;
+    color: $grey;
 
     font-weight: 400;
     font-size: $_26px;

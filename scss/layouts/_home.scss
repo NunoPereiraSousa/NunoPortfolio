@@ -6,7 +6,7 @@
 
   text-align: center;
   font-family: $headers;
-  color: $dark;
+  color: $grey;
   letter-spacing: normal;
 
   h1 {
@@ -43,7 +43,7 @@
     font-size: $_20px;
 
     font-weight: 500;
-    color: $dark;
+    color: $grey;
     transition: all 0.4s;
 
     @include breakpoint-up(tablet) {
@@ -61,8 +61,8 @@
   a {
     margin-top: 2rem;
 
-    text-decoration: underline $dark;
-    color: $dark;
+    text-decoration: underline $grey;
+    color: $grey;
     transition: all 0.4s;
 
     @include breakpoint-up(tablet) {
@@ -167,7 +167,7 @@
     font-weight: 400;
     font-family: $headers;
     line-height: 1.2;
-    color: $dark;
+    color: $grey;
 
     margin-top: 0;
 
@@ -254,9 +254,6 @@
 .showcase {
   @include breakpoint-up(desktop) {
     padding-bottom: calc(24vh + 6.875rem);
-  }
-
-  &__grid {
   }
 }
 
