@@ -62,7 +62,7 @@ section.desktop_section {
 
   color: $grey;
 
-  border-right: 1px solid $grey;
+  border-right: 2px solid $grey;
   width: 40vw;
   height: 100vh;
 
@@ -113,17 +113,3 @@ section.desktop_section {
     }
   }
 }
-
-.center-marker {
-  position: fixed;
-  width: 2px;
-  height: 100vh;
-  // background: tomato;
-  top: 0;
-  left: calc(50vw - 1px);
-}
-
-// section.active {
-//   opacity: 1;
-//   //   color: $red;
-// }

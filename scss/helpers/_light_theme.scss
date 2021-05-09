@@ -19,6 +19,36 @@ body.light {
     }
   }
 
+  .mobile_section,
+  .desktop_section {
+    h1,
+    h3,
+    h5 {
+      color: $dark;
+    }
+
+    path {
+      fill: $dark !important;
+    }
+  }
+
+  .mobile_section {
+    h3,
+    h5 {
+      font-weight: 500;
+    }
+
+    border-bottom: 2px solid $dark;
+  }
+
+  .desktop_section {
+    border-right: 2px solid $dark;
+
+    div {
+      opacity: 0.5;
+    }
+  }
+
   .cursor.nightTheme {
     background-color: $dark;
   }
