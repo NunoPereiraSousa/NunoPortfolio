@@ -21,7 +21,7 @@
 
   h1 {
     font-weight: 100;
-    font-size: 40vh;
+    font-size: 30vh;
     line-height: 0.7;
     margin: 0;
     font-family: $body;
@@ -35,15 +35,16 @@
 
   h3 {
     margin-top: 6vh;
-    font-size: 50px;
+    font-size: 40px;
     font-family: $headers2;
     text-transform: uppercase;
   }
 
   h5 {
-    font-size: 20px;
+    font-size: 26px;
     font-family: $headers2;
     opacity: 0.75;
+    margin-top: 0.4rem;
   }
 
   svg {
@@ -68,10 +69,14 @@ section.desktop_section {
 
   h1 {
     font-weight: 100;
-    font-size: 50vh;
+    font-size: 42vh;
     line-height: 0.7;
     margin: 0;
     font-family: $body;
+
+    @include breakpoint-up(large) {
+      font-size: 50vh;
+    }
   }
 
   h3,
