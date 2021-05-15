@@ -44,7 +44,6 @@ function getTime() {
   hours = hours ? hours : 12; // the hour '0' should be '12'
 
   let finalTime = `${hours}:${getMinutes()} ${ampm}`;
-  console.log(finalTime);
 
   // return finalTime;
   currentDateTime.innerHTML = finalTime;

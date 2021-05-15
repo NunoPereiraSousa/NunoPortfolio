@@ -30,6 +30,7 @@ const changeText = () => {
 
 const changeCursor = () => {
   status = JSON.parse(localStorage.getItem("theme"));
+  console.log(status);
 
   if (status == "lightMode") {
     cursorFollower.classList.remove("lightTheme");
@@ -47,8 +48,6 @@ const changeCursor = () => {
 toggle.addEventListener("click", () => {
   status = JSON.parse(localStorage.getItem("theme"));
 
-  console.log(status);
-
   if (status !== "lightMode") {
     enableLightMode();
   } else {
@@ -56,6 +55,7 @@ toggle.addEventListener("click", () => {
   }
 
   changeText();
+  changeCursor();
 });
 
 if (status == "lightMode") {

@@ -12,7 +12,7 @@ window.onload = () => {
       ".open_work div div"
     ],
     {
-      y: "15%",
+      y: "10%",
       stagger: 0.2
     }
   ).to(

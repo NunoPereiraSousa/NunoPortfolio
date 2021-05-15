@@ -87,25 +87,6 @@ $("#toggleTheme").on("mouseleave", () => {
   follower.removeClass("toggleTheme");
 });
 
-$("#toggleTheme").on("click", () => {
-  let theme = JSON.parse(localStorage.getItem("theme"));
-
-  console.log(theme);
-
-  if (theme !== "lightMode") {
-    console.log(1);
-    follower.addClass("nightTheme");
-    cursor.addClass("nightTheme");
-    follower.removeClass("lightTheme");
-    cursor.removeClass("lightTheme");
-  } else {
-    follower.addClass("lightTheme");
-    cursor.addClass("lightTheme");
-    follower.removeClass("nightTheme");
-    cursor.removeClass("nightTheme");
-  }
-});
-
 $(".contacts").on("mouseenter", () => {
   cursor.addClass("contacts_cursor");
   follower.addClass("contacts_cursor");

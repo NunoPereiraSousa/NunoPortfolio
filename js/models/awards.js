@@ -18,7 +18,7 @@ export let awards = [
     title: "Multi-time national champion",
     date1: "Twenty",
     date2: "Seventeen",
-    category: "Multi-time national champion",
+    category: "Pro - Swimmer",
     desc: "Multiple times national champion with over 70 titles and awards."
   },
   {
