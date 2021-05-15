@@ -31,12 +31,17 @@
   }
 
   &__logo,
-  p {
+  h3 {
     font-family: $headers;
     font-size: $_20px;
     color: $grey;
     font-weight: 600;
     letter-spacing: normal;
+
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
 
     @include breakpoint-up(tablet) {
       font-size: $_26px;
@@ -57,6 +62,11 @@
     font-size: $_18px;
 
     opacity: 0.5;
+
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
 
     @include breakpoint-up(desktop) {
       position: absolute;
@@ -106,6 +116,11 @@
 
       &:hover {
         color: $red;
+      }
+
+      div > div {
+        transform: translateY(100%);
+        transition: all 0.4s ease-out;
       }
 
       @include breakpoint-up(desktop) {

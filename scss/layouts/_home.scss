@@ -38,6 +38,11 @@
     @include breakpoint-up(large) {
       font-size: $_120px;
     }
+
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
   }
 
   h3 {
@@ -82,6 +87,18 @@
       font-size: $_18px;
 
       transition: none;
+    }
+
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
+  }
+
+  &__based {
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
     }
   }
 
@@ -169,6 +186,13 @@
     padding: 24vh 5.5vw calc(24vh + 6.875rem);
   }
 
+  & * {
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
+  }
+
   h4 {
     font-weight: 400;
     font-family: $headers;
@@ -190,7 +214,7 @@
       }
 
       @include breakpoint-up(desktop) {
-        font-size: $_70px;
+        font-size: $_80px;
         line-height: 1.1;
       }
 
@@ -217,8 +241,8 @@
       }
 
       @include breakpoint-up(desktop) {
-        margin: 20vh 0 20vh 40vw;
-        font-size: $_40px;
+        margin: 20vh 0 20vh 30vw;
+        font-size: $_60px;
         line-height: 1.2;
       }
 
@@ -246,7 +270,7 @@
 
       @include breakpoint-up(desktop) {
         margin: 20vh 10vw 20vh 20vw;
-        font-size: $_34px;
+        font-size: $_50px;
         line-height: 1.2;
       }
     }

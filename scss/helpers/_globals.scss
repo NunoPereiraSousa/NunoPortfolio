@@ -78,17 +78,9 @@ button:focus {
   display: grid;
 }
 
-// .overflow {
-//   overflow: hidden;
-// }
-
-// .about_show,
-// .about_show_desktop,
-// .showcase_reveal {
-//   transform: translateY(100%);
-
-//   transition: all 1s ease;
-// }
+.line {
+  overflow: hidden;
+}
 
 .hide-for-mobile {
   @include breakpoint-down(iPadPro) {
