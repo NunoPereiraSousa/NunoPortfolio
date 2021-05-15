@@ -57,7 +57,7 @@
         padding: 0;
         margin: 1.6rem 0;
         visibility: hidden;
-        opacity: 0;
+        // opacity: 0;
 
         transition: all 0.8s;
 
@@ -67,7 +67,7 @@
 
         &.open {
           visibility: visible;
-          opacity: 1;
+          // opacity: 1;
         }
 
         li {
@@ -75,6 +75,11 @@
 
           a {
             color: $dark;
+
+            div > div {
+              transform: translateY(100%);
+              transition: all 0.3s ease-out;
+            }
           }
         }
 
@@ -93,6 +98,11 @@
               @include breakpoint-up(tablet) {
                 font-size: $_60px;
               }
+
+              div > div {
+                transform: translateY(100%);
+                transition: all 0.3s ease-out;
+              }
             }
           }
         }
@@ -108,6 +118,11 @@
 
             @include breakpoint-up(tablet) {
               font-size: $_28px;
+            }
+
+            div > div {
+              transform: translateY(100%);
+              transition: all 0.3s ease-out;
             }
           }
         }
@@ -125,6 +140,11 @@
 
               &#email {
                 text-decoration: underline;
+              }
+
+              div > div {
+                transform: translateY(100%);
+                transition: all 0.3s ease-out;
               }
             }
           }

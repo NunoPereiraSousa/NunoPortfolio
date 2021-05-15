@@ -12,6 +12,8 @@ let header_open__cross = document.querySelector(".header_open__cross");
 
 let header__logo = document.querySelector(".header__logo");
 
+let mobileTl = gsap.timeline();
+
 header__hamburger.addEventListener("click", () => {
   window.scrollTo(0, 0);
 
@@ -32,27 +34,43 @@ header__hamburger.addEventListener("click", () => {
     mobile_menu__links.classList.add("open");
     mobile_menu__services.classList.add("open");
     mobile_menu__socials.classList.add("open");
+
+    mobileTl.to(
+      [
+        ".mobile_menu__links a div div",
+        ".mobile_menu__services a div div",
+        ".mobile_menu__socials a div div"
+      ],
+      {
+        y: "0%",
+        stagger: 0.1
+      }
+    );
   }, 600);
 });
 
 header_open__cross.addEventListener("click", () => {
-  mobile_menu__links.classList.remove("open");
-  mobile_menu__services.classList.remove("open");
-  mobile_menu__socials.classList.remove("open");
-
   setTimeout(() => {
-    header_open.classList.remove("open");
+    mobileTl.to(
+      [
+        ".mobile_menu__links a div div",
+        ".mobile_menu__services a div div",
+        ".mobile_menu__socials a div div"
+      ],
+      {
+        y: "100%",
+        stagger: 0.1
+      }
+    );
   }, 150);
 
   setTimeout(() => {
     mobile_menu.classList.remove("open");
     mobile_menu__bg.classList.remove("open");
-  }, 600);
-
-  setTimeout(() => {
     main.classList.remove("no_scroll");
     main.classList.remove("menu-open");
     header.classList.remove("remove");
+    header_open.classList.remove("open");
     header__logo.style.color = "#fffafa";
-  }, 800);
+  }, 1500);
 });
