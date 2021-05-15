@@ -29,10 +29,6 @@
     padding-top: 4rem;
   }
 
-  //   &:hover h2 {
-  //     color: $white;
-  //   }
-
   h3 {
     margin: 0;
     font-size: $_17px;
@@ -54,6 +50,7 @@
     font-weight: 500;
     line-height: 1.3;
     color: $grey;
+    font-family: $body;
 
     transition: all 0.4s;
 
@@ -61,8 +58,7 @@
       font-size: $_24px;
       line-height: 1.5;
       color: $grey;
-      font-family: $body;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 1.5rem;
     }
   }

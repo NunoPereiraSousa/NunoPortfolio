@@ -1,21 +1,28 @@
 import { awards } from "../models/awards.js";
 
-let showcase__grid = document.querySelector(".showcase__grid");
+let awards__grid = document.querySelector(".awards__grid");
 
 for (let award of awards) {
-  showcase__grid.innerHTML += `
-    <article class="showcase__grid__article grid">
-        <div
-            class="showcase__grid__article__categories flex flex-ai-c flex-jc-sb"
-        >
-            <h4>${award.title}</h4>
-            <h4>${award.date}</h4>
-        </div>
-
-        <h5>
-            ${award.desc}
-        </h5>
-    </article>
+  awards__grid.innerHTML += `
+        <article class="awards__grid__card grid">
+            <h3>
+                ${award.date1}<br class="hide-for-desktop" />
+                ${
+                  award.date2 == "Seventeen"
+                    ? ""
+                    : award.date1 && award.date2 == "Fourteen"
+                    ? ""
+                    : award.date1
+                } <br class="hide-for-desktop" />
+                ${award.date2}
+            </h3>
+            <div>
+                <h2>
+                    ${award.desc}
+                </h2>
+                <p>${award.category}</p>
+            </div>
+        </article>
     `;
 }
 

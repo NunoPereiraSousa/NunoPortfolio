@@ -40,6 +40,11 @@
     @include breakpoint-up(large) {
       font-size: $_140px;
     }
+
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
   }
 
   &__svgs {

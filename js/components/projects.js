@@ -106,7 +106,6 @@ window.onload = () => {
         "-=3.5"
       );
   } else {
-    console.log(1);
     projectTl2
       .to(".header__logo div div", {
         y: "0%",

@@ -519,6 +519,12 @@ body.light .about__presentation svg#arrow path {
   stroke: #1a1a1a !important;
 }
 
+body.light .awards__grid__card h3,
+body.light .awards__grid__card h2,
+body.light .awards__grid__card p {
+  color: #1a1a1a;
+}
+
 body.light .about__contact h3,
 body.light .about__contact h2,
 body.light .about__contact a {
@@ -2218,6 +2224,7 @@ body.dark .cursor-follower.contacts_cursor {
   font-weight: 500;
   line-height: 1.3;
   color: #f7f0d8;
+  font-family: "Work Sans";
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -2227,8 +2234,7 @@ body.dark .cursor-follower.contacts_cursor {
     font-size: 1.5rem;
     line-height: 1.5;
     color: #f7f0d8;
-    font-family: "Work Sans";
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 1.5rem;
   }
 }
@@ -2296,6 +2302,13 @@ body.dark .cursor-follower.contacts_cursor {
   .about__presentation h1 {
     font-size: 8.75rem;
   }
+}
+
+.about__presentation h1 div > div {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .about__presentation__svgs {
