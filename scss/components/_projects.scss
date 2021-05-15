@@ -72,6 +72,7 @@
 }
 
 section.desktop_section {
+  position: relative;
   font-weight: 500;
   transition: color 0.3s;
 
@@ -81,11 +82,21 @@ section.desktop_section {
 
   color: $grey;
 
-  border-right: 2px solid $grey;
   width: 40vw;
   height: 100vh;
-
   // transition: all 0.4s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform-origin: 100% 0px;
+    transform: translateY(-50%);
+    background-color: rgba($color: $grey, $alpha: 0.5);
+    height: 0;
+    width: 2px;
+  }
 
   h1 {
     font-weight: 100;

@@ -164,6 +164,10 @@
 
         font-family: $headers;
       }
+
+      @include breakpoint-up(large) {
+        font-size: $_26px;
+      }
     }
   }
 
@@ -210,6 +214,11 @@
         font-size: $_16px;
       }
 
+      @include breakpoint-up(large) {
+        font-size: $_20px;
+        font-weight: 300;
+      }
+
       &.open_work {
         margin-right: 0;
         margin-top: 1.125rem;
@@ -242,6 +251,12 @@
       @include breakpoint-up(tablet) {
         margin-top: 0;
         margin-left: auto;
+      }
+
+      @include breakpoint-up(large) {
+        font-size: $_20px;
+        font-weight: 300;
+        text-decoration: 1px underline rgba($color: $red, $alpha: 0.8);
       }
     }
   }

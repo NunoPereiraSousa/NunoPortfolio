@@ -45,6 +45,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const sections = gsap.utils.toArray(".desktop_section");
 
+let rule = CSSRulePlugin.getRule("section.desktop_section::after");
+
 let projectTl = gsap.timeline();
 let projectTl2 = gsap.timeline();
 
@@ -67,6 +69,14 @@ window.onload = () => {
         ".header__desktop_menu a div div",
         {
           y: "0%",
+          stagger: 0.25
+        },
+        "-=0.3"
+      )
+      .to(
+        rule,
+        {
+          height: "86%",
           stagger: 0.25
         },
         "-=0.3"

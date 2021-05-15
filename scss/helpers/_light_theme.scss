@@ -50,10 +50,12 @@ body.light {
   }
 
   .desktop_section {
-    border-right: 2px solid $dark;
+    &::after {
+      background-color: rgba($color: $dark, $alpha: 0.5);
+    }
 
     div {
-      opacity: 1;
+      // opacity: 1;
     }
   }
 

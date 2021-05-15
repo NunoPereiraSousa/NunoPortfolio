@@ -1,24 +1,34 @@
 a.socials__card {
   width: 100%;
   text-transform: uppercase;
-  font-size: $_70px;
+  font-size: $_40px;
   color: $grey;
   font-family: $headers2;
 
-  padding: 3rem 0;
+  &:nth-child(even) {
+    text-align: right;
+  }
 
-  border-top: 1px solid $grey;
+  // border-top: 1px solid $grey;
 
   transition: all 0.4s;
 
   @include breakpoint-up(tablet) {
-    padding: 8vh 0;
-    font-size: $_120px;
+    // padding: 8vh 0;
+    font-size: $_80px;
   }
 
   @include breakpoint-up(iPadPro) {
-    padding: 12vh 0;
-    font-size: $_140px;
+    font-size: $_100px;
+  }
+
+  @include breakpoint-up(desktop) {
+    width: fit-content;
+    font-size: $_80px;
+  }
+
+  @include breakpoint-up(large) {
+    font-size: $_100px;
   }
 
   &:hover.email {
