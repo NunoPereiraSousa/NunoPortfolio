@@ -53,7 +53,7 @@ body.light {
     border-right: 2px solid $dark;
 
     div {
-      opacity: 0.5;
+      opacity: 1;
     }
   }
 
@@ -97,20 +97,6 @@ body.light {
     h5,
     h4 {
       color: $dark;
-    }
-
-    border-bottom: 1px solid rgba($color: $dark, $alpha: 0.4);
-
-    @include breakpoint-up(desktop) {
-      border-bottom: 1px solid rgba($color: $dark, $alpha: 0.2);
-    }
-
-    &:first-child {
-      border-top: 1px solid rgba($color: $dark, $alpha: 0.4);
-
-      @include breakpoint-up(desktop) {
-        border-top: 1px solid rgba($color: $dark, $alpha: 0.2);
-      }
     }
   }
 

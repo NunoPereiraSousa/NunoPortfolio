@@ -25,12 +25,22 @@
     line-height: 0.7;
     margin: 0;
     font-family: $body;
+
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
   }
 
   h3,
   h5 {
     font-weight: 400;
     margin: 0;
+
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
   }
 
   h3 {
@@ -45,11 +55,19 @@
     font-family: $headers2;
     opacity: 0.75;
     margin-top: 0.4rem;
+
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
   }
 
   svg {
     margin-top: 6vh;
     height: 80px;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 0.4s ease-out;
   }
 }
 
@@ -67,6 +85,8 @@ section.desktop_section {
   width: 40vw;
   height: 100vh;
 
+  // transition: all 0.4s ease;
+
   h1 {
     font-weight: 100;
     font-size: 42vh;
@@ -77,12 +97,22 @@ section.desktop_section {
     @include breakpoint-up(large) {
       font-size: 50vh;
     }
+
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
   }
 
   h3,
   h5 {
     font-weight: 400;
     margin: 0;
+
+    div > div {
+      transform: translateY(100%);
+      transition: all 0.4s ease-out;
+    }
   }
 
   h3 {
@@ -101,6 +131,9 @@ section.desktop_section {
   svg {
     margin-top: 10vh;
     height: 130px;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 0.4s ease-out;
   }
 
   & > div {

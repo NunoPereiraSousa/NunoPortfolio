@@ -25,11 +25,6 @@
     align-items: center;
   }
 
-  &:hover h3,
-  &:hover h4 {
-    opacity: 1;
-  }
-
   h4 {
     font-size: $_14px;
     font-family: $body;
@@ -52,8 +47,10 @@
       order: 2;
       margin-left: auto;
       font-size: $_18px;
+    }
 
-      opacity: 0.5;
+    @include breakpoint-up(large) {
+      font-size: $_26px;
     }
 
     div > div {
@@ -80,8 +77,10 @@
     @include breakpoint-up(desktop) {
       font-size: $_60px;
       order: 1;
+    }
 
-      opacity: 0.5;
+    @include breakpoint-up(large) {
+      font-size: $_80px;
     }
 
     div > div {

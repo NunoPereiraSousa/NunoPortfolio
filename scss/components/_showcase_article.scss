@@ -1,8 +1,4 @@
 .showcase__grid__article {
-  &:hover {
-    opacity: 1;
-  }
-
   margin-bottom: 2rem;
 
   @include breakpoint-up(desktop) {
