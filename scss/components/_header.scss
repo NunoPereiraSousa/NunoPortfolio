@@ -162,10 +162,9 @@
   &__logo {
     font-family: $headers;
     font-size: $_20px;
-    color: $grey;
+    color: $dark;
     font-weight: 600;
     letter-spacing: normal;
-    color: $grey;
 
     @include breakpoint-up(tablet) {
       font-size: $_26px;
@@ -184,7 +183,7 @@
       left: 75%;
       height: 2px;
       width: 1.4rem;
-      background-color: $grey;
+      background-color: $dark;
       transition: all 0.8s;
 
       &:nth-child(1) {

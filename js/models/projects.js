@@ -53,18 +53,26 @@ export let projectsShowcase = [
   },
   {
     id: 3,
-    title: "EU traveling"
+    title: "EU Traveling"
   },
   {
     id: 4,
-    title: "HomeDecor"
+    title: "Loghi"
   },
   {
     id: 5,
-    title: "Loghi"
+    title: "HomeDecor"
   },
   {
     id: 6,
     title: "Weather"
+  },
+  {
+    id: 7,
+    title: "Dutify"
+  },
+  {
+    id: 8,
+    title: "Covid PT"
   }
 ];

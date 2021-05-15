@@ -1,8 +1,16 @@
 body.light {
   .header {
-    &__logo,
-    p {
-      color: $dark;
+    &__logo {
+      color: $dark !important;
+    }
+
+    #toggleTheme {
+      color: $dark !important;
+
+      div > div {
+        transform: translateY(100%);
+        transition: all 0.4s ease-out;
+      }
     }
 
     &__hamburger {
