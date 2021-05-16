@@ -61,10 +61,10 @@
 
   h3 {
     margin: 0;
-    font-size: $_26px;
+    font-size: $_30px;
     color: $grey;
 
-    font-weight: 400;
+    font-weight: 500;
 
     @include breakpoint-up(tablet) {
       font-size: $_40px;

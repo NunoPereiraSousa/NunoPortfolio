@@ -53,10 +53,6 @@ body.light {
     &::after {
       background-color: rgba($color: $dark, $alpha: 0.5);
     }
-
-    div {
-      // opacity: 1;
-    }
   }
 
   .cursor.nightTheme {
@@ -76,10 +72,6 @@ body.light {
     h2 {
       color: $dark;
     }
-  }
-
-  .socials__card {
-    border-top: 1px solid $dark;
   }
 
   .services__grid__article {
@@ -249,5 +241,9 @@ body.light {
 
   .cursor-follower.open_work_cursor.nightTheme {
     border-color: $red !important;
+  }
+
+  #bigName {
+    fill: $dark;
   }
 }

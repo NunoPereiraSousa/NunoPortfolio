@@ -9,12 +9,9 @@ a.socials__card {
     text-align: right;
   }
 
-  // border-top: 1px solid $grey;
-
   transition: all 0.4s;
 
   @include breakpoint-up(tablet) {
-    // padding: 8vh 0;
     font-size: $_80px;
   }
 

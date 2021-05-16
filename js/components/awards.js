@@ -13,7 +13,7 @@ for (let award of awards) {
                     : award.date1 && award.date2 == "Fourteen"
                     ? ""
                     : award.date1
-                } <br class="hide-for-desktop" />
+                } 
                 ${award.date2}
             </h3>
             <div>
@@ -25,18 +25,3 @@ for (let award of awards) {
         </article>
     `;
 }
-
-// let articles = document.querySelectorAll(".showcase__grid__article");
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// // SCROLL FADE ANIMATION
-// articles.forEach(article => {
-//   gsap.to(article, {
-//     scrollTrigger: {
-//       trigger: article,
-//       start: "-50% center"
-//     },
-//     opacity: 1
-//   });
-// });

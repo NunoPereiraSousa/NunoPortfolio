@@ -12,19 +12,3 @@ for (let hobby of hobbies) {
     </article>
     `;
 }
-
-let hobbiesCards = document.querySelectorAll(".hobbies__grid__card");
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// SCROLL FADE ANIMATION
-// hobbiesCards.forEach(hobby => {
-//   gsap.to(hobby, {
-//     scrollTrigger: {
-//       trigger: hobby,
-//       markers: true,
-//       start: "-120% center"
-//     },
-//     opacity: 1
-//   });
-// });
