@@ -1792,6 +1792,7 @@ body.dark .cursor-follower.contacts_cursor {
 
 #bigName {
   fill: #f7f0d8;
+  margin-bottom: 2rem;
 }
 
 .carousel {
@@ -1838,7 +1839,7 @@ body.dark .cursor-follower.contacts_cursor {
   font-size: 3.125rem;
   letter-spacing: normal;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
   color: #f7f0d8;
   margin-top: 0;
