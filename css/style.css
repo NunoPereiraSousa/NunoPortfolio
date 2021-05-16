@@ -1769,6 +1769,7 @@ body.dark .cursor-follower.contacts_cursor {
 }
 
 .socials {
+  padding: 0 1.125rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1792,6 +1793,7 @@ body.dark .cursor-follower.contacts_cursor {
 
 #bigName {
   fill: #f7f0d8;
+  padding: 0 1.125rem;
   margin-bottom: 2rem;
 }
 
@@ -3077,7 +3079,7 @@ body.dark .cursor-follower.contacts_cursor {
 a.socials__card {
   width: 100%;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2.125rem;
   color: #f7f0d8;
   font-family: "Cormorant";
   -webkit-transition: all 0.4s;

@@ -413,6 +413,7 @@
 }
 
 .socials {
+  padding: 0 1.125rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -427,5 +428,6 @@
 
 #bigName {
   fill: $grey;
+  padding: 0 1.125rem;
   margin-bottom: 2rem;
 }
